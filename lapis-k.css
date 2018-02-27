@@ -2475,10 +2475,14 @@
         padding: 12px 15px !important;
     }
 
+    ._unit._work-detail-unit .works_display img {
+        max-width: 100% !important;
+    }
+  
     ._unit._work-detail-unit .works_display {
 
         /*** MEMBER ILLUUSTRATION RIGHT CONTENT WORKS ***/
-        width: 40vw !important;
+        width: auto !important;
     }
 
     .read-more.js-click-trackable {
