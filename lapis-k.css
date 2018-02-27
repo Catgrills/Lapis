@@ -109,9 +109,9 @@
     ._booth-promotion-container,
     .comic-hot-works,
     .content._mypage-fanbox,
-	.followbooster-after-bookmark-caption,
+    .followbooster-after-bookmark-caption,
     .footer,
-	._icon._bookmark-icon-inline,
+    ._icon._bookmark-icon-inline,
     .icon-pixpedia,
     .icon-pixpedia-no-item,
     ._icon.sprites-checked,
@@ -1200,7 +1200,7 @@
     }
 
     .followbooster-after-bookmark.user-recommendation-items,
-	.followbooster-after-bookmark.user-recommendation-items .user-recommendation-item {
+    .followbooster-after-bookmark.user-recommendation-items .user-recommendation-item {
         border: none !important;
     }
 
