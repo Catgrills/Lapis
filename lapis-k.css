@@ -173,11 +173,11 @@
     }
 
     ._one-click-bookmark.new {
-        background-image: url("https://i.imgur.com/63p1cf8.png");
+        background-image: url("https://i.imgur.com/63p1cf8.png") !important;
     }
 
     ._one-click-bookmark.on.new {
-        background-image: url("https://i.imgur.com/wu2OcFV.pngg");
+        background-image: url("https://i.imgur.com/wu2OcFV.pngg") !important;
     }
 
     /* HEADER */
