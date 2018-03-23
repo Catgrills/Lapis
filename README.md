@@ -45,7 +45,7 @@ I use several fonts for my custom stylesheet.
 <li> <a href="https://www.freejapanesefont.com/kf-himaji/">KFhimaji</a></li>
 <li> <a href="https://www.fontsquirrel.com/fonts/pacifico">Pacifico</a></li>
 <li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
-<li> <a href="https://www.freechinesefont.com/simplified-traditional-tang-yuan-ti/">Tang Yuan</a> (Chinese font)</li>
+<li> <a href="https://www.freechinesefont.com/simplified-traditional-tang-yuan-ti/">Tang Yuan Ti</a> (Chinese font)</li>
 <li> <a href="https://www.freekoreanfont.com/bm-yeon-sung-download/">BM Yeon Sung</a> (Korean font)</li>
 </ol>
 
