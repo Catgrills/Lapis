@@ -573,6 +573,7 @@
 		border-bottom: 1px solid var(--border-color) !important;
 		border-radius: 1px !important;
 		height: 90px !important;
+		width: 100% !important;
 		padding: 5px 82px !important;
 		position: absolute !important;
 		top: 126px !important;
