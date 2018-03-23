@@ -1,6 +1,6 @@
 # Lapis-K
 
-<img src="preview_lapis-k.png" width="100%">
+<img src="preview_2_lapis-k.png" width="100%">
 
 Preview of <i>Lapis-K</i>.
 
@@ -27,10 +27,10 @@ Instruction
 
 <strong>Step 2 : Install the script </strong>
 <ol>
-<li> Via <a href="https://userstyles.org/styles/146398/lapis-k-pixiv-css">userstyles</a> : click the button <i>install Style</i> and it's done.</li>
-<li> Or <a href="https://pastebin.com/ia70Zdzv">manually</a> : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
+<li> Via userstyles (<a href="https://userstyles.org/styles/146398/lapis-k-light-pixiv-css">light version</a> or <a href="https://userstyles.org/styles/157504/lapis-k-dark-pixiv-css">dark version</a>) : click the button <i>install Style</i> and it's done.</li>
+<li> Or manually (<a href="https://pastebin.com/ia70Zdzv">light version</a> or <a href="https://pastebin.com/rPSMPgkF">dark version</a>) : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
+<li><b>(NEW) STYLUS ONLY</b> : Import <a href="https://mega.nz/#F!4TIBUTaK!68UQF79dszA23h5snooTRw">lapis-k.json</a> in Stylus by clicking the button <i>Import Styles</i>. You can change theme by clicking the gear icon next to the script name in the managment styles page.</li>
 </ol>
-
 <strong>Step 3 : Install others scripts </strong>
 <ol>
 <li>Install <a href="https://greasyfork.org/en/scripts/31512-pixiv-bigger-scroll-thumbnails">Pixiv Bigger Scroll Thumbnails</a>.</li>
