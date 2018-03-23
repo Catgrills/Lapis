@@ -44,8 +44,8 @@ I use several fonts for my custom stylesheet.
 <li> <a href="http://www.freejapanesefont.com/bokutachi-gothic-2-bold/">Bokutachi no Gothic 2 </a></li>
 <li> <a href="https://www.fontsquirrel.com/fonts/pacifico">Pacifico</a></li>
 <li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
-<li> [OPTIONAL/CHINESE] <a href="https://www.freechinesefont.com/simplified-traditional-tang-yuan-ti/">Tang Yuan</a></li>
-<li> [OPTIONAL/KOREAN] <a href="https://www.freekoreanfont.com/bm-yeon-sung-download/">BM Yeon Sung</a></li>
+<li> <a href="https://www.freechinesefont.com/simplified-traditional-tang-yuan-ti/">Tang Yuan</a> (Chinese font)</li>
+<li> <a href="https://www.freekoreanfont.com/bm-yeon-sung-download/">BM Yeon Sung</a> (Korean font)</li>
 </ol>
 
 <strong>Step 5 : Show your appreciation </strong>
