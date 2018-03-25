@@ -2777,6 +2777,10 @@
 	._unit._work-detail-unit ._work.multiple {
 		width: auto !important;
 	}
+	
+	._layout-thumbnail.ui-modal-trigger img {
+		width: 100% !important;   
+	}
 
 	.read-more.js-click-trackable {
 		display: none;
