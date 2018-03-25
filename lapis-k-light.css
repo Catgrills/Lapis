@@ -2773,13 +2773,10 @@
 		width: auto !important;
 		max-width: 90% !important;
 	}
-
-	._unit._work-detail-unit ._work.multiple {
-		width: auto !important;
-	}
 	
+	._unit._work-detail-unit ._work.multiple,
 	._layout-thumbnail.ui-modal-trigger img {
-		width: 100% !important;   
+	    	width: 100% !important;
 	}
 
 	.read-more.js-click-trackable {
