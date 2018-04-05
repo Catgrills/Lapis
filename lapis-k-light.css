@@ -3869,6 +3869,7 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		color: var(--primary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed;
+		text-align: center !important;
 	}
 
 	.ranking-items.adjust .rank .up,
