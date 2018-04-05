@@ -2563,6 +2563,8 @@
 
 	.layout-a .layout-column-2 .work-info .caption {
 		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
 		line-height: 22pt !important;
 	}
 
@@ -2608,7 +2610,8 @@
 		margin-bottom: 6px !important;
 	}
 
-	.work-tags .romaji-illust-tag {
+	.work-tags .romaji-illust-tag,
+	.work-tags .illust-tag-translation {
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		letter-spacing: 0px !important;
@@ -3531,6 +3534,16 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
+	
+	.column-header.with-translation-title .column-title {
+		margin: -8px 0px 0px 20px !important;
+	}
+
+	.column-header.with-translation-title .translation-column-title {
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		margin-left: 10px !important;
+	}
 
 	.count-badge {
 		border-radius: 2px;
@@ -3538,7 +3551,8 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		padding: 10px 15px !important;
-		margin-top: 1px !important;
+		margin-top: 7px !important;
+		margin-bottom: 8px !important;
 	}
 
 	.column-label .menu-items {
@@ -3756,7 +3770,10 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
 	}
-
+	
+	.column-order-menu .pager-container .page-list li {
+		background-color: var(--card-bg-2) !important;
+	}
 }
 
 @-moz-document regexp("https://www.pixiv.net/ranking.php.*") {
