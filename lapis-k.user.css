@@ -8,23 +8,23 @@
 @var select theme 'Theme' {
 	"Light": `
 	:root {
-        --body-bg: #ECEFF1 !important; 
+        	--body-bg: #ECEFF1 !important; 
 		--card-bg: #FFF !important;
 		--card-bg-2: #F0F1F5 !important;
 		--border-color: #DBDCE6 !important;
 		--primary-color: #333 !important;
 		--secondary-color: #7E7E7E !important;
-        --invert: invert(0) !important;
+        	--invert: invert(0) !important;
 	}
 	`,
 	"Dark":`
 	:root {
-	    --body-bg: #161925 !important; 
+	    	--body-bg: #161925 !important; 
 		--card-bg: #1D2D44 !important;
   		--card-bg-2: #152132 !important;
 		--border-color: #0D1321 !important;
 		--primary-color: #C0E0DE !important;
-        --secondary-color: #AAABBC !important;
+        	--secondary-color: #AAABBC !important;
 		--invert: invert(1) !important;
 	}
 	`
