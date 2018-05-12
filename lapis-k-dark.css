@@ -6,7 +6,7 @@
 	:root {
 		--body-bg: #161925 !important;
 		--card-bg: #1D2D44 !important;
-		--card-bg-2:#152132 !important;
+		--card-bg-2: #152132 !important;
        		--card-bg-op: rgba(21,33,50,.8) !important;
 		--border-color: #0D1321 !important;
 		--primary-color: #C0E0DE !important;
@@ -184,6 +184,7 @@
 	._share-links.big-buttons,
 	._shortcut-help,
 	.side-menu.comic-container,
+	.side-menu.group-list,
 	._sketch-promotion-container .pixiv_sketch_tooltip,
 	#toolbar-items,
 	._ui-tooltip[href*="booth"],
@@ -1703,72 +1704,6 @@
 	/* MEMBER PROFILE */
 
 	/** DESCRIPTION : change the elements of the member profile page **/
-	._unit.list-unit.following-unit,
-	._unit.list-unit.mypixiv-unit,
-	.side-menu.group-list {
-
-		/*** MEMBER PROFILE LEFT CONTENT FOLLOW/PIXIV BOXES ***/
-		border: none !important;
-		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		width: 150px !important;
-		position: absolute !important;
-		top: 185px !important;
-	}
-	
-	.side-menu.group-list {
-		display: none !important;	
-	}
-
-	.side-menu.group-list h1 {
-		background: transparent !important;
-		font-size: 12pt !important;
-		height: 42px !important;
-		line-height: 40px !important;
-		padding-left: 12px !important;
-	}
-
-	._unit.list-unit.following-unit {
-		right: 90px !important;
-	}
-
-	._unit.list-unit.mypixiv-unit {
-		right: 250px !important;
-	}
-
-	.side-menu.group-list {
-		margin-top: 0px !important;
-		right: 200px !important;
-	}
-
-	._unit.list-unit .unit-title,
-	._unit.list-unit .unit-count {
-		background: inherit !important;
-		color: var(--primary-color) !important;
-		font-size: 14pt !important;
-		font-stretch: condensed;
-		padding: 4px 10px !important;
-	}
-
-	._unit.list-unit .unit-title *,
-	._unit.list-unit .unit-count * {
-		color: var(--primary-color) !important;
-	}
-
-	._unit.list-unit .user-list,
-	._unit.list-unit .more,
-	.side-menu .groups,
-	.side-menu .more {
-		display: none !important;
-	}
-
-	.layout-a .layout-column-2 ._unit {
-
-		/*** MEMBER PROFILE RIGHT CONTENT ***/
-		background: transparent !important;
-		border: none !important;
-	}
-
 	.layout-a .layout-column-2 .works_area .works_info {
 
 		/*** MEMBER PROFILE RIGHT CONTENT WORKS INFO ***/
@@ -3991,7 +3926,7 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		text-align: center !important;
 		margin: 20px auto !important;
 	}
-	
+
 	#js-react-search-mid > div {
 	    	margin: 0px;    
 	}
