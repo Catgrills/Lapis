@@ -1715,6 +1715,10 @@
 		position: absolute !important;
 		top: 185px !important;
 	}
+	
+	.side-menu.group-list {
+		display: none !important;	
+	}
 
 	.side-menu.group-list h1 {
 		background: transparent !important;
