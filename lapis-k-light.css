@@ -3988,6 +3988,14 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		margin: 20px auto !important;
 	}
 
+	#js-react-search-mid > div {
+	    	margin: 0px;    
+	}
+
+	#js-react-search-mid .bookmark-count {
+	    	display: none !important;   
+	}
+
 	.gtm-recommend-illust.gtm-illust-title-link {
 		color: var(--primary-color);
 		font-size: 14pt !important;
