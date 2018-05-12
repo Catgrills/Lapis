@@ -7,6 +7,7 @@
 		--body-bg: #161925 !important;
 		--card-bg: #1D2D44 !important;
 		--card-bg-2:#152132 !important;
+       		--card-bg-op: rgba(21,33,50,.8) !important;
 		--border-color: #0D1321 !important;
 		--primary-color: #C0E0DE !important;
 		--secondary-color: #AAABBC !important;
@@ -18,6 +19,18 @@
 	/** DESCRIPTION : set the main font and change others elements for every page **/
 	html {
 		overflow-x: hidden !important;
+	}
+
+	*::-moz-focus-inner {
+		border: 0;
+	}
+
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		text-indent: 0px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	body {
@@ -37,7 +50,7 @@
 	textarea,
 	td,
 	tr {
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;        /* font-family: "Roboto", "落落の汤圆体 jojisin" !important; [CHINESE] */
+		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;        /* font-family: "Roboto", "落落の汤圆体 jojisin" !important; [CHINESE] */
 
 		/* font-family: "Roboto", "BM YEONSUNG" !important; [KOREAN] */
 	}
@@ -63,7 +76,7 @@
 		background-color: var(--card-bg) !important;
 		border: none;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		padding: 4px 1px 4px 0px !important;
@@ -127,8 +140,10 @@
 		filter: var(--invert) !important;
 	}
 
+	a[href*="/novel/"],
 	.ads_anchor,
 	.ads_value .ads_inner,
+	.area_new.promotion-comic,
 	.booth-follow-items .event-name-badge,
 	._booth-promotion-container,
 	.comic-hot-works,
@@ -194,7 +209,9 @@
 	.fbmvZrK,
 	._no-item {
 		background: transparent;
-		font-size: 15pt !important;
+		color: #369ECF !important;
+		font-size: 17pt !important;
+		font-stretch: condensed;
 	}
 
 	._one-click-bookmark {
@@ -214,7 +231,7 @@
 		background-color: var(--card-bg) !important;
 		border-top: 6px solid #369ECF;
 		border-bottom: none;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 		height: 120px !important;
 	}
 
@@ -234,12 +251,12 @@
 
 		/*** HEADER INSIDE CONTAINER TITLE LOGO ***/
 		color: #369ECF !important;
-		content: "お絵かきがもっと楽しくなる場所" !important;
-		font-family: "KFhimaji" !important;
-		font-size: 22pt !important;
+		content: "ピクシブ" !important;
+		font-family: "Honoka Antique-Kaku" !important;
+		font-size: 30pt !important;
 		width: 30vw !important;
 		position: absolute !important;
-		margin-top: 5px !important;
+		margin-top: -2px !important;
 		margin-left: 16px !important;
 		overflow: hidden !important;
 		text-overflow: ellipsis !important;
@@ -269,6 +286,61 @@
 	._global-header .navigation-list .home,
 	._global-header .navigation-list .menu-icon {
 		display: none !important;
+	}
+
+	.notifications.new-version .notification-button .count {
+		background: transparent;
+		border: none;
+		color: #369ECF;
+		font-size: 12pt !important;
+		font-stretch: condensed;
+	}
+
+	.notification-popup.new-version#notification-popboard::before,
+	.notification-popup.new-version#notification-popboard::after,
+	.notification-popup.new-version#notification-message::before,
+	.notification-popup.new-version#notification-message::after {
+		display: none;
+	}
+
+	#notification-popboard,
+	#notification-message {
+		background: var(--card-bg-2);
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+	}
+
+	#notification-popboard div,
+	#notification-message div,
+	#notification-message span {
+		border-color: var(--border-color);
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal !important;
+	}
+
+	#notification-message > div {
+		line-height: 22px;
+	}
+
+	#notification-message span {
+		background: transparent;
+	}
+
+	#notification-popboard li,
+	#notification-message div ul li {
+		background: var(--card-bg-2);
+		border-bottom: 1px solid var(--border-color) !important;
+	}
+
+	#notification-popboard li * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		line-height: 20pt !important;
 	}
 
 	._premium-lead-header,
@@ -339,9 +411,9 @@
 
 	#suggest-list * {
 		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		letter-spacing: 0px !important;
 		line-height: 16pt !important;
 	}
 
@@ -364,6 +436,10 @@
 		border-radius: 2px !important;
 	}
 
+	#modal-messages {
+		background: var(--card-bg-op);
+	}
+
 	.notification-popup.new-version .header,
 	._3PHaofo {
 		font-size: 12pt !important;
@@ -381,8 +457,8 @@
 	}
 
 	#notification-message.new-version .name {
-		font-family: "Roboto", "KFhimaji" !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 		height: 20px !important;
 	}
@@ -420,17 +496,27 @@
 		margin-bottom: 6px !important;
 	}
 
+	._global-header .link-list .settings-menu li:last-child .item {
+		border-bottom: none !important;
+		margin-bottom: -5px !important;
+	}
+
 	._global-header .navigation-list .menus li > a + a::before {
-		border-color: var(--border-color)
+		border-color: var(--border-color);
 	}
 
 	.mypixiv-message {
 
 		/*** POPUP WINDOWS PIXIV MESSAGE ***/
+		background: var(--card-bg) !important;
 		border-radius: 2px !important;
 		border-top: 6px solid #2CC990 !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 5px 15px 15px 15px !important;
+	}
+
+	#modal-messages .modal-window > div.mypixiv-message {
+		top: 40% !important;
 	}
 
 	#modal-messages .modal-window div.mypixiv-message .header {
@@ -445,15 +531,18 @@
 	}
 
 	#modal-messages .modal-window div.mypixiv-message form textarea {
-		background: var(--card-bg-2);
+		background: var(--card-bg-2) !important;
 		border: none !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		font-size: 12pt !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		max-width: 100% !important;
 		min-width: 100% !important;
 		min-height: 100px !important;
 		margin-bottom: 20px;
+		padding: 8px 10px !important;
 	}
 
 	#modal-messages .modal-window div.mypixiv-message form .buttons input,
@@ -461,55 +550,38 @@
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		font-family: "Roboto" !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 		height: 40px !important;
 		line-height: 40px !important;
 		width: 80px !important;
 	}
 
-	.SaRQDsr {
+	._2XpbYyV {
 
 		/*** POPUP WINDOWS MUTE/SETTINGS ***/
+		background: var(--card-bg);
 		border-radius: 2px !important;
 		border-top: 6px solid #2C82C9 !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 	}
 
-	.HpgJOxH {
-		background: url('https://imgur.com/4GlrMN7.png') no-repeat 50% 50%;
-		background-size: 25px auto !important;
-		background-color: transparent !important;
-		border: none !important;
-		color: transparent !important;
-		opacity: .6 !important;
+	._2XpbYyV * {
+		border-color: var(--border-color);
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		font-weight: normal;
 	}
 
-	.OwbPTs6 {
-		visibility: hidden;
+	._mute-edit-container .lists {
+		background: var(--card-bg);
+		height: 100% !important;
 	}
 
-	._2akl2xD {
-		font-size: 17pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
-		text-transform: lowercase !important;
-	}
-
-	.qzAmGoU .p7QJkNC,
-	._3VCwsE5 .-nASB33,
-	._3--uSq5 ._1DwJf6F {
-		font-size: 12pt !important;
-	}
-
-	._3VCwsE5 .-nASB33 {
-		margin-top: 10px !important;
-		margin-bottom: 10px !important;
-	}
-
-	._mute-edit-container .lists .list .title,
-	._1TJHP4Y > h2,
-	._26pBIMd {
+	._mute-edit-container .lists .list .title {
+		color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -517,6 +589,7 @@
 	}
 
 	._mute-edit-container .lists .list .item {
+		color: var(--primary-color);
 		margin-top: 20px !important;
 	}
 
@@ -535,22 +608,16 @@
 	}
 
 	._mute-edit-container .lists .list .label span {
-		font-family: "Roboto", "KFhimaji" !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 	}
 
-	._mute-edit-container .lists .list ._action-button.mute,
-	.aeFuj-U.aeF3Wnp,
-	._1i-Mwh7.aeF3Wnp {
+	._mute-edit-container .lists .list ._action-button.mute {
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		font-family: "Roboto" !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
-	}
-
-	._2Mk5yZ8 ._1DwJf6F {
-		display: none;
 	}
 
 	/* HOME */
@@ -559,7 +626,6 @@
 	#page-mypage {
 
 		/*** HOME MAIN CONTAINER ***/
-		padding-top: 30px !important;
 		margin-left: 60px !important;
 	}
 
@@ -579,6 +645,10 @@
 		top: 126px !important;
 		right: 0px !important;
 		left: 0px !important;
+	}
+
+	#page-bookmark-user-myself ._user-profile-card {
+		top: 0px !important;
 	}
 
 	#page-mypage .profile ._user-icon,
@@ -652,6 +722,7 @@
 		background: #008891 !important;
 		border-radius: 2px !important;
 		border-top: none !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
@@ -682,6 +753,7 @@
 	#page-mypage .menu-item li:nth-of-type(2) {
 		background: #42729B;
 		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
@@ -708,6 +780,7 @@
 	#page-mypage h1 a[href="/ranking.php?mode=daily"],
 	#page-mypage a[href="/ranking.php?mode=original"] {
 		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
@@ -780,8 +853,9 @@
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		padding-left: 28px !important;
-		padding-bottom: 24px !important;
+		padding-bottom: 20px !important;
 		text-transform: capitalize !important;
+		margin-top: 5px !important;
 		margin-right: -18px !important;
 		margin-left: -18px !important;
 		margin-bottom: 30px !important;
@@ -792,7 +866,7 @@
 	}
 
 	#item-container .item header .actions {
-		top: 33px;
+		top: 28px;
 		right: 35px;
 	}
 
@@ -868,7 +942,18 @@
 	#page-mypage #booth-follow-items ._layout-thumbnail {
 
 		/*** HOME BOOTH BOX ***/
-		border: 2px solid #EBEBEB !important;
+		border: 2px solid var(--border-color) !important;
+	}
+
+	#page-mypage #booth-follow-items .image-item .title {
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		font-weight: normal;
+		margin-top: 10px;
+		max-width: 150px !important;
+		line-height: 20pt !important;
+		display: block !important;
 	}
 
 	#page-mypage .item.spotlight .content {
@@ -879,16 +964,20 @@
 	}
 
 	#page-mypage #item-container .spotlight .content .item {
+		background: var(--card-bg-2) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		margin-right: 45px !important;
 	}
 
 	#page-mypage #item-container .spotlight .content .title-outside {
+		background: #000;
 		height: 45px !important;
 		left: 0px !important;
 	}
 
 	#page-mypage #item-container .spotlight .content .title {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 		line-height: 45px !important;
 	}
@@ -901,6 +990,7 @@
 
 	#page-mypage .contests .project-description {
 		width: 60vw !important;
+		margin-left: 10px !important;
 	}
 
 	#page-mypage .contests .official-contest:nth-child(2n+1) {
@@ -910,6 +1000,7 @@
 	#page-mypage .contests .project-icon img {
 		border-radius: 50% !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		margin-top: 0px !important;
 	}
 
 	.project_pixiv {
@@ -918,18 +1009,57 @@
 
 	#page-mypage .official-contest h3 {
 		position: absolute !important;
-		left: 100px !important;
+		left: 105px !important;
 		margin-top: 5px !important;
 	}
 
 	#page-mypage .official-contest h3 a {
-		font-family: "Roboto", "KFhimaji" !important;
+		color: var(--primary-color);
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
 
 	#page-mypage .project-description p {
+		color: var(--secondary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		margin-top: 45px;
+	}
+
+	#page-mypage .project-description img {
+		margin-top: 5px !important;
+	}
+
+	.project_pixiv .mypage-nearbyclose-badge {
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		border-radius: 2px !important;
+		height: 70px !important;
+		width: 100px !important;
+	}
+
+	.project_pixiv .mypage-nearbyclose-badge * {
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		font-weight: normal !important;
+		line-height: 20pt !important;
+		margin-top: 4px !important;
+	}
+
+	.mypage-result-btn {
+		background: #2C82C9;
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: #FFF !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		width: 100px;
+		text-align: center;
+	}
+
+	.mypage-more-btn,
+	.project_pixiv .project-description .mypage-new-badge {
 		display: none !important;
 	}
 
@@ -941,14 +1071,38 @@
 		margin-bottom: 15px !important;
 	}
 
+	#page-mypage ._sketch-lives-container .sketch-lives-list .thumbnail {
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+	}
+
+	#page-mypage ._sketch-lives-container .sketch-lives-list .sketch-live-item .badge-container * {
+		display: none;
+	}
+
+	._user-icon.size-16.cover-texture.ui-profile-popup.streamer-icon {
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		height: 25px !important;
+		width: 25px !important;
+		margin-right: 5px;
+	}
+
 	#page-mypage ._sketch-lives-container .sketch-live-item .header .live-name {
 		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt;
+		font-weight: normal;
 	}
 
 	#page-mypage ._sketch-lives-container .sketch-live-item .viewers {
-		font-size: 12pt !important;
+		background: #2C82C9;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: #FFF !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		width: 100px;
+		padding: 5px;
+		margin: 10px auto;
 	}
 
 	#page-mypage .content._mypage-fanbox {
@@ -965,6 +1119,18 @@
 	._mypage-fanbox .mf__following-alert {
 		border-radius: 2px !important;
 		font-size: 12pt;
+	}
+
+	._mypage-fanbox .mf__creator {
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+	}
+
+	._mypage-fanbox .mf__creator-name {
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	#page-mypage ._mypage-showcase .mf__list {
@@ -992,34 +1158,20 @@
 	}
 
 	#page-mypage .tagCloud a {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal;
 	}
 
 	/* MY FOLLOWING USERS */
 
 	/** DESCRIPTION : change the elements of the user following users page **/
-	#page-bookmark-user-myself ._unit.list-unit.following-unit,
-	#page-bookmark-reg-user ._unit.list-unit.following-unit {
-		top: 151px !important;
+	#page-bookmark-user-myself {
+		width: 97% !important;
 	}
 
-	#page-bookmark-user-myself .ui-layout-east,
-	#page-bookmark-reg-user .ui-layout-east {
-		float: none !important;
-		width: 90vw !important;
-		position: absolute;
-		top: 280px !important;
-		right: 0px !important;
-		left: 0px !important;
-		margin: auto !important;
-	}
-
-	#page-bookmark-user-myself .column-main,
-	#page-bookmark-reg-user .column-main {
-		background: transparent !important;
-		border: none !important;
+	#page-bookmark-user-myself .tabs {
+		margin-left: -5px !important;
 	}
 
 	#page-bookmark-user-myself .column-title,
@@ -1028,6 +1180,8 @@
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
+		margin-top: 20px;
+		margin-left: 22px;
 	}
 
 	#page-bookmark-user-myself .count-badge,
@@ -1037,7 +1191,7 @@
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		padding: 10px 15px 10px 14px !important;
-		margin-top: 2px !important;
+		margin-top: 15px !important;
 	}
 
 	#page-bookmark-user-myself .context {
@@ -1074,6 +1228,9 @@
 		background: var(--card-bg) !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: var(--primary-color) !important;
+		font-size: 15pt !important;
+		font-stretch: condensed !important;
 		max-width: 300px !important;
 		height: 100px !important;
 		padding: 15px !important;
@@ -1083,7 +1240,6 @@
 
 	#page-bookmark-user-myself .members .ui-profile-popup,
 	#page-bookmark-reg-user .members .ui-profile-popup {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 	}
@@ -1120,7 +1276,7 @@
 		background: var(--card-bg-2) !important;
 		border: none !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .01) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		font-weight: normal !important;
@@ -1162,7 +1318,6 @@
 
 	.bookmark-detail-unit .title {
 		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 18pt !important;
 		font-stretch: condensed;
 		font-weight: normal !important;
@@ -1185,7 +1340,6 @@
 
 	._illust-series-title-text,
 	._3r3jP3O ._3VbxfKi ._1ZRY2a1 {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 	}
 
@@ -1234,12 +1388,14 @@
 	}
 
 	.bookmark-detail-unit .privacy {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		margin-right: 10px !important;
 	}
 
 	.remove {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		position: absolute;
 		margin-top: -15px !important;
 		margin-left: -11px !important;
@@ -1268,7 +1424,8 @@
 	}
 
 	.list-option.tag-order {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		position: absolute !important;
 		right: 34px !important;
 	}
@@ -1297,7 +1454,6 @@
 	}
 
 	._unit.complete-unit .column-title {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		margin-top: 15px !important;
@@ -1350,7 +1506,6 @@
 
 	#illust-recommend .image-item .title {
 		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -1378,6 +1533,7 @@
 
 	._follow-button-container.js-click-trackable .follow-button {
 		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
@@ -1404,14 +1560,13 @@
 	}
 
 	#js-mount-point-discovery ._1hflFDF {
+
+		/*** DISCOVERY HEADER ***/
 		background: var(--card-bg) !important;
 		border-bottom: 1px solid var(--border-color) !important;
-		padding-bottom: 23px !important;
+		padding-bottom: 19px !important;
+		margin-top: -10px;
 		margin-right: 1px !important;
-	}
-
-	#js-mount-point-discovery ._31jH7Ts {
-		display: none !important;
 	}
 
 	#js-mount-point-discovery ._1hflFDF * {
@@ -1421,7 +1576,15 @@
 		font-weight: normal !important;
 	}
 
+	#js-mount-point-discovery ._31jH7Ts {
+
+		/*** DISCOVERY HEADER TABS ***/
+		display: none !important;
+	}
+
 	#js-mount-point-discovery .column-title {
+
+		/*** DISCOVERY MAIN TITLE ***/
 		color: var(--secondary-color) !important;
 		font-size: 17pt !important;
 		font-stretch: condensed;
@@ -1431,32 +1594,25 @@
 	}
 
 	#js-mount-point-discovery ._3zgldxY {
+
+		/*** DISCOVERY ILLUSTRATIONS CONTAINER ***/
 		margin: 0 !important;
 		text-align: center !important;
 	}
 
-	._1vrcjFY div {
-		width: inherit !important;
-		height: inherit !important;
-	}
-
 	#js-mount-point-discovery .gtm-recommend-illust.gtm-illust-title-link {
+
+		/*** DISCOVERY ILLUSTRATIONS CONTAINER PICTURE TITLE ***/
 		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		font-weight: normal !important;
 		line-height: 18pt !important;
 	}
 
-	#js-mount-point-discovery .gtm-recommend-illust.gtm-illust-title-link * {
-		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
-		font-size: 15pt !important;
-		font-weight: normal !important;
-	}
-
 	#js-mount-point-discovery .js-click-trackable.ui-profile-popup {
+
+		/*** DISCOVERY ILLUSTRATIONS CONTAINER USERNAME ***/
 		color: var(--secondary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
@@ -1465,11 +1621,9 @@
 		margin-top: 5px !important;
 	}
 
-	#js-mount-point-discovery .js-click-trackable.ui-profile-popup * {
-		font-family: "Roboto", "KFhimaji" !important;
-	}
-
 	#js-mount-point-discovery .gtm-discover-related-button {
+
+		/*** DISCOVERY ILLUSTRATIONS CONTAINER MORE LIKE THIS BUTTON ***/
 		background: #2C82C9 !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
@@ -1483,21 +1637,16 @@
 	}
 
 	#js-mount-point-discovery .thumbnail-menu {
+
+		/*** DISCOVERY ILLUSTRATIONS CONTAINER ACTIONS BUTTONS ***/
 		position: relative !important;
 		right: 10px !important;
 	}
 
-	#js-mount-point-discovery .SN11CHZ {
-		font-stretch: condensed !important;
-		padding: 14px 10px 15px 10px !important;
-		position: absolute !important;
-		top: 10px !important;
-		right: 0px !important;
-		margin-top: 0 !important;
-	}
-
 	._2taBWk8,
 	._2taBWk8 div {
+
+		/*** DISCOVERY ILLUSTRATION CONTAINER AVATAR ***/
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		height: 32px !important;
 		width: 32px !important;
@@ -1505,6 +1654,8 @@
 	}
 
 	#js-mount-point-discovery ._2yLzXFL {
+
+		/*** RECOMMENDED USERS NAME ***/
 		color: var(--primary-color) !important;
 		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 17pt !important;
@@ -1514,6 +1665,8 @@
 	}
 
 	#js-mount-point-discovery ._1F4kGJx {
+
+		/*** RECOMMENDED USERS DESCRIPTION ***/
 		color: var(--secondary-color) !important;
 		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
 		font-size: 14pt !important;
@@ -1524,18 +1677,21 @@
 	#js-mount-point-discovery .follow-button.js-follow-button.off.js-click-trackable {
 		border-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		padding-top: 3px !important;
+		padding-top: 4px !important;
 		padding-bottom: 3px !important;
 	}
 
 	#js-mount-point-discovery ._follow-buttons .follow-button .text {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		text-transform: uppercase !important;
 	}
 
 	#js-mount-point-discovery ._6_Sgob7 {
-		font-size: 12pt !important;
+
+		/*** RECOMMENDED USERS MORE LINK ***/
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		line-height: 18px !important;
 		text-transform: lowercase !important;
 	}
@@ -1670,9 +1826,9 @@
 	.worksOption ._image-items .image-item .title,
 	._illust-series-thumbnail .title {
 		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal;
 		height: 40px !important;
 		max-width: 100% !important;
 		overflow: hidden;
@@ -1687,8 +1843,9 @@
 	}
 
 	.worksOption .user.ui-profile-popup {
-		font-family: "Roboto", "KFhimaji" !important;
-		font-size: 12pt !important;
+		;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		line-height: 30px !important;
 		opacity: 0.6 !important;
 	}
@@ -1725,7 +1882,6 @@
 	._unit.manage-unit .column-title {
 
 		/*** MEMBER GALLERY RIGHT CONTENT TITLE ***/
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		margin-top: 20px !important;
@@ -1765,7 +1921,7 @@
 	._unit.manage-unit ._image-items {
 
 		/*** MEMBER GALLERY RIGHT CONTENT ILLUSTRATIONS ***/
-		margin-top: 85px !important;
+		margin-top: 65px !important;
 		margin-left: 6px !important;
 	}
 
@@ -1898,6 +2054,11 @@
 		color: var(--primary-color) !important;
 	}
 
+	#book_outlist * {
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
 	.area_new.bookmark-tags #bookmark_toggle_btn {
 		display: none !important;
 	}
@@ -1969,7 +2130,7 @@
 		/*** MEMBER BOOKMARK RIGHT CONTENT ACTION FOOTER ***/
 		background: var(--card-bg) !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 10px 10px 25px 10px !important;
 		margin-top: 104px !important;
 		margin-left: 22px !important;
@@ -1978,7 +2139,8 @@
 
 	.column-action-menu .menu-items {
 		border-bottom: 1px solid var(--border-color) !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		padding-bottom: 20px !important;
 		padding-left: 10px !important;
 		margin-right: -10px !important;
@@ -2011,7 +2173,6 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
-		padding: 6px 16px 8px 16px !important;
 	}
 
 	.tag-badge {
@@ -2157,7 +2318,8 @@
 		background: #EFF2FF !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		height: 40px !important;
 		width: 85px !important;
 		margin-top: 13px !important;
@@ -2205,7 +2367,6 @@
 	}
 
 	.ui-layout-east .stacc_main_timeline .stacc_post_user_name a {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 16pt !important;
 		font-stretch: condensed;
 	}
@@ -2229,7 +2390,6 @@
 
 	.ui-layout-east .stacc_ref_illust_title a {
 		color: #40BC86 !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 15pt !important;
 		font-stretch: condensed;
 		font-weight: normal;
@@ -2245,7 +2405,6 @@
 	.ui-layout-east .stacc_status .stacc_post_time a,
 	.ui-layout-east .stacc_status .stacc_tweet_mark a,
 	.ui-layout-east .stacc_status .stacc_comment_count a {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 	}
@@ -2268,7 +2427,6 @@
 	}
 
 	.stacc_main_timeline .stacc_status_content_top .stacc_message {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt;
 	}
 
@@ -2287,8 +2445,13 @@
 
 	.ui-layout-east .stacc_status .stacc_comment_button a,
 	.ui-layout-east .stacc_status .stacc_remove_button a {
-		font-size: 12pt;
+		font-size: 14pt;
+		font-stretch: condensed;
 		padding-right: 10px !important;
+	}
+
+	.ui-layout-east .stacc_status .stacc_comment_button a:hover {
+		color: var(--primary-color);
 	}
 
 	.ui-layout-east .stacc_right_area {
@@ -2373,6 +2536,7 @@
 		background: #008891 !important;
 		border-radius: 2px !important;
 		border-top: none !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
@@ -2394,6 +2558,7 @@
 	#contents .ui-layout-west .ui-layout-west ._follow-buttons .follow-button {
 		background: #42729B;
 		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		padding: 0px 25px;
 		height: 38px !important;
@@ -2406,7 +2571,7 @@
 	}
 
 	.follow-button[data-click-label="follow"] {
-		background: #B05F6D !important;
+		background: #009CFF !important;
 	}
 
 	.layout-a .layout-column-1 .ui-layout-west ._follow-buttons .follow-button span,
@@ -2430,17 +2595,36 @@
 	}
 
 	._balloon-menu-popup {
+		background: var(--card-bg-2) !important;
+		border: none;
 		border-radius: 2px !important;
-		margin-left: -10px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		margin-left: -40px !important;
 	}
 
 	._balloon-menu-popup::before,
 	._balloon-menu-popup::after {
-		margin-left: -2px;
+		display: none;
+	}
+
+	._balloon-menu-popup li {
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
+	._balloon-menu-popup .menu li:hover {
+		background-color: var(--card-bg);
+	}
+
+	._balloon-menu-popup .menu li.group-header {
+		background: transparent !important;
 	}
 
 	._balloon-menu-closer.menu * {
-		font-size: 11pt !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		text-shadow: none;
 	}
 
 	._unit._work-detail-unit {
@@ -2562,9 +2746,9 @@
 	}
 
 	.layout-a .layout-column-2 .work-info .caption {
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
+		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;
+		font-size: 16pt !important;
+		font-stretch: condensed;
 		line-height: 22pt !important;
 	}
 
@@ -2601,7 +2785,7 @@
 	.layout-a .layout-column-2 .work-tags .tags .tag {
 		background: #2C82C9 !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .01) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
@@ -2619,7 +2803,7 @@
 
 	.layout-a .layout-column-2 .work-tags .tags .tag * {
 		color: #FFF !important;
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;
 	}
 
 	.tags .portal,
@@ -2631,7 +2815,7 @@
 		background: var(--card-bg);
 		border: none !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .01) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		padding: 8px 15px !important;
@@ -2644,6 +2828,27 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		font-size: 11pt !important;
 		padding: 20px 25px !important;
+	}
+
+	#rpc table tr td[style*="padding"] {
+		border-bottom: 1px dotted var(--border-color);
+		padding: 0px 0px 10px 0px !important;
+	}
+
+	#rpc * {
+		background: transparent !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
+	#rpc #infotag,
+	#rpc #add_tag {
+		background: var(--card-bg-2) !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		padding: 5px !important;
 	}
 
 	#rpc .btn_type04 {
@@ -2668,13 +2873,13 @@
 	._bookmark-toggle-button.add-bookmark,
 	._bookmark-toggle-button.bookmarked.edit-bookmark {
 		background: #F15946 !important;
-		border-radius: 1px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .01) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-stretch: condensed !important;
 		padding: 8px 15px !important;
 		line-height: 30px !important;
-		width: 138px !important;
+		width: auto !important;
 		text-transform: uppercase !important;
 		margin-left: 1px !important;
 	}
@@ -2682,7 +2887,7 @@
 	._bookmark-toggle-button.add-bookmark span,
 	._bookmark-toggle-button.bookmarked.edit-bookmark span {
 		color: #FFF !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-weight: bold !important;
 	}
 
@@ -2693,10 +2898,10 @@
 	.bookmark-count._ui-tooltip {
 		background: #F9AE74 !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .01) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 30px !important;
@@ -2704,8 +2909,11 @@
 		width: 40px !important;
 		text-align: center !important;
 		padding: 8px 15px !important;
+	}
+
+	.bookmark-container .bookmark-count._ui-tooltip {
 		position: absolute !important;
-		left: 195px !important;
+		left: 182px !important;
 	}
 
 	._icon.sprites-bookmark-badge {
@@ -2714,7 +2922,7 @@
 
 	#toggle-container {
 		position: absolute !important;
-		right: 256px !important;
+		right: 289px !important;
 		top: 10px !important;
 	}
 
@@ -2722,10 +2930,10 @@
 		background: #565554 !important;
 		border: none !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .01) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		padding: 12px 15px !important;
@@ -2735,17 +2943,17 @@
 
 	#download-container {
 		position: absolute !important;
-		right: 83px !important;
+		right: 88px !important;
 		top: 11px !important;
 	}
 
 	#download-container #dl-btn {
 		background: #FA7921 !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .01) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		padding: 12px 15px !important;
@@ -2759,11 +2967,11 @@
 
 	#search-container #iqdb-btn {
 		background: #3BB273 !important;
-		border-radius: 1px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .01) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		padding: 12px 15px !important;
@@ -2779,9 +2987,9 @@
 
 	._unit._work-detail-unit ._work.multiple,
 	._layout-thumbnail.ui-modal-trigger img {
-	    	width: 100% !important;
+		width: 100% !important;
 	}
-	
+
 	.read-more.js-click-trackable {
 		display: none;
 	}
@@ -2880,12 +3088,16 @@
 	}
 
 	._3xzjsFN {
+
+		/*** COMMENT AVATAR ***/
 		margin-left: 10px !important;
 	}
 
 	.PbeURw7 {
+
+		/*** COMMENT USERNAME ***/
 		color: var(--secondary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
+		font-family: "Roboto", "KFhimaji", "BM YEONSUNG" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -2893,12 +3105,16 @@
 	}
 
 	._2aCP2fP * {
+
+		/*** COMMENT META FOOTER ***/
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 	}
 
 	._3ZKenub,
 	._3WoMljY {
+
+		/*** COMMENTS CONTAINER ***/
 		background: var(--card-bg-2) !important;
 		border: 1px solid var(--border-color) !important;
 		border-radius: 2px !important;
@@ -2909,28 +3125,36 @@
 		margin-bottom: 14px !important;
 	}
 
+	._3QoUzhi._3dti9h3 {
+
+		/*** COMMENTS CONTAINER REPLY ***/
+		background: var(--card-bg-2) !important;
+		border: 1px solid var(--border-color) !important;
+		border-radius: 2px !important;
+		height: 45px !important;
+		margin-top: 0px !important;
+	}
+
+	._3HT4qAA {
+
+		/*** COMMENTS CONTAINER REPLY SEND BUTTON ***/
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		font-family: "Roboto" !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		height: 45px !important;
+	}
+
 	._3ZKenub *,
-	._3WoMljY {
+	._3WoMljY,
+	._3QoUzhi._3dti9h3 {
+
+		/*** COMMENTS CONTAINER CONTENT ***/
 		color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		line-height: 25px !important;
-	}
-
-	.z-7Uhbp {
-		font-size: 12pt !important;
-		font-stretch: condensed !important;
-		margin-left: 2px !important;
-	}
-
-	._1q8tmAX,
-	._8yltpOD {
-		font-size: 12pt !important;
-		font-stretch: condensed !important;
-	}
-
-	.user-name.ui-profile-popup {
-		font-family: "Roboto", "KFhimaji" !important;
 	}
 
 	._comment-items .date._clickable {
@@ -2938,6 +3162,8 @@
 	}
 
 	._2R2k89m {
+
+		/*** COMMENTS VIEW MORE BUTTON ***/
 		background: #2C82C9 !important;
 		border: none !important;
 		border-radius: 2px !important;
@@ -2954,20 +3180,17 @@
 		margin: 20px auto !important;
 	}
 
-	._1BCR88- * {
-		font-family: "Roboto", "KFhimaji" !important;
-		font-size: 11pt !important;
-		font-stretch: condensed !important;
-		letter-spacing: .3px !important;
-	}
-
 	._2kOolTE,
 	._3zgK46a {
+
+		/*** COMMENTS DISPLAY REPLIES BUTTON ***/
 		background: var(--card-bg) !important;
+		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: var(--primary-color) !important;
 		font-family: "Roboto" !important;
 		font-size: 14pt !important;
-		font-stretch: condensed !important;
+		font-stretch: condensed;
 		padding: 8px 15px !important;
 		margin-left: 13px !important;
 		margin-top: 20px !important;
@@ -3031,7 +3254,6 @@
 	.stacc_post_user_name a,
 	.stacc_ref_illust_user_name *,
 	.stacc_ref_user_illust_count {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-weight: normal !important;
 	}
@@ -3042,7 +3264,6 @@
 	}
 
 	.stacc_ref_user_name a {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 16pt !important;
 	}
 
@@ -3094,7 +3315,8 @@
 	#page-setting-user .settingNavi,
 	#contents .settingNavi {
 		border-bottom: none !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		text-align: left !important;
 	}
 
@@ -3157,6 +3379,21 @@
 		line-height: 20pt !important;
 	}
 
+	#page-setting-profile #profile_table input,
+	#page-setting-profile #profile_table select,
+	#page-setting-profile #profile_table textarea,
+	#page-setting-user .settingContent select,
+	#contents .settingContent input,
+	#contents .settingContent textarea,
+	.settingPicureArea {
+		background: var(--card-bg-2) !important;
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		font-size: 14pt !important;
+		padding: 8px !important;
+	}
+
 	.btn_type01,
 	.btn_type06,
 	._button {
@@ -3164,11 +3401,87 @@
 		border: none !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		font-size: 12pt !important;
-		height: 30px !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		height: 40px !important;
+		line-height: 40px !important;
 		width: auto !important;
-		padding-left: 10px !important;
+		text-shadow: none !important;
 		padding-right: 10px !important;
+		padding-left: 10px !important;
+	}
+
+	.setting-social-login tr {
+		border-bottom: 1px dotted var(--border-color);
+	}
+
+	.teqpeUx {
+		margin-top: 6px !important;
+	}
+
+	/* REPORT */
+
+	/** DESCRIPTION : change the elements of the report page **/
+	h2.reportTitle {
+		border-bottom: 1px solid var(--border-color) !important;
+		font-size: 17pt !important;
+		font-stretch: condensed;
+		font-weight: normal !important;
+		padding-bottom: 15px !important;
+		padding-left: 20px !important;
+	}
+
+	.reportUserLeft {
+		background: var(--card-bg-2) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+	}
+
+	.reportUserLeft * {
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
+	#report > div {
+		background: var(--card-bg-2) !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+	}
+
+	#report h4 {
+		background: transparent !important;
+		font-size: 18pt !important;
+		font-stretch: condensed;
+		font-weight: normal;
+		padding: 10px 15px;
+	}
+
+	#report * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		line-height: 20pt;
+	}
+
+	#report textarea {
+		background: var(--card-bg) !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
+	#report ._button-large {
+		background: #2C82C9 !important;
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: #FFF !important;
+		text-shadow: none !important;
 	}
 
 }
@@ -3253,7 +3566,6 @@ regexp("https://www.pixiv.net/bookmark.php\\?id=.*&type=user") {
 
 	._unit .member-items .member-item .user .user-name,
 	#search-result .members li .ui-profile-popup {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		max-width: 160px !important;
@@ -3283,7 +3595,8 @@ regexp("https://www.pixiv.net/bookmark.php\\?id=.*&type=user") {
 
 }
 
-@-moz-document regexp("https://www.pixiv.net/bookmark_new_illust.php.*") {
+@-moz-document regexp("https://www.pixiv.net/bookmark_new_illust.php.*"),
+regexp("https://www.pixiv.net/setting_access_block.php.*") {
 
 	/* MY FOLLOWING ILLUSTRATION */
 
@@ -3356,7 +3669,6 @@ regexp("https://www.pixiv.net/bookmark.php\\?id=.*&type=user") {
 	.gtm-recommend-illust.gtm-illust-title-link,
 	._1IP8RNV ._3aqcmmE {
 		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -3369,17 +3681,11 @@ regexp("https://www.pixiv.net/bookmark.php\\?id=.*&type=user") {
 
 	.js-click-trackable.ui-profile-popup.gtm-recommend-illust.gtm-user-name-link {
 		color: var(--secondary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		height: 40px !important;
 		line-height: 40px !important;
 		margin-top: -10px !important;
-	}
-
-	._1IP8RNV ._3aqcmmE *,
-	.js-click-trackable.ui-profile-popup.gtm-recommend-illust.gtm-user-name-link * {
-		font-family: "Roboto", "KFhimaji" !important;
 	}
 
 	.SN11CHZ {
@@ -3396,6 +3702,33 @@ regexp("https://www.pixiv.net/bookmark.php\\?id=.*&type=user") {
 		right: 10px !important;
 	}
 
+	/* BLOCKED USERS */
+
+	/** DESCRIPTION : change the elements of the blocked users page **/
+	.add-block-user-container {
+		background: var(--card-bg-2) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		padding: 20px !important;
+	}
+
+	.add-block-user-container * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		line-height: 20pt;
+	}
+
+	.add-block-user-container input {
+		background: var(--card-bg) !important;
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		padding: 8px !important;
+	}
+
 }
 
 @-moz-document url("https://www.pixiv.net/bookmark.php"),
@@ -3403,7 +3736,7 @@ regexp("https://www.pixiv.net/bookmark.php*\\?rest=.*"),
 regexp("https://www.pixiv.net/stacc/my/home/.*"),
 regexp("https://www.pixiv.net/stacc\\?mode=.*") {
 	#wrapper .layout-a {
-		margin-top: -30px !important;
+		margin-top: 0px !important;
 	}
 
 	.stacc_east_area {
@@ -3429,10 +3762,6 @@ regexp("https://www.pixiv.net/stacc\\?mode=.*") {
 
 	.bookmark-count._ui-tooltip {
 		display: none !important;
-	}
-
-	.title .self {
-		font-family: "Roboto", "KFhimaji" !important;
 	}
 
 	.button-on {
@@ -3525,26 +3854,41 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 
 	.column-header {
 		border-bottom: 1px solid var(--border-color) !important;
-		padding: 10px 5px 15px 5px !important;
+		padding: 7px 0px 14px 2px;
 		margin-bottom: 10px !important;
 	}
 
-	.column-title .self {
-		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
-		font-size: 18pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
-	}
-	
 	.column-header.with-translation-title .column-title {
-		margin: -8px 0px 0px 20px !important;
+		margin: 0px 10px !important;
 	}
 
 	.column-header.with-translation-title .translation-column-title {
-		font-size: 14pt !important;
+		vertical-align: -7px !important;
+	}
+
+	.column-header:not(.with-translation-title) .search-result-information {
+		padding: 10px 0px 1px 0px !important;
+		margin-left: 4px !important;
+		margin-top: -11px;
+	}
+
+	.column-header.with-translation-title .search-result-information {
+		padding: 13px 0px !important;
+		margin-top: 4px !important;
+		margin-left: -10px !important;
+	}
+
+	.column-header.with-translation-title .translation-column-title.romaji,
+	.column-header.with-translation-title .translation-column-title .romaji {
+		letter-spacing: 0px;
+	}
+
+	.column-header.with-translation-title .translation-column-title,
+	.column-title .self {
+		color: var(--primary-color) !important;
+		font-size: 18pt !important;
 		font-stretch: condensed !important;
-		margin-left: 10px !important;
+		font-weight: normal !important;
 	}
 
 	.count-badge {
@@ -3553,8 +3897,23 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		padding: 10px 15px !important;
-		margin-top: 7px !important;
-		margin-bottom: 8px !important;
+	}
+
+	.column-header:not(.with-translation-title) .count-badge {
+		margin-top: 4px;
+	}
+
+	.column-header.with-translation-title .count-badge {
+		position: absolute !important;
+		margin-top: -7px !important;
+	}
+
+	#js-react-tag-translation-suggestion-popup {
+		display: none;
+	}
+
+	.column-order-menu .pager-container .page-list li {
+		background: var(--card-bg-2) !important;
 	}
 
 	.column-label .menu-items {
@@ -3571,7 +3930,7 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		background: var(--card-bg-2) !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		font-size: 14pt !important;
+		font-size: 15pt !important;
 		font-stretch: condensed;
 		padding: 10px !important;
 		margin-right: 10px !important;
@@ -3619,7 +3978,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 	}
 
 	.gtm-search-related-tags-top * {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -3632,7 +3990,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 
 	.gtm-recommend-illust.gtm-illust-title-link {
 		color: var(--primary-color);
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -3641,7 +3998,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 
 	.js-click-trackable.ui-profile-popup {
 		color: var(--primary-color);
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		line-height: 18pt !important;
@@ -3670,22 +4026,24 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		background: var(--card-bg-2) !important;
 	}
 
+	.user-recommendation-item {
+		border-top: 1px dotted var(--border-color);
+	}
+
 	.user-recommendation-item .title {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
 	}
 
 	.user-recommendation-item .meta.inline-list,
 	.user-recommendation-item .caption {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		margin-left: 3px !important;
 	}
 
 	.user-recommendation-item .caption {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-stretch: condensed !important;
-		opacity: .6 !important;
 	}
 
 	.user-recommendation-item .images {
@@ -3702,9 +4060,12 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		border: none !important;
 		border-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		font-size: 12pt !important;
-		padding: 6px 25px !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		padding: 8px 25px !important;
+		text-shadow: none;
 		width: auto !important;
+		margin-top: 10px !important;
 	}
 
 	.column-related {
@@ -3730,7 +4091,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 	}
 
 	._novel-item .title a {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 15pt !important;
 	}
 
@@ -3754,7 +4114,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 	}
 
 	.novel-list ._novel-item .novel-contents .novel-caption {
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		opacity: .6 !important;
@@ -3772,10 +4131,7 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
 	}
-	
-	.column-order-menu .pager-container .page-list li {
-		background-color: var(--card-bg-2) !important;
-	}
+
 }
 
 @-moz-document regexp("https://www.pixiv.net/ranking.php.*") {
@@ -3815,9 +4171,9 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		background: var(--card-bg-2) !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		font-size: 14pt !important;
+		font-size: 15pt !important;
 		font-stretch: condensed !important;
-		padding: 10px !important;
+		padding: 8px !important;
 		margin-right: 10px !important;
 	}
 
@@ -3869,7 +4225,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		color: var(--primary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed;
-		text-align: center !important;
 	}
 
 	.ranking-items.adjust .rank .up,
@@ -3882,7 +4237,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 
 	.ranking-items.adjust .title {
 		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		font-weight: normal !important;
@@ -3897,7 +4251,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 	}
 
 	._user-icon + .user-name {
-		font-family: "Roboto", "KFhimaji" !important;
 		margin-left: 10px !important;
 	}
 
@@ -4018,7 +4371,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 		border-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: var(--secondary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 15pt !important;
 		padding: 13px 0px !important;
 	}
@@ -4035,7 +4387,6 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 
 	.image-item .title {
 		color: var(--primary-color) !important;
-		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		margin-top: 10px !important;
@@ -4043,6 +4394,27 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
 
 	._unit.list-unit {
 		display: none;
+	}
+
+}
+
+@-moz-document url("https://www.pixiv.net/stacc/my/setting") {
+
+	/* FEED SETTINGS */
+
+	/** DESCRIPTION : change the elements of the feed settings page **/
+	.one_column_body {
+		margin-left: 357px !important;
+		padding-top: 80px !important;
+	}
+
+	table,
+	table tr td {
+		background: var(--card-bg-2) !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		padding: 10px !important;
 	}
 
 }
