@@ -1,32 +1,32 @@
 /* ==UserStyle==
 @name           Lapis-K
 @namespace      https://github.com/Catgrills/Lapis-K
-@version        1.0.2
+@version        1.0.3
 @description    An userstyle for Pixiv called Lapis-K.
 @author         Catgrills/Katgrills
 @preprocessor uso
 @var select theme 'Theme' {
 	"Light": `
 	:root {
-        --body-bg: #ECEFF1 !important; 
+                --body-bg: #ECEFF1 !important; 
 		--card-bg: #FFF !important;
 		--card-bg-2: #F9F9F9 !important;
-        --card-bg-op: rgba(240,241,245,.8) !important;
+                --card-bg-op: rgba(240,241,245,.8) !important;
 		--border-color: #DBDCE6 !important;
 		--primary-color: #333 !important;
 		--secondary-color: #7E7E7E !important;
-        --invert: invert(0) !important;
+                --invert: invert(0) !important;
 	}
 	`,
 	"Dark":`
 	:root {
-	    --body-bg: #161925 !important; 
+	        --body-bg: #161925 !important; 
 		--card-bg: #1D2D44 !important;
   		--card-bg-2: #152132 !important;
-        --card-bg-op: rgba(21,33,50,.8) !important;
+                --card-bg-op: rgba(21,33,50,.8) !important;
 		--border-color: #0D1321 !important;
 		--primary-color: #C0E0DE !important;
-        --secondary-color: #AAABBC !important;
+                --secondary-color: #AAABBC !important;
 		--invert: invert(1) !important;
 	}
 	`
