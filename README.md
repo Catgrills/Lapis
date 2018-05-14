@@ -1,6 +1,6 @@
 # Lapis-K
 
-<img src="preview_2_lapis-k.png" width="100%">
+<img src="preview_3_lapis-k.png" width="100%">
 
 Preview of <i>Lapis-K</i>.
 
@@ -38,10 +38,10 @@ Instruction
 I use several fonts for my custom stylesheet.
 <ol>
 <li> <a href="http://www.freejapanesefont.com/bokutachi-gothic-2-bold/">Bokutachi no Gothic 2 </a></li>
+<li> <a href="https://www.freejapanesefont.com/honoka-antique-kaku-download/">Honoka Antique Kaku</a></li>
 <li> <a href="https://www.freejapanesefont.com/kf-himaji/">KFhimaji</a></li>
-<li> <a href="https://www.fontsquirrel.com/fonts/pacifico">Pacifico</a></li>
 <li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
-<li> <a href="https://www.freechinesefont.com/simplified-traditional-tang-yuan-ti/">Tang Yuan Ti</a> (Chinese font)</li>
+<li> <a href="https://github.com/dolbydu/font/blob/master/unicode/Microsoft%20Yahei.ttf">Microsoft Yahei</a> (Chinese font)</li>
 <li> <a href="https://www.freekoreanfont.com/bm-yeon-sung-download/">BM Yeon Sung</a> (Korean font)</li>
 </ol>
 
