@@ -79,6 +79,12 @@
 		/*** TRANSPARENT CONTAINER ***/
 		background: var(--card-bg-op);
 	}
+	
+	.bookmark-count {
+
+		/*** BOOKMARK COUNTER BADGE ***/
+		font-family: "Roboto" !important;    
+	}
 
 	.layout-a .layout-column-2 .manage-unit ._work:hover,
 	.layout-body ._unit .ranking-items-container .ranking-items .ranking-item .work:hover,
