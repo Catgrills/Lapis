@@ -22,7 +22,7 @@
 	}
 
 	*:not(i) {
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;        
+		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;		
 
 		/* font-family: "Roboto", "Microsoft Yahei" !important; [CHINESE] */
 
@@ -149,7 +149,8 @@
 		color: #FFF !important;
 	}
 
-	._no-item {
+	._no-item,
+	._2M38x92 {
 
 		/*** EMPTY CONTAINER ***/
 		background: transparent !important;
@@ -178,6 +179,7 @@
 	}
 
 	._1caAaX7,
+	._1IP8RNV ._3aqcmmE,
 	a[href*="/novel/"],
 	.ads_anchor,
 	.ads_value .ads_inner,
@@ -415,6 +417,66 @@
 
 	._global-header .navigation-list .menus li > a + a::before {
 		border-color: var(--border-color);
+	}
+
+	._profile-popup .wrapper .items,
+	._profile-popup .wrapper .user-info {
+
+		/*** POPUP PROFILE ***/
+		background: var(--card-bg-2) !important;
+		border: none !important;
+		border-radius: 1px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .3) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+	}
+
+	._profile-popup .wrapper .items {
+		padding: 10px;
+	}
+
+	._profile-popup .wrapper .user-info {
+		border-top: 1px solid var(--border-color) !important;
+		width: 346px !important;
+	}
+
+	._profile-popup .wrapper .user-info .user-name {
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		position: relative;
+		top: 8px !important;
+	}
+
+	._profile-popup .nipple,
+	._profile-popup .wrapper .user-info .description {
+		display: none;
+	}
+
+	._profile-popup .wrapper .item {
+		border-color: var(--border-color) !important;
+	}
+
+	._profile-popup .wrapper .user-info .follow-button {
+		background: #009CFF !important;
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: #FFF !important;
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		height: 26px !important;
+		line-height: 23px !important;
+		padding-right: 10px;
+		padding-left: 10px;
+		position: relative;
+		top: 3px;
+	}
+
+	._profile-popup .wrapper .user-info .following2 .follow-button {
+		background: #42729B !important;
 	}
 
 	._user-profile-card .dot-menu .opener {
@@ -1298,7 +1360,7 @@
 		max-width: 200px;
 		overflow: hidden !important;
 		text-overflow: ellipsis !important;
-		white-space: nowrap !important;        
+		white-space: nowrap !important;
 	}
 
 	#page-mypage .ui-layout-east .contents-east #column-misc .item.daily,
@@ -2390,7 +2452,7 @@
 		margin-bottom: 50px;
 	}
 
-	#wrapper .layout-a .layout-column-2 ._unit ._image-items.js-legacy-mark-unmark-list .image-item  {
+	#wrapper .layout-a .layout-column-2 ._unit ._image-items.js-legacy-mark-unmark-list .image-item {
 		margin-bottom: 65px !important;
 	}
 
@@ -2772,15 +2834,16 @@
 	.bookmark-detail-unit ._button-large {
 
 		/*** PERSONAL BOOKMARKS DETAIL MAIN CONTAINER ADD/EDIT BUTTON ***/
-		background: var(--card-bg-2) !important;
+		background: #009CFF !important;
 		border: none !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: #FFF;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		font-weight: normal !important;
 		text-shadow: none !important;
-		padding: 10px 20px 12px 20px !important;
+		padding: 12px 20px !important;
 	}
 
 	.bookmark-detail-unit .privacy {
@@ -2799,6 +2862,13 @@
 		position: absolute;
 		margin-top: -15px !important;
 		margin-left: -11px !important;
+	}
+
+	#wrapper .layout-body ._unit._list-unit.bookmark-list-unit {
+
+		/*** PERSONAL BOOKMARKS DETAIL MAIN CONTAINER TAGS ***/
+		background: var(--card-bg-2) !important;
+		border-top: 1px solid var(--border-color) !important;
 	}
 
 	._list-unit .title {
@@ -4097,7 +4167,7 @@
 		background: #F9AE74 !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		color: #FFF !important;		
+		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -4220,6 +4290,7 @@
 	#js-mount-point-comment-module {
 		width: 776px !important;
 	}
+
 	c
 	#wrapper .layout-a .layout-column-2 ._unit ._comment-form .tabs,
 	#wrapper .layout-a .layout-column-2 ._unit ._comment-form .tabs li,
@@ -4345,13 +4416,13 @@
 	#wrapper .layout-a .layout-column-2 ._unit ._3zgK46a {
 
 		/*** ILLUSTRATION RIGHT COLUMN COMMENTS DISPLAY REPLIES BUTTON ***/
-		background: var(--card-bg) !important;
+		background: #009CFF !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		color: var(--primary-color) !important;
+		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
-		padding: 8px 15px !important;
+		padding: 10px 15px !important;
 		margin-left: 13px !important;
 		margin-top: 20px !important;
 	}
@@ -5043,5 +5114,3 @@
 	}
 
 }
-
-
