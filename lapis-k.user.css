@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis-K
 @namespace      https://github.com/Catgrills/Lapis-K
-@version        1.0.3
+@version        1.0.4
 @description    An userstyle for Pixiv called Lapis-K.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -34,7 +34,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("pixiv.net") {
-/*[[theme]]*/
+        /*[[theme]]*/
 	/* GENERAL */
 
 	/** DESCRIPTION : set the main font and change others elements for every page **/
@@ -43,9 +43,9 @@
 	}
 
 	*:not(i) {
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;        
-        
-        /* font-family: "Roboto", "Microsoft YaHei" !important; [CHINESE] */
+		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;		 
+
+		/* font-family: "Roboto", "Microsoft YaHei" !important; [CHINESE] */
 
 		/* font-family: "Roboto", "BM YEONSUNG" !important; [KOREAN] */
 	}
@@ -170,7 +170,8 @@
 		color: #FFF !important;
 	}
 
-	._no-item {
+	._no-item,
+	._2M38x92 {
 
 		/*** EMPTY CONTAINER ***/
 		background: transparent !important;
@@ -199,6 +200,7 @@
 	}
 
 	._1caAaX7,
+	._1IP8RNV ._3aqcmmE,
 	a[href*="/novel/"],
 	.ads_anchor,
 	.ads_value .ads_inner,
@@ -242,9 +244,9 @@
 	.iiclm-a_right,
 	.imagecontainer .detail,
 	.image-item ._illust-series-title,
-    .item.daily-novel,
 	#item-container .info ._icon,
 	#item-container #user-recommend-module,
+	.item.daily-novel,
 	#js-react-search-top,
 	#js-react-tag-translation-suggestion-popup,
 	.layout-column-2 #illust-recommend,
@@ -333,7 +335,7 @@
 	.worksShare,
 	#wrapper .layout-a .area_new.user-tags,
 	#wrapper .layout-a .layout-column-2 ._unit ._image-items .bookmark-count,
-    #wrapper .layout-a .layout-column-2 ._unit #one_comment .worksImageresponse,
+	#wrapper .layout-a .layout-column-2 ._unit #one_comment .worksImageresponse,
 	#wrapper .layout-a .layout-column-2 ._unit .work-info ._illust-series-title {
 		display: none !important;
 	}
@@ -436,6 +438,66 @@
 
 	._global-header .navigation-list .menus li > a + a::before {
 		border-color: var(--border-color);
+	}
+
+	._profile-popup .wrapper .items,
+	._profile-popup .wrapper .user-info {
+
+		/*** POPUP PROFILE ***/
+		background: var(--card-bg-2) !important;
+		border: none !important;
+		border-radius: 1px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .3) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+	}
+
+	._profile-popup .wrapper .items {
+		padding: 10px;
+	}
+
+	._profile-popup .wrapper .user-info {
+		border-top: 1px solid var(--border-color) !important;
+		width: 346px !important;
+	}
+
+	._profile-popup .wrapper .user-info .user-name {
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		position: relative;
+		top: 8px !important;
+	}
+
+	._profile-popup .nipple,
+	._profile-popup .wrapper .user-info .description {
+		display: none;
+	}
+
+	._profile-popup .wrapper .item {
+		border-color: var(--border-color) !important;
+	}
+
+	._profile-popup .wrapper .user-info .follow-button {
+		background: #009CFF !important;
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: #FFF !important;
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+		height: 26px !important;
+		line-height: 23px !important;
+		padding-right: 10px;
+		padding-left: 10px;
+		position: relative;
+		top: 3px;
+	}
+
+	._profile-popup .wrapper .user-info .following2 .follow-button {
+		background: #42729B !important;
 	}
 
 	._user-profile-card .dot-menu .opener {
@@ -1096,8 +1158,8 @@
 		color: var(--secondary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		text-align: left;
 		margin-top: 45px;
-        text-align: left;
 	}
 
 	#page-mypage .contents-east .contents-main #item-container .contests .project-icon img {
@@ -1143,8 +1205,8 @@
 		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
-        padding-right: 10px;
-        padding-left: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
 		width: auto;
 		text-align: center;
 	}
@@ -1308,19 +1370,19 @@
 		padding-left: 5px;
 		display: inline-block;
 		margin-right: 4px;
-        max-width: 200px;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-        white-space: nowrap !important;
+		max-width: 200px;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+		white-space: nowrap !important;
 	}
-    
-    #page-mypage .ui-layout-east .contents-east #column-misc .item h1 {
-        color: #FFF;
-        max-width: 200px;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-        white-space: nowrap !important;        
-    }
+
+	#page-mypage .ui-layout-east .contents-east #column-misc .item h1 {
+		color: #FFF;
+		max-width: 200px;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+		white-space: nowrap !important;
+	}
 
 	#page-mypage .ui-layout-east .contents-east #column-misc .item.daily,
 	#page-mypage .ui-layout-east .contents-east #column-misc .item.daily h1 {
@@ -2279,10 +2341,10 @@
 		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
-        max-width: 100%;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-        white-space: nowrap !important;
+		max-width: 100%;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+		white-space: nowrap !important;
 		padding-bottom: 10px;
 	}
 
@@ -2411,10 +2473,10 @@
 		margin-bottom: 50px;
 	}
 
-    #wrapper .layout-a .layout-column-2 ._unit ._image-items.js-legacy-mark-unmark-list .image-item  {
+	#wrapper .layout-a .layout-column-2 ._unit ._image-items.js-legacy-mark-unmark-list .image-item {
 		margin-bottom: 65px !important;
-    }
-    
+	}
+
 	#wrapper .layout-a .layout-column-2 ._unit ._image-items .image-item .work,
 	#wrapper .layout-a .layout-column-2 ._unit ._illust-series-detail .works .image-item .work {
 		border: 2px solid var(--border-color);
@@ -2793,15 +2855,16 @@
 	.bookmark-detail-unit ._button-large {
 
 		/*** PERSONAL BOOKMARKS DETAIL MAIN CONTAINER ADD/EDIT BUTTON ***/
-		background: var(--card-bg-2) !important;
+		background: #009CFF !important;
 		border: none !important;
 		border-radius: 2px !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: #FFF;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		font-weight: normal !important;
 		text-shadow: none !important;
-		padding: 10px 20px 12px 20px !important;
+		padding: 12px 20px !important;
 	}
 
 	.bookmark-detail-unit .privacy {
@@ -2820,6 +2883,13 @@
 		position: absolute;
 		margin-top: -15px !important;
 		margin-left: -11px !important;
+	}
+
+	#wrapper .layout-body ._unit._list-unit.bookmark-list-unit {
+
+		/*** PERSONAL BOOKMARKS DETAIL MAIN CONTAINER TAGS ***/
+		background: var(--card-bg-2) !important;
+		border-top: 1px solid var(--border-color) !important;
 	}
 
 	._list-unit .title {
@@ -3029,7 +3099,7 @@
 		/*** FOLLOW/MYPIXIV RIGHT COLUMN USER DATA ***/
 		font-size: 14pt;
 		font-stretch: condensed;
-        font-weight: normal;
+		font-weight: normal;
 	}
 
 	#wrapper .layout-a .layout-column-2 ._unit ._pager-complex li span,
@@ -3947,9 +4017,9 @@
 		width: auto !important;
 		line-height: 34px !important;
 		text-transform: uppercase !important;
-        padding-right: 10px;
+		padding-right: 10px;
 		padding-bottom: 1px !important;
-        padding-left: 15px;
+		padding-left: 15px;
 	}
 
 	#wrapper .layout-a .layout-column-2 ._unit ._nice-button span {
@@ -4095,21 +4165,21 @@
 		margin-left: 1px !important;
 	}
 
-    #wrapper .layout-a .layout-column-2 ._unit ._bookmark-toggle-button.bookmarked.edit-bookmark {
-        width: 105px !important;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-        white-space: nowrap !important;
-    }
-    
+	#wrapper .layout-a .layout-column-2 ._unit ._bookmark-toggle-button.bookmarked.edit-bookmark {
+		width: 105px !important;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+		white-space: nowrap !important;
+	}
+
 	#wrapper .layout-a .layout-column-2 ._unit ._bookmark-toggle-button span {
 		color: #FFF !important;
 		font-size: 14pt !important;
 		font-weight: normal !important;
-        max-width: 100%;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-        white-space: nowrap !important;
+		max-width: 100%;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+		white-space: nowrap !important;
 	}
 
 	#wrapper .layout-a .layout-column-2 ._unit .bookmark-count {
@@ -4366,13 +4436,13 @@
 	#wrapper .layout-a .layout-column-2 ._unit ._3zgK46a {
 
 		/*** ILLUSTRATION RIGHT COLUMN COMMENTS DISPLAY REPLIES BUTTON ***/
-		background: var(--card-bg) !important;
+		background: #009CFF !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		color: var(--primary-color) !important;
+		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
-		padding: 8px 15px !important;
+		padding: 10px 15px !important;
 		margin-left: 13px !important;
 		margin-top: 20px !important;
 	}
@@ -5062,9 +5132,5 @@
 	#wrapper #contents .one_column .one_column_top {
 		border: none !important;
 	}
-
+	
 }
-
-
-
-
