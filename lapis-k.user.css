@@ -1,32 +1,32 @@
 /* ==UserStyle==
 @name           Lapis-K
 @namespace      https://github.com/Catgrills/Lapis-K
-@version        1.0.4
+@version        1.0.5
 @description    An userstyle for Pixiv called Lapis-K.
 @author         Catgrills/Katgrills
 @preprocessor uso
 @var select theme 'Theme' {
 	"Light": `
 	:root {
-                --body-bg: #ECEFF1 !important; 
+		--body-bg: #ECEFF1 !important;
 		--card-bg: #FFF !important;
 		--card-bg-2: #F9F9F9 !important;
-                --card-bg-op: rgba(240,241,245,.8) !important;
+		--card-bg-op: rgba(240, 241, 245, .8) !important;
 		--border-color: #DBDCE6 !important;
 		--primary-color: #333 !important;
 		--secondary-color: #7E7E7E !important;
-                --invert: invert(0) !important;
+		--invert: invert(0) !important;
 	}
 	`,
 	"Dark":`
 	:root {
-	        --body-bg: #161925 !important; 
+		--body-bg: #161925 !important;
 		--card-bg: #1D2D44 !important;
-  		--card-bg-2: #152132 !important;
-                --card-bg-op: rgba(21,33,50,.8) !important;
+		--card-bg-2: #152132 !important;
+		--card-bg-op: rgba(21, 33, 50, .8) !important;
 		--border-color: #0D1321 !important;
 		--primary-color: #C0E0DE !important;
-                --secondary-color: #AAABBC !important;
+		--secondary-color: #AAABBC !important;
 		--invert: invert(1) !important;
 	}
 	`
@@ -34,7 +34,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("pixiv.net") {
-        /*[[theme]]*/
+/*[[theme]]*/
 	/* GENERAL */
 
 	/** DESCRIPTION : set the main font and change others elements for every page **/
@@ -43,7 +43,7 @@
 	}
 
 	*:not(i) {
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;		 
+		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;		
 
 		/* font-family: "Roboto", "Microsoft YaHei" !important; [CHINESE] */
 
@@ -74,16 +74,16 @@
 		margin-top: 50px !important;
 	}
 
+	.bookmark-count {
+
+		/*** BOOKMARK COUNTER BADGE ***/
+		font-family: "Roboto" !important;
+	}
+
 	#modal-messages {
 
 		/*** TRANSPARENT CONTAINER ***/
 		background: var(--card-bg-op);
-	}
-	
-	.bookmark-count {
-
-		/*** BOOKMARK COUNTER BADGE ***/
-		font-family: "Roboto" !important;    
 	}
 
 	.layout-a .layout-column-2 .manage-unit ._work:hover,
@@ -250,9 +250,9 @@
 	.iiclm-a_right,
 	.imagecontainer .detail,
 	.image-item ._illust-series-title,
+	.item.daily-novel,
 	#item-container .info ._icon,
 	#item-container #user-recommend-module,
-	.item.daily-novel,
 	#js-react-search-top,
 	#js-react-tag-translation-suggestion-popup,
 	.layout-column-2 #illust-recommend,
@@ -339,7 +339,6 @@
 	.works_display .read-more,
 	.worksOptionRightInfo a[href*="illust_infomsg"],
 	.worksShare,
-	#wrapper .layout-a .area_new.user-tags,
 	#wrapper .layout-a .layout-column-2 ._unit ._image-items .bookmark-count,
 	#wrapper .layout-a .layout-column-2 ._unit #one_comment .worksImageresponse,
 	#wrapper .layout-a .layout-column-2 ._unit .work-info ._illust-series-title {
@@ -568,7 +567,9 @@
 	}
 
 	#modal-messages .modal-window div.mypixiv-message .label {
-		font-size: 12pt !important;
+		color: var(--secondary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
 	}
 
 	#modal-messages .modal-window div.mypixiv-message form textarea {
@@ -1164,8 +1165,8 @@
 		color: var(--secondary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
-		text-align: left;
 		margin-top: 45px;
+		text-align: left;
 	}
 
 	#page-mypage .contents-east .contents-main #item-container .contests .project-icon img {
@@ -1177,7 +1178,8 @@
 	}
 
 	#page-mypage .contents-east .contents-main #item-container .contests .project-description img {
-		margin-top: 5px !important;
+		margin-top: 4px !important;
+		filter: brightness(0) var(--invert) !important;
 	}
 
 	.project_pixiv {
@@ -1480,6 +1482,10 @@
 		font-size: 16pt !important;
 		font-stretch: condensed;
 		font-weight: normal;
+	}
+
+	#wrapper .contents .iiclm-a_left .area .area_title .info_area_subtitle.f12 {
+		margin-top: -2px !important;
 	}
 
 	#wrapper .contents .iiclm-a_left .area ._pager-complex li span,
@@ -2016,7 +2022,8 @@
 	/* POPULAR TAG */
 
 	/** DESCRIPTION : change the elements of the popular tag page **/
-	#wrapper .layout-body ._unit .column-content .tag-list * {
+	#wrapper .layout-body ._unit .column-content .tag-list *,
+	#wrapper .layout-a .layout-column-2 ._unit .column-content .tag-list * {
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 	}
@@ -2552,6 +2559,7 @@
 
 		/*** WORKS RIGHT COLUMN COUNTER BADGE ***/
 		background: #009CFF !important;
+		border: none;
 		border-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF;
@@ -2560,6 +2568,22 @@
 		font-weight: normal !important;
 		padding: 8px 10px !important;
 		margin-top: 14px !important;
+	}
+
+	#wrapper .layout-a .layout-column-2 ._unit .tag-badge {
+
+		/*** WORKS RIGHT COLUMN TAG BADGE ***/
+		background: #E84855 !important;
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: #FFF;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+		padding: 8px 10px !important;
+		margin-top: 14px !important;
+		margin-right: 5px;
 	}
 
 	#wrapper .layout-a .layout-column-2 ._unit .column-menu {
@@ -2597,7 +2621,8 @@
 	/* BOOKMARKS */
 
 	/** DESCRIPTION : change the elements of the bookmarks page **/
-	#wrapper .layout-a .layout-column-1 .area_new.bookmark-tags {
+	#wrapper .layout-a .layout-column-1 .area_new.bookmark-tags,
+	#wrapper .layout-a .layout-column-1 .area_new.user-tags {
 
 		/*** BOOKMARKS LEFT COLUMN TAG BOX ***/
 		background: var(--card-bg) !important;
@@ -2606,7 +2631,7 @@
 		border-width: 6px 0px 0px 0px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .3) !important;
 		height: 50vh !important;
-		width: 60vw !important;
+		width: 50vw !important;
 		position: fixed !important;
 		top: 0px !important;
 		right: 0px !important;
@@ -2617,7 +2642,8 @@
 		display: none;
 	}
 
-	#wrapper .layout-a .layout-column-1 .area_new.bookmark-tags .area_title {
+	#wrapper .layout-a .layout-column-1 .area_new.bookmark-tags .area_title,
+	#wrapper .layout-a .layout-column-1 .area_new.user-tags .area_title {
 		background: transparent !important;
 		color: var(--primary-color) !important;
 		font-size: 18pt !important;
@@ -2625,13 +2651,22 @@
 		padding: 8px 15px !important;
 	}
 
-	#wrapper .layout-a .layout-column-1 .area_new.bookmark-tags .area_title * {
+	#wrapper .layout-a .layout-column-1 .area_new.bookmark-tags .area_title *,
+	#wrapper .layout-a .layout-column-1 .area_new.user-tags .area_title * {
 		color: var(--primary-color) !important;
 	}
 
-	#wrapper .layout-a .layout-column-1 #book_outlist * {
+	#wrapper .layout-a .layout-column-1 #book_outlist *,
+	#wrapper .layout-a .layout-column-1 .area_new.user-tags .tagCloud *,
+	#wrapper .layout-a .layout-column-1 .area_new.user-tags .view_mypixiv {
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal;
+	}
+
+	#wrapper .layout-a .layout-column-1 .area_new.user-tags .tagCloud {
+		padding: 10px;
+		margin-top: -15px;
 	}
 
 	#wrapper .layout-a .layout-column-1 .area_new.bookmark-tags #bookmark_toggle_btn {
@@ -2779,7 +2814,6 @@
 
 		/*** PERSONAL BOOKMARKS DETAIL MAIN CONTAINER ***/
 		background: var(--card-bg);
-		border: none !important;
 		border-radius: 2px 2px 0px 0px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding-bottom: 120px !important;
@@ -5138,5 +5172,6 @@
 	#wrapper #contents .one_column .one_column_top {
 		border: none !important;
 	}
-	
+
 }
+
