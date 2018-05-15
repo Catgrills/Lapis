@@ -5147,6 +5147,12 @@
 
 }
 
+@-moz-document regexp("https://www.pixiv.net/member_illust.php.*") {
+	#wrapper .layout-a .layout-column-2 ._unit #tag-btn {
+		margin-top: -46px !important;    
+	}
+}
+
 @-moz-document regexp("https://www.pixiv.net/support.php.*") {
 	#wrapper #contents .one_column .one_column_top {
 		border: none !important;
