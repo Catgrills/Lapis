@@ -2705,7 +2705,7 @@
 		width: 60px;
 		position: absolute;
 		right: 15px;
-		margin-top: -8px;
+		margin-top: -46px;
 	}
 
 	#wrapper .layout-a .layout-column-2 ._unit ._image-items .image-item .user {
@@ -5166,12 +5166,6 @@
 		border-radius: 1px;
 	}
 
-}
-
-@-moz-document regexp("https://www.pixiv.net/member_illust.php.*") {
-	#wrapper .layout-a .layout-column-2 ._unit #tag-btn {
-		margin-top: -46px !important;    
-	}
 }
 
 @-moz-document regexp("https://www.pixiv.net/support.php.*") {
