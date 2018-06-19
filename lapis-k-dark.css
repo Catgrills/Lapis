@@ -40,6 +40,10 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
+	
+	textarea::-moz-placeholder {
+		color: var(--primary-color) !important;
+	}
 
 	body {
 		background: var(--body-bg) !important;
