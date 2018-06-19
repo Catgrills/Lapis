@@ -6,7 +6,7 @@
 	:root {
 		--body-bg: #161925 !important;
 		--card-bg: #1D2D44 !important;
-		--card-bg-2: #152132 !important;
+		--card-bg-2:#152132 !important;
 		--card-bg-op: rgba(21, 33, 50, .8) !important;
 		--border-color: #0D1321 !important;
 		--primary-color: #C0E0DE !important;
@@ -40,7 +40,7 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
-	
+
 	textarea::-moz-placeholder {
 		color: var(--primary-color) !important;
 	}
@@ -185,7 +185,8 @@
 	}
 
 	._no-item,
-	._2M38x92 {
+	._2M38x92,
+	._3TOuR5l {
 
 		/*** EMPTY CONTAINER ***/
 		background: transparent !important;
@@ -321,6 +322,7 @@
 	#root header a[href*="/cate_r18"],
 	#root header a[href*="/premium.php"],
 	#root header a[href*="/www.pixiv.help/"],
+	#root header form ul span[class*="3u2"],
 	.rss,
 	.self-tag,
 	.share-link-container,
@@ -372,7 +374,8 @@
 	/* POPUP */
 
 	/** DESCRIPTION : change the elements of the popup windows **/
-	.notifications.new-version .notification-button .count {
+	.notifications.new-version .notification-button .count,
+	#root header button span {
 
 		/*** POPUP NOTIFICATIONS ***/
 		background: transparent;
@@ -441,7 +444,19 @@
 		margin-right: -50px !important;
 	}
 
-	._global-header .link-list .settings-menu .item {
+	#root header div > ul > li > ul {
+		background: var(--card-bg) !important;
+		border: none !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .3) !important;
+		outline: none !important;
+		padding: 5px !important;
+		margin-top: 37px;
+		margin-right: 37px !important;
+	}
+
+	._global-header .link-list .settings-menu .item,
+	#root header div > ul > li > ul > li > a {
 		border-bottom: 1px solid var(--border-color) !important;
 		color: var(--primary-color) !important;
 		font-size: 14pt !important;
@@ -452,7 +467,8 @@
 		margin-bottom: 6px !important;
 	}
 
-	._global-header .link-list .settings-menu li:last-child .item {
+	._global-header .link-list .settings-menu li:last-child .item,
+	#root header div > ul > li > ul > li:last-child > a {
 		border-bottom: none !important;
 		margin-bottom: -5px !important;
 	}
@@ -724,10 +740,14 @@
 		top: 30px !important;
 	}
 
+	#root header div:nth-of-type(1) {
+		width: 100%;
+	}
+
 	#root header a[href="/"] {
 		position: relative;
 		top: 18px !important;
-		left: -91px !important;
+		left: 90px !important;
 	}
 
 	.title.header-logo::after {
@@ -767,12 +787,17 @@
 		left: inherit !important;
 	}
 
-	#root header  .n5QTR4w {
+	#root header .n5QTR4w {
+		width: 100% !important;
 		position: absolute;
-		top: 46px;
-		right: 385px !important;
-		left: inherit !important;
-		visibility: hidden;
+		top: 26px;
+		left: 0px !important;
+	}
+
+	#root header .n5QTR4w > ul {
+		position: absolute;
+		right: 340px;
+		margin-top: 23px !important;
 	}
 
 	._global-header .navigation-list .menus li a,
@@ -782,6 +807,20 @@
 		font-weight: normal !important;
 		opacity: .6 !important;
 		text-transform: lowercase !important;
+	}
+
+	#root header ._2s4C5qu .pIUH7OF::before {
+		border-left: 1px dotted var(--border-color);
+		height: 16px !important;
+		margin-top: 2px !important;
+	}
+
+	#root header .nB78dzd {
+		position: absolute !important;
+		width: 100px !important;
+		right: 277px !important;
+		margin-top: 20px;
+		display: none;
 	}
 
 	._global-header .navigation-list .menus li > a.current {
@@ -831,6 +870,29 @@
 		margin-top: -8px !important;
 	}
 
+	#root header form ul {
+		background: var(--card-bg-2) !important;
+		border: none;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		padding: 10px 30px 10px 10px !important;
+		max-width: 100% !important;
+		text-overflow: ellipsis !important;
+		overflow: hidden !important;
+		white-space: nowrap !important;
+		margin-top: 1px;
+	}
+
+	#root header form ul * {
+		border: none;
+		font-size: 14pt;
+		font-stretch: condensed;
+		padding: 8px 10px;
+	}
+
 	#root header input {
 		background: var(--card-bg-2) !important;
 		border: none;
@@ -844,22 +906,27 @@
 		text-overflow: ellipsis !important;
 		overflow: hidden !important;
 		white-space: nowrap !important;
-		margin-top: -15px !important;
+		margin-top: -3px !important;
 		margin-right: -45px;
+		margin-left: -83px;
 	}
 
-	#suggest-container .submit.sprites-search-old,
-	#root header form button {
+	#suggest-container .submit.sprites-search-old {
 
 		/*** HEADER CONTENT SEARCHBAR INPUT ICON ***/
+		background-color: transparent !important;
+		filter: brightness(0) var(--invert) !important;
+		opacity: .2 !important;
+		margin-top: 1px;
+		margin-right: 10px !important;
+	}
+
+	#root header form button {
 		background-color: transparent !important;
 		margin-right: 8px !important;
 		filter: brightness(0) var(--invert) !important;
 		opacity: .2 !important;
-	}
-
-	#root header form button {
-		margin-top: -9px;
+		margin-top: 3px;
 	}
 
 	#suggest-list {
@@ -905,14 +972,14 @@
 		z-index: 1 !important;
 	}
 
-	#root header a[href*="setting"] {
+	#root header div > ul > li > a[href*="setting"] {
 		background: no-repeat url("https://i.imgur.com/pLOzSFM.png") center !important;
 		background-color: transparent !important;
 		background-size: 20px auto !important;
 		color: transparent;
 		position: relative;
-		top: 33px !important;
-		margin-right: -35px !important;
+		top: 32px !important;
+		margin-right: 49px !important;
 		filter: var(--invert) !important;
 		opacity: .3 !important;
 		z-index: 1 !important;
@@ -3068,7 +3135,7 @@
 		border: none !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
-		height: 120px;
+		height: 112px;
 	}
 
 	._unit.complete-unit .column-title {
@@ -3918,6 +3985,7 @@
 		font-stretch: condensed !important;
 	}
 
+	#contents .ui-layout-east .stacc_unify_comment_content_list a,
 	#contents .ui-layout-east .stacc_status .stacc_post_time a,
 	#contents .ui-layout-east .stacc_status .stacc_tweet_mark a,
 	#contents .ui-layout-east .stacc_status .stacc_comment_count a {
@@ -4105,9 +4173,11 @@
 
 	#root .sticky {
 		position: relative !important;
+		visibility: hidden;
 	}
 
 	.sticky a[href*="/bookmark"] {
+		visibility: visible !important;
 		margin-right: -15px !important;
 		margin-top: 10px !important;
 	}
@@ -4117,15 +4187,18 @@
 	}
 
 	#root .sticky a[href*="/member_illust"] {
+		background: #212121;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		border-radius: 2px !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		padding-bottom: 11px !important;
+		visibility: visible !important;
 	}
 
 	#root article section a[href*="/member_illust"] {
+		background: #212121;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		border-radius: 2px !important;
 		font-size: 14pt !important;
@@ -4166,12 +4239,14 @@
 		box-shadow: none !important;
 		position: relative;
 		top: -2px !important;
+		visibility: hidden;
 	}
 
 	#root article figcaption ul li a {
 		color: #FFF !important;
 		font-size: 14pt;
 		font-stretch: condensed;
+		font-weight: normal;
 		letter-spacing: 0px;
 		line-height: 30pt;
 	}
@@ -4195,6 +4270,19 @@
 		color: var(--secondary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
+	}
+
+	#root article div > ul > li > div > div > div > span[class*="ip"] {
+		color: #FFF;
+		font-weight: normal;
+	}
+
+	#root article ul li button {
+		background: var(--card-bg-2);
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
+		color: var(--secondary-color);
+		padding-bottom: 8px;
 	}
 
 	#root article section {
@@ -4307,6 +4395,97 @@
 		color: var(--secondary-color);
 		font-size: 14pt;
 		font-stretch: condensed;
+	}
+
+	.end-page {
+		display: none;
+	}
+
+	.page-menu {
+		margin-top: 10px;
+		margin-right: 5px;
+	}
+
+	.page-menu .page-button.switch {
+		background: var(--card-bg);
+		border: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
+		padding: 10px !important;
+	}
+
+	._icon-thumbnail-view::before {
+		background: no-repeat url("https://i.imgur.com/fz6600P.png") center !important;
+		background-size: cover !important;
+		content: "dd";
+		color: transparent !important;
+		opacity: .3;
+		filter: var(--invert);
+	}
+
+	.thumbnail-view .toggle-thumbnail {
+		border: none !important;
+	}
+
+	._icon-expand-image::before {
+		background: no-repeat url("https://i.imgur.com/IUQjDaT.png") center !important;
+		background-size: cover !important;
+		content: "dd";
+		color: transparent !important;
+		opacity: .3;
+		filter: var(--invert);
+	}
+
+	._icon-fit-image::before {
+		background: no-repeat url("https://i.imgur.com/6j12dOj.png") center !important;
+		background-size: cover !important;
+		content: "dd";
+		color: transparent !important;
+		opacity: .3;
+		filter: var(--invert);
+	}
+
+	.page-menu * {
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
+	.full-size-container:hover {
+		border-color: transparent;
+	}
+
+	.item-container .image {
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+	}
+
+	.thumbnail-container .breadcrumbs {
+		visibility: hidden;
+	}
+
+	.thumbnail-container .thumbnail-items {
+		margin-top: 50px;
+	}
+
+	.thumbnail-container .thumbnail-items li {
+		background: var(--card-bg);
+		border: 2px solid transparent;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
+		padding: 0px;
+		transition: border-color 1s ease;
+		margin: 4px;
+	}
+
+	.thumbnail-container .thumbnail-items li:hover {
+		border-color: #47D2E9 !important;
+		transition: border-color 1s ease;
+		margin: 4px;
+	}
+
+	.thumbnail-items li.current {
+		background: var(--card-bg-2) !important;
+		border-color: transparent;
+		opacity: .5;
 	}
 
 	/* SEARCH */
@@ -4975,4 +5154,5 @@
 	#wrapper #contents .one_column .one_column_top {
 		border: none !important;
 	}
+
 }
