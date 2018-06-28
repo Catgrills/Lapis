@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis-K
 @namespace      https://github.com/Catgrills/Lapis-K
-@version        1.0.7
+@version        1.0.8
 @description    An userstyle for Pixiv called Lapis-K.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -337,13 +337,14 @@
 	.reguler-contest .result-contestarea .result-contest .more-btn::before,
 	.related.create-group.require-mail-authorization,
 	.result-title-bar,
-	#root > div > div > aside,
+	#root article div iframe,
+	#root > div > div > div > aside,
 	#root header a img,
 	#root header ul li a[href="/"],
 	#root header a[href*="/cate_r18"],
 	#root header a[href*="/premium.php"],
 	#root header a[href*="/www.pixiv.help/"],
-	#root header form ul span[class*="3u2"],
+	#root header form ul span[class*="3u2"]
 	.rss,
 	.self-tag,
 	.share-link-container,
