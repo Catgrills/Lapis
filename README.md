@@ -22,8 +22,7 @@ Instruction
 + for <a href="https://addons.opera.com/en-gb/extensions/details/stylus/?display=en">Opera</a>
 
 <strong>Step 2 : Install the script </strong>
-+ Via <b>userstyles</b> : <a href="https://userstyles.org/styles/157504/lapis-k-dark-pixiv-css">Dark theme</a> or <a href="https://userstyles.org/styles/146398/lapis-k-light-pixiv-css">Light theme</a>
-+ Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Lapis/master/user.css">click here</a>
++ Directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Lapis/master/pixiv.user.css">click here</a>
 
 <strong>Step 3 : Install others scripts </strong>
 <ol>
