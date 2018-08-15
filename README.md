@@ -1,13 +1,13 @@
-# Lapis-K
+# Lapis
 
 <img src="preview_6_lapis-k.png" width="100%">
 
-Preview of <i>Lapis-K</i>.
+Preview of <i>Lapis</i>.
 
 About
 -------------------------------
 
-<i>Lapis-K</i> is an user style for <i>Pixiv</i>.
+<i>Lapis</i> is an user style for <i>Pixiv</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
