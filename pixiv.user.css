@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.1.0
+@version        1.1.1
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -261,7 +261,7 @@
 	.comic-hot-works, 
 	.content._mypage-fanbox, div[style*="margin:48px auto 8px;"],
 	#enable-auto-view,
-    figure section button:not(.gtm-main-bookmark),
+    	figure section button:not(.gtm-main-bookmark),
 	.followbooster-after-bookmark-caption,
 	._follow-buttons .follow-button.off .text::before,
 	.footer,
@@ -397,6 +397,10 @@
 	#root article div[style*="position: fixed"] * {
 		visibility: hidden !important;
 	}
+
+    #root article div[style*="position: fixed"] {
+        position: relative !important;
+    }
 
 	/* POPUP */
 
@@ -4265,6 +4269,12 @@
 		max-width: 100% !important;
 	}
 
+    #root article figcaption > div > div {
+        width: 90% !important;
+        padding-bottom: 35px !important;
+        margin-top: -30px !important;
+    }
+
 	#root article figcaption h1 {
 		color: var(--primary-color) !important;
 		font-family: "Roboto", "KFhimaji" !important;
@@ -4515,8 +4525,38 @@
 	}
 
 	.thumbnail-container .breadcrumbs {
-		visibility: hidden;
+        background: var(--card-bg) !important;
+        border: 1px solid var(--border-color);
+        border-radius: 2px !important;
+        font-size: 12pt !important;
+        font-stretch: condensed;
+        position: relative !important;
+        margin-top: 15px !important;
 	}
+    
+    .breadcrumbs li {
+        margin-top: -2px !important;
+    }
+    
+    .breadcrumbs li + li a {
+        background-image: none;
+        color: var(--primary-color) !important;
+    }
+    
+    .breadcrumbs li:last-child a {
+        position: relative !important;
+        bottom: -2px !important;
+    }
+    
+    .breadcrumbs .user {
+        position: relative !important;
+        bottom: -2px !important;
+    }
+    
+    .breadcrumbs .user-icon {
+        position: relative !important;
+        top: -2px !important;
+    }
 
 	.thumbnail-container .thumbnail-items {
 		margin-top: 50px;
@@ -5211,3 +5251,4 @@
 	}
 
 }
+
