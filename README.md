@@ -7,7 +7,7 @@ Preview of <i>Lapis</i>.
 About
 -------------------------------
 
-<i>Lapis</i> is an user style for <i>Pixiv</i>.
+<i>Lapis</i> is a user style for <i>Pixiv</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
