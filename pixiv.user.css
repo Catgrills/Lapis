@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.1.2
+@version        1.1.5
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -44,9 +44,7 @@
 	}
 
 	*:not(i) {
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;		
-
-		/* font-family: "Roboto", "Microsoft YaHei" !important; [CHINESE] */
+		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;		/* font-family: "Roboto", "Microsoft YaHei" !important; [CHINESE] */
 
 		/* font-family: "Roboto", "BM YEONSUNG" !important; [KOREAN] */
 	}
@@ -135,7 +133,8 @@
 		opacity: .9;
 	}
 
-	.jtNf8vS {
+	.jtNf8vS,
+	.sc-gqjmRU.jcwxIf {
 		background: #3066BE !important;
 		border: none !important;
 		border-radius: 2px !important;
@@ -150,7 +149,8 @@
 	}
 
 	.gVu_bev,
-	.css-135s1op {
+	.css-135s1op,
+	.sc-feJyhm.eOaQTJ {
 		background: #3066BE !important;
 		border: none !important;
 		border-radius: 2px !important;
@@ -162,7 +162,8 @@
 	}
 
 	._1VJYUl1,
-	.css-1um74rv {
+	.css-1um74rv,
+	.hAaAZQ {
 		background: #3066BE !important;
 		border: none !important;
 		border-radius: 2px !important;
@@ -240,6 +241,7 @@
 		font-stretch: condensed;
 	}
 
+	._1ctvHfQ, 
 	._1veIpu0, 
 	._2IE86N-, 
 	._2n3Kjtz, 
@@ -266,7 +268,8 @@
 	._comment-item .header::before, 
 	._comment-item .header::after, 
 	.comic-hot-works, 
-	.content._mypage-fanbox, div[style*="margin:48px auto 8px;"],
+	.content._mypage-fanbox, 
+	div[style*="margin:48px auto 8px;"],
 	.css-1n9m084,
 	.css-lwuooq,
 	#enable-auto-view,
@@ -276,6 +279,7 @@
 	._global-header .navigation-list .home,
 	._global-header .navigation-list .menu-icon,
 	._global-header .navigation-menu-right,
+	.gTpHWC,
 	._icon._bookmark-icon-inline,
 	.icon-pixpedia,
 	.icon-pixpedia-no-item,
@@ -359,6 +363,10 @@
 	#root header a[href*="/www.pixiv.help/"],
 	#root header form ul span[class*="3u2"]
 	.rss,
+	.sc-bbkauy.kyZFqK,
+	.sc-dznXNo.jEzEHT,
+	.sc-hgRTRy.labCCs,
+	.sc-kgoBCf.kOUdse,
 	.self-tag,
 	.share-link-container,
 	._share-links.big-buttons,
@@ -408,7 +416,7 @@
 		visibility: hidden !important;
 	}
 
-	#root article div[style*="position: fixed"] {
+	#root article div[style*="position:fixed"] {
 		position: relative !important;
 	}
 
@@ -1940,7 +1948,8 @@
 	/* NEW BOOTH */
 
 	/** DESCRIPTION : change the elements of the new booth page **/
-	#wrapper .layout-body ._unit.booth-follow-items .column-title + .count-badge {
+	#wrapper .layout-body ._unit.booth-follow-items .column-title + .count-badge,
+	.bThlrn {
 
 		/*** NEW BOOTH UNIT HEADER COUNTER BADGE ***/
 		background: #009CFF !important;
@@ -2481,7 +2490,7 @@
 		font-weight: normal;
 	}
 
-	/* PROFILE NEW */
+	/* NEW PROFILE */
 
 	/** DESCRIPTION : change the elements of the new profile page **/
 	._1i03mnX,
@@ -2494,7 +2503,8 @@
 		background: var(--body-bg) !important;
 	}
 
-	.css-elnv0n {
+	.bWqqkx,
+	.jSTonB {
 
 		/*** PROFILE BANNER ***/
 		background: no-repeat url("https://i.imgur.com/LXyN0E2.jpg") center 55%;
@@ -2698,14 +2708,17 @@
 
 	.css-1enaay6,
 	._2qteKYc,
-	.q1b-dUK {
+	.q1b-dUK,
+	.hqUSuq {
 
 		/*** PROFILE WORKS THUMBNAIL ***/
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 	}
 
-	.css-17e5mrc {
+	.css-17e5mrc,
+	.NeoCZ,
+	.sc-eHgmQL.dRvHnS {
 
 		/*** PROFILE WORKS TITLE ***/
 		color: var(--primary-color);
@@ -3089,7 +3102,8 @@
 		color: var(--primary-color) !important;
 	}
 
-	#wrapper .layout-a .layout-column-2 ._unit .count-badge {
+	#wrapper .layout-a .layout-column-2 ._unit .count-badge,
+	.dPBrNF {
 
 		/*** WORKS RIGHT COLUMN COUNTER BADGE ***/
 		background: #009CFF !important;
@@ -3102,6 +3116,10 @@
 		font-weight: normal !important;
 		padding: 8px 10px !important;
 		margin-top: 14px !important;
+	}
+
+	.dPBrNF {
+		margin-top: 2px !important;
 	}
 
 	#wrapper .layout-a .layout-column-2 ._unit .tag-badge {
@@ -3746,8 +3764,8 @@
 	}
 
 	#page-bookmark-user-myself section.column-main header nav.context ul.root {
-        border-color: transparent !important;
-    }
+		border-color: transparent !important;
+	}
 
 	/* PERSONAL FOLLOWERS */
 
@@ -4534,9 +4552,9 @@
 		color: var(--primary-color) !important;
 	}
 
-	/* ILLUSTRATION */
+	/* NEW ILLUSTRATION */
 
-	/** DESCRIPTION : change the elements of the illustration page **/
+	/** DESCRIPTION : change the elements of the new illustration page **/
 	#root article {
 		background: var(--card-bg);
 		border-radius: 2px;
@@ -4581,7 +4599,10 @@
 		opacity: .6;
 	}
 
-	.css-11f0vtr {
+	.css-11f0vtr,
+	.ghceZz,
+	.cDqPOL,
+	.sc-jbWsrJ.cSVCXx {
 		background: #212121;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		border-radius: 2px !important;
@@ -4598,7 +4619,10 @@
 	}
 
 	#root article section a[href*="/member_illust"],
-	._2MiUeav {
+	._2MiUeav,
+	.dAUTee,
+	.hgNNdk,
+	.sc-cmTdod.lhXrYu {
 		background: #212121;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
 		border-radius: 2px !important;
@@ -4631,6 +4655,17 @@
 
 	#root article figcaption #expandable-paragraph-0 {
 		color: var(--secondary-color) !important;
+	}
+
+	.css-ob7xq9.e1k4bvmn5 div,
+	.css-ob7xq9.e1k4bvmn5 a {
+		background: #009CFF !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		color: #FFF !important;
+		width: 100% !important;
+		padding-top: 8px !important;
+		margin-left: 35px !important;
 	}
 
 	#root article figcaption footer ul li {
@@ -4804,6 +4839,12 @@
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		padding-bottom: 15px !important;
+	}
+
+	.-ip-R7I._1eLpZGm {
+		color: #FFF !important;
+		border-radius: 2px !important;
+		padding-bottom: 4px !important;
 	}
 
 	#root h2 {
