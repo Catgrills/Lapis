@@ -44,7 +44,9 @@
 	}
 
 	*:not(i) {
-		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;		/* font-family: "Roboto", "Microsoft YaHei" !important; [CHINESE] */
+		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;		
+		
+		/* font-family: "Roboto", "Microsoft YaHei" !important; [CHINESE] */
 
 		/* font-family: "Roboto", "BM YEONSUNG" !important; [KOREAN] */
 	}
