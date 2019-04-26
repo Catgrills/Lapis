@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.1.8
+@version        1.1.9
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -4958,8 +4958,10 @@
 		font-size: 14pt;
 		font-stretch: condensed;
 		padding: 8px 15px 10px 15px;
-		line-height: 36pt;
+		line-height: 20pt;
 		margin-right: 2px !important;
+        	margin-bottom: 6px !important;
+        	display: inline-block;
 	}
 
 	div[role="none"] div[style*="absolute"] {
