@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.1.6
+@version        1.1.7
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -4803,7 +4803,8 @@
 
 	/** DESCRIPTION : change the elements of the new work page **/
 
-	#root > div > div > div > aside,
+	#root aside:nth-of-type(1),
+    	#root aside:nth-of-type(2),
 	div[role="none"] div[style*="absolute"] span /*** SUGGEST TRANSLATION ***/,
 	div[role="none"] div[style*="absolute"] svg {
 		display: none !important;
