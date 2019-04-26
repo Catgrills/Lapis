@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.1.7
+@version        1.1.8
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -5645,7 +5645,7 @@ regexp("https://www.pixiv.net/bookmark.php\?id.*") {
 	}
 
 	#root div[style*="pixiv.pximg"],
-	#root img {
+	#root a[href*="member"] img {
 
 		/*** THUMBNAILS ***/
 		border-radius: 2px;
