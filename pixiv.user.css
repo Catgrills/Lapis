@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.1.9
+@version        1.2.0
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -164,10 +164,7 @@
 		color: #FFF !important;
 	}
 
-	._no-item,
-	._2M38x92,
-	._3TOuR5l,
-	._2Ti3f0Y {
+	._no-item {
 
 		/*** EMPTY CONTAINER ***/
 		background: transparent !important;
@@ -195,6 +192,7 @@
 		font-stretch: condensed;
 	}
 
+    	a[href="/premium/lead/lp?g=anchor&i=badge"],
 	a[href*="/novel/"], 
 	.ad-footer, .adsbygoogle, 
 	.ads_anchor, 
@@ -204,6 +202,7 @@
 	.bookmark-ranges .related, 
 	._bookmark-toggle-button .bookmark-icon, 
 	.booth-follow-items .event-name-badge,
+    	button[aria-haspopup="true"],
 	._booth-promotion-container, 
 	.column-action-menu .buttons li ._ui-tooltip, 
 	.column-header .pixpedia-link, 
@@ -225,7 +224,7 @@
 	._global-header .navigation-list .home,
 	._global-header .navigation-list .menu-icon,
 	._global-header .navigation-menu-right,
-	.gTpHWC,
+    	.gm-profile-work-list-tag-list-click::before,
 	._icon._bookmark-icon-inline,
 	.icon-pixpedia,
 	.icon-pixpedia-no-item,
@@ -250,7 +249,6 @@
 	#js-react-tag-translation-suggestion-popup,
 	.layout-column-2 #illust-recommend,
 	._layout-order-bookmark-wrapper,
-	.Lmm-1Pz,
 	._member-illust-medium-fanbox-area,
 	._member-page-fanbox-area,
 	._member-page-frequent-uploaded-work-tags-container,
@@ -308,10 +306,6 @@
 	#root header a[href*="/www.pixiv.help/"],
 	#root header form ul span[class*="3u2"]
 	.rss,
-	.sc-bbkauy.kyZFqK,
-	.sc-dznXNo.jEzEHT,
-	.sc-hgRTRy.labCCs,
-	.sc-kgoBCf.kOUdse,
 	.self-tag,
 	.share-link-container,
 	._share-links.big-buttons,
