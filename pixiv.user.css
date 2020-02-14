@@ -15,7 +15,7 @@
 		--border-color: #DBDCE6 !important;
 		--primary-color: #555 !important;
 		--secondary-color: rgb(123, 123, 123) !important;
-        --invert: invert(0);
+        	--invert: invert(0);
 		--icon: url("https://i.imgur.com/iHziR6f.png") !important;
 	}
 	`,
@@ -28,7 +28,7 @@
 		--border-color: #0D1321 !important;
 		--primary-color: #C0E0DE !important;
 		--secondary-color: #AAABBC !important;
-        --invert: invert(1);
+        	--invert: invert(1);
 		--icon: url("https://i.imgur.com/ZWvuLSo.png") !important;
 	}
 	`
@@ -50,54 +50,54 @@
 		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
 	}
     
-    *::-moz-focus-inner {
+	*::-moz-focus-inner {
 		border: 0 !important;
 	}
-    
-    body {
-        background: var(--body-bg) !important;
-    }
-    
-    #wrapper {
+
+	body {
+		background: var(--body-bg) !important;
+	}
+
+	#wrapper {
 
 		/*** MAIN CONTAINER ***/
 		width: 1050px !important;
 		margin-top: -45px !important;
 	}
     
-    ._balloon-menu-popup {
+	._balloon-menu-popup {
 
 		/*** OPENER POPUP ***/
-        background: var(--card-bg-2);
-        border: 1px solid var(--border-color);
-    }
+		background: var(--card-bg-2);
+		border: 1px solid var(--border-color);
+	}
+
+	._balloon-menu-popup * {
+		color: var(--primary-color) !important;
+		font-size: 12pt;
+		font-stretch: condensed;
+		text-shadow: none;
+	}
+
+	._balloon-menu-popup .menu .group-header {
+		display: none !important;
+	}
+
+	._balloon-menu-popup li:hover {
+		background: transparent !important;
+		opacity: .6;
+	}
+
+	._balloon-menu-popup::before {
+		border-color: var(--border-color) transparent !important;
+	}
+
+	._balloon-menu-popup::after {
+		border-color: var(--card-bg-2) transparent !important;
+	}
+
     
-    ._balloon-menu-popup * {
-        color: var(--primary-color) !important;
-        font-size: 12pt;
-        font-stretch: condensed;
-        text-shadow: none;
-    }
-    
-    ._balloon-menu-popup .menu .group-header {
-        display: none !important;
-    }
-    
-    ._balloon-menu-popup li:hover {
-        background: transparent !important;
-        opacity: .6;
-    }
-     
-    ._balloon-menu-popup::before {
-        border-color: var(--border-color) transparent !important;
-    }
-    
-    ._balloon-menu-popup::after {
-        border-color: var(--card-bg-2) transparent !important;
-    }
-    
-    
-    .layout-a .layout-column-2 .manage-unit ._work:hover,
+    	.layout-a .layout-column-2 .manage-unit ._work:hover,
 	.layout-body ._unit .ranking-items-container .ranking-items .ranking-item .work:hover,
 	._image-items .image-item ._work:hover,
 	#wrapper .layout-body .gtm-recommend-illust.gtm-thumbnail-link:hover,
@@ -124,7 +124,7 @@
 		transition: border-color 1s ease !important;
 	}
     
-    ._profile-popup .wrapper .items,
+	._profile-popup .wrapper .items,
 	._profile-popup .wrapper .user-info {
 
 		/*** POPUP PROFILE ***/
@@ -135,16 +135,16 @@
 		font-weight: normal !important;
 	}
     
-    ._profile-popup .wrapper .items {
-        border-top-right-radius: 4px;
-        border-top-left-radius: 4px;
-    }
+	._profile-popup .wrapper .items {
+		border-top-right-radius: 4px;
+		border-top-left-radius: 4px;
+	}
 
 	._profile-popup .wrapper .user-info {
-        border-bottom-right-radius: 4px;
-        border-bottom-left-radius: 4px;
-        margin-top: -2px;
-    }
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+		margin-top: -2px;
+	}
     
 	._profile-popup .wrapper .items {
 		padding: 10px;
@@ -183,263 +183,263 @@
 		font-weight: normal;
         padding: 8px 10px 10px 10px;
 	}
-    
-    .adsbygoogle /*** ADS ***/,
-    .ad-footer,
-    .upload.ad-printservice.hover-item,
-    .align-column /*** HOME NAVIGATION ***/,
-    .comic-container /*** HOME COMIC CONTAINER ***/,
-    .comic-hot-works.novel /*** POPULAR COMICS ***/,
-    .footer._classic-footer /*** HOME FOOTER ***/,
-    ._history .title .trial,
-    ._icon.sprites-info.open-info.ui-modal-trigger /*** RANKING INFO ICON ***/,
-    iframe[name="expandedFooter"] /*** INVISIBLE BLOC ***/,
-    #page-mypage .item.user-events /*** HOME USER EVENTS SECTION ***/,
-    #page-mypage .item.featured-tags /*** HOME FEATURED TAGS SECTION ***/,
-    #page-mypage .item.contests /*** HOME CONTEST SECTION ***/,
-    #page-mypage .item.booth-follow-items .description /*** HOME BOOTH SECTION DESCRIPTION ***/,
-    #page-mypage .item.booth-follow-items .title /*** HOME BOOTH SECTION TITLES ***/,
-    #page-mypage .item.booth-follow-items .information /*** HOME BOOTH SECTION NOTICE ***/,
-    #page-mypage .item.booth-follow-items .event-name-badge /*** HOME BOOTH SECTION EVENT BADGE ***/,
-    #page-mypage .ui-layout-west ._profile-menu-unit .menu-item:nth-child(4) /*** HOME GROUP/EVENTS MENU ***/,
-    .premium-lead-premium-campaign /*** GET PRENIUM BUTTON ***/,
-    ._premium-badge /*** PRENIUM BADGE ***/,
-    .stacc_right_menu a[href*="unify"] /*** SWITCH TO NEW FEED LINK ***/,
-    .toolbar-item /*** SEND FEEBACKS ***/,
-    ._unit.booth-follow-items .description,
-    ._unit.booth-follow-items .information,
-    ._user-profile-card-badges /*** USER PROFILE BADGES ***/,
-    .velocity.inline-list {
-        display: none !important;
-    }
-    
-    /* HEADER */
-    
-    /** DESCRIPTION : change the elements of the header **/
-    #root header {
-        background: var(--card-bg) !important;
-        border-bottom: 1px solid var(--border-color) !important;
-        height: 70px !important;
-        padding-top: 17px !important;
-    }
-    
-    ._global-header {
-        background: var(--card-bg) !important;
-        border-bottom: 1px solid var(--border-color) !important;
-        height: 78px !important;
-        padding-top: 17px !important;
-    }
-    
-    .title.header-logo {
-        
-        /*** HEADER LOGO ***/
-        top: 4px !important;
-        left: -110px !important;
-    }
-    
-    header ul li a[href="/en/"] /*** HEADER HOME LINK ***/,
-    header a[href*="/premium"] /*** HEADER PRENIUM LINK ***/,
-    header a[href="/cate_r18.php"] /*** HEADER R18 LINK ***/,
-    header a[href="/novel/cate_r18.php"] /*** HEADER R18 LINK ***/,
-    header a[href*="https://www.pixiv.help"] /*** HEADER HELP LINK ***/,
-    #root header a[href="/discovery"] /*** HEADER DISCOVERY LINK ***/,
-    .gtm-www-header-discovery-icon,
-    header a[href="/howto"] /*** HEADER HOW TO DRAW LINK ***/,
-    header a[href="/idea"] /*** HEADER CREATIVE IDEAS LINK ***/,
-    header a[href="/novel/upload.php"] /*** HEADER UPLOAD LINK ***/,
-    header a[href="/upload.php"] /*** HEADER UPLOAD LINK ***/,
-    header a[href="/manage/illusts/"] /*** HEADER MANAGE LINK ***/,
-    header a[href="/manage/novels/"] /*** HEADER MANAGE LINK ***/,
-    header a[href="/stacc?mode=unify"] /*** HEADER FEED LINK ***/,
-    header .stacc,
-    header button[type="button"] /*** HEADER NOTIFICATIONS BUTTONS ***/,
-    header .notifications,
-    header iframe /*** HEADER INVISIBLE BLOCS ***/ {
-        display: none !important;
-    }
-    
-    header .menu-group,
-    header ul {
-        
-        /*** HEADER LINKS CONTAINER ***/
-        background: transparent !important;
-    }
-    
-    header a[href="/bookmark.php"],
-    header a[href="/novel/bookmark.php"] {
-        
-        /*** HEADER BOOKMARKS LINK ***/
-        background-color: #B33939 !important;
-        background-image: url("https://i.imgur.com/Jc1vG2W.png") !important;
-        background-position: center 52%;
-        background-repeat: no-repeat;
-        background-size: 20px auto;
-        border-radius: 50% !important;
-        color: transparent !important;
-        height: 48px !important;
-        width: 48px !important;
-        position: fixed !important;
-        left: 27px !important;
-        bottom: 34px !important;
-        opacity: .4;
-		transition: all .3s ease-in-out !important;
-        z-index: 99 !important;
-    }
-    
-    header a[href="/bookmark.php"]:hover {
-        opacity: .9;
-		transition: all .3s ease-in-out !important;
-    }
-    
-    header a[href="/bookmark.php"] img,
-    header a[href="/novel/bookmark.php"] img {
-        display: none;
-    }
-    
-    ._global-header #suggest-input {
-        
-        /*** HEADER SEARCH BAR ***/
-        background: var(--card-bg-2) !important;
-        border: 1px solid var(--border-color) !important;
-        border-top-left-radius: 2px !important;
-        border-bottom-left-radius: 2px !important;
-        color: var(--primary-color) !important;
-        font-size: 14pt !important;
-        font-stretch: condensed !important;
-        padding: 5px 8px 6px 8px !important;
-        width: 400px !important;
-    }
- 
-    ._global-header .container {
-        background: transparent !important;
-        border: none !important;
-        margin-top: -58px !important;
-        margin-left: -514px !important;
-    }
-    
-    .submit.sprites-search-old {
-        
-        /*** HEADER SEARCH BAR ICON ***/
-        background-color: #747d8c !important;
-        background-image: url("https://i.imgur.com/NRfkJAi.png") !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: 49px auto !important;
-        border: 1px solid #000 !important;
-        color: #000 !important;
-        width: 50px !important;
-        height: 33px !important;
-        padding: 5px 8px 6px 8px !important;
-        margin-top: -55px !important;
-        margin-right: 266px !important;
-    }
-    
-    #suggest-list {
-        
-        /*** HEADER SEARCH BAR SUGGESTIONS ***/
-        background: var(--card-bg-2) !important;
-        border: 1px solid var(--border-color) !important;
-        width: 416px !important;
-        padding: 5px !important;
-        margin-top: 13px !important;
-        margin-left: -509px !important;
-    }
-    
-    #suggest-list li:hover {
-        background: transparent;
-        opacity: .6;
-    }
-    
-    #suggest-list * {
-        border-color: var(--border-color) !important;
-        color: var(--primary-color) !important;
-        font-size: 14pt !important;
-        font-stretch: condensed;
-        line-height: 20pt !important;
-    }
-    
-    .label.header-settings {
-        
-        /*** HEADER SETTINGS ***/
-        background: no-repeat var(--icon) center;
-        background-size: 35px auto !important;
-        color: transparent !important;
-		outline: none !important;
-        width: 100px !important;
-        margin-top: 8px !important;
-        margin-right: -100px !important;
-    }
-    
-    ._global-header .link-list .settings-menu .items {
-        
-        /*** HEADER SETTINGS MENU ***/
-		background: var(--card-bg-2) !important;
-        border: 1px solid var(--border-color) !important;
-		outline: none !important;
-        margin-top: 0px;
-		margin-right: -74px !important;
+
+	.adsbygoogle /*** ADS ***/,
+	.ad-footer,
+	.upload.ad-printservice.hover-item,
+	.align-column /*** HOME NAVIGATION ***/,
+	.comic-container /*** HOME COMIC CONTAINER ***/,
+	.comic-hot-works.novel /*** POPULAR COMICS ***/,
+	.footer._classic-footer /*** HOME FOOTER ***/,
+	._history .title .trial,
+	._icon.sprites-info.open-info.ui-modal-trigger /*** RANKING INFO ICON ***/,
+	iframe[name="expandedFooter"] /*** INVISIBLE BLOC ***/,
+	#page-mypage .item.user-events /*** HOME USER EVENTS SECTION ***/,
+	#page-mypage .item.featured-tags /*** HOME FEATURED TAGS SECTION ***/,
+	#page-mypage .item.contests /*** HOME CONTEST SECTION ***/,
+	#page-mypage .item.booth-follow-items .description /*** HOME BOOTH SECTION DESCRIPTION ***/,
+	#page-mypage .item.booth-follow-items .title /*** HOME BOOTH SECTION TITLES ***/,
+	#page-mypage .item.booth-follow-items .information /*** HOME BOOTH SECTION NOTICE ***/,
+	#page-mypage .item.booth-follow-items .event-name-badge /*** HOME BOOTH SECTION EVENT BADGE ***/,
+	#page-mypage .ui-layout-west ._profile-menu-unit .menu-item:nth-child(4) /*** HOME GROUP/EVENTS MENU ***/,
+	.premium-lead-premium-campaign /*** GET PRENIUM BUTTON ***/,
+	._premium-badge /*** PRENIUM BADGE ***/,
+	.stacc_right_menu a[href*="unify"] /*** SWITCH TO NEW FEED LINK ***/,
+	.toolbar-item /*** SEND FEEBACKS ***/,
+	._unit.booth-follow-items .description,
+	._unit.booth-follow-items .information,
+	._user-profile-card-badges /*** USER PROFILE BADGES ***/,
+	.velocity.inline-list {
+		display: none !important;
 	}
     
-    ._global-header .link-list .settings-menu .items li {
-		border-bottom: 1px solid var(--border-color) !important;
-        margin-top: -1px;
-        margin-bottom: -1px;
-    }
-    
-    ._global-header .link-list .settings-menu .items * {
-        color: var(--secondary-color);
-        font-size: 12pt;
-        font-stretch: condensed;
-    }
-    
-    ._global-header .link-list .settings-menu .items a[href="/setting_user.php"] {
-        display: none;
-    }
-    
-    /* FOLLOW/FOLLOWING BUTTON */
-    
-    /** DESCRIPTION : change the elements of the follow/following button **/
-    #root .js-click-trackable,
-    form h1 .js-click-trackable,
-    div[role="none"] .js-click-trackable {
-        background: #16A085 !important;
-        border-radius: 2px;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
-        color: #FFF !important;
-        font-size: 14pt;
-        font-stretch: condensed;
-        padding-bottom: 12px !important;
-    }
-    
-    #root .js-click-trackable svg,
-    form h1 .js-click-trackable svg,
-    div[role="none"] .js-click-trackable svg {
-        position: relative;
-        top: -1px !important;
-        left: -3px;
-    }
-    
-    /* HOME */
-    
-    /** DESCRIPTION : change the elements of the home page **/
-    #page-mypage .ui-layout-west ._profile-menu-unit {
+	/* HEADER */
 
-		/*** HOME LEFT COLUMN ***/
+	/** DESCRIPTION : change the elements of the header **/
+	#root header {
+		background: var(--card-bg) !important;
+		border-bottom: 1px solid var(--border-color) !important;
+		height: 70px !important;
+		padding-top: 17px !important;
+	}
+
+	._global-header {
+		background: var(--card-bg) !important;
+		border-bottom: 1px solid var(--border-color) !important;
+		height: 78px !important;
+		padding-top: 17px !important;
+	}
+
+	.title.header-logo {
+
+		/*** HEADER LOGO ***/
+		top: 4px !important;
+		left: -110px !important;
+	}
+
+	header ul li a[href="/en/"] /*** HEADER HOME LINK ***/,
+	header a[href*="/premium"] /*** HEADER PRENIUM LINK ***/,
+	header a[href="/cate_r18.php"] /*** HEADER R18 LINK ***/,
+	header a[href="/novel/cate_r18.php"] /*** HEADER R18 LINK ***/,
+	header a[href*="https://www.pixiv.help"] /*** HEADER HELP LINK ***/,
+	#root header a[href="/discovery"] /*** HEADER DISCOVERY LINK ***/,
+	.gtm-www-header-discovery-icon,
+	header a[href="/howto"] /*** HEADER HOW TO DRAW LINK ***/,
+	header a[href="/idea"] /*** HEADER CREATIVE IDEAS LINK ***/,
+	header a[href="/novel/upload.php"] /*** HEADER UPLOAD LINK ***/,
+	header a[href="/upload.php"] /*** HEADER UPLOAD LINK ***/,
+	header a[href="/manage/illusts/"] /*** HEADER MANAGE LINK ***/,
+	header a[href="/manage/novels/"] /*** HEADER MANAGE LINK ***/,
+	header a[href="/stacc?mode=unify"] /*** HEADER FEED LINK ***/,
+	header .stacc,
+	header button[type="button"] /*** HEADER NOTIFICATIONS BUTTONS ***/,
+	header .notifications,
+	header iframe /*** HEADER INVISIBLE BLOCS ***/ {
+		display: none !important;
+	}
+
+	header .menu-group,
+	header ul {
+
+		/*** HEADER LINKS CONTAINER ***/
+		background: transparent !important;
+	}
+
+	header a[href="/bookmark.php"],
+	header a[href="/novel/bookmark.php"] {
+
+		/*** HEADER BOOKMARKS LINK ***/
+		background-color: #B33939 !important;
+		background-image: url("https://i.imgur.com/Jc1vG2W.png") !important;
+		background-position: center 52%;
+		background-repeat: no-repeat;
+		background-size: 20px auto;
+		border-radius: 50% !important;
+		color: transparent !important;
+		height: 48px !important;
+		width: 48px !important;
+		position: fixed !important;
+		left: 27px !important;
+		bottom: 34px !important;
+		opacity: .4;
+		transition: all .3s ease-in-out !important;
+		z-index: 99 !important;
+	}
+
+	header a[href="/bookmark.php"]:hover {
+		opacity: .9;
+		transition: all .3s ease-in-out !important;
+	}
+
+	header a[href="/bookmark.php"] img,
+	header a[href="/novel/bookmark.php"] img {
+		display: none;
+	}
+
+	._global-header #suggest-input {
+
+	/*** HEADER SEARCH BAR ***/
+		background: var(--card-bg-2) !important;
+		border: 1px solid var(--border-color) !important;
+		border-top-left-radius: 2px !important;
+		border-bottom-left-radius: 2px !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		padding: 5px 8px 6px 8px !important;
+		width: 400px !important;
+	}
+
+	._global-header .container {
+		background: transparent !important;
+		border: none !important;
+		margin-top: -58px !important;
+		margin-left: -514px !important;
+	}
+
+	.submit.sprites-search-old {
+
+		/*** HEADER SEARCH BAR ICON ***/
+		background-color: #747d8c !important;
+		background-image: url("https://i.imgur.com/NRfkJAi.png") !important;
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+		background-size: 49px auto !important;
+		border: 1px solid #000 !important;
+		color: #000 !important;
+		width: 50px !important;
+		height: 33px !important;
+		padding: 5px 8px 6px 8px !important;
+		margin-top: -55px !important;
+		margin-right: 266px !important;
+	}
+
+	#suggest-list {
+
+		/*** HEADER SEARCH BAR SUGGESTIONS ***/
+		background: var(--card-bg-2) !important;
+		border: 1px solid var(--border-color) !important;
+		width: 416px !important;
+		padding: 5px !important;
+		margin-top: 13px !important;
+		margin-left: -509px !important;
+	}
+
+	#suggest-list li:hover {
+		background: transparent;
+		opacity: .6;
+	}
+
+	#suggest-list * {
+		border-color: var(--border-color) !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		line-height: 20pt !important;
+	}
+
+	.label.header-settings {
+
+		/*** HEADER SETTINGS ***/
+		background: no-repeat var(--icon) center;
+		background-size: 35px auto !important;
+		color: transparent !important;
+		outline: none !important;
+		width: 100px !important;
+		margin-top: 8px !important;
+		margin-right: -100px !important;
+	}
+
+	._global-header .link-list .settings-menu .items {
+
+		/*** HEADER SETTINGS MENU ***/
+		background: var(--card-bg-2) !important;
+		border: 1px solid var(--border-color) !important;
+		outline: none !important;
+		margin-top: 0px;
+		margin-right: -74px !important;
+	}
+
+	._global-header .link-list .settings-menu .items li {
+		border-bottom: 1px solid var(--border-color) !important;
+		margin-top: -1px;
+		margin-bottom: -1px;
+	}
+
+	._global-header .link-list .settings-menu .items * {
+		color: var(--secondary-color);
+		font-size: 12pt;
+		font-stretch: condensed;
+	}
+
+	._global-header .link-list .settings-menu .items a[href="/setting_user.php"] {
+		display: none;
+	}
+
+	/* FOLLOW/FOLLOWING BUTTON */
+
+	/** DESCRIPTION : change the elements of the follow/following button **/
+	#root .js-click-trackable,
+	form h1 .js-click-trackable,
+	div[role="none"] .js-click-trackable {
+		background: #16A085 !important;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		color: #FFF !important;
+		font-size: 14pt;
+		font-stretch: condensed;
+		padding-bottom: 12px !important;
+	}
+
+	#root .js-click-trackable svg,
+	form h1 .js-click-trackable svg,
+	div[role="none"] .js-click-trackable svg {
+		position: relative;
+		top: -1px !important;
+		left: -3px;
+	}
+
+	/* HOME */
+
+	/** DESCRIPTION : change the elements of the home page **/
+	#page-mypage .ui-layout-west ._profile-menu-unit {
+
+	/*** HOME LEFT COLUMN ***/
 		background: var(--card-bg) !important;
 		border: 1px solid var(--border-color);
 		border-radius: 1px !important;
-        margin-left: -5px;
+		margin-left: -5px;
 	}
 
 	#page-mypage .ui-layout-west ._profile-menu-unit .profile {
 
-		/*** HOME LEFT COLUMN PROFILE ***/
+	/*** HOME LEFT COLUMN PROFILE ***/
 		padding-top: 5px !important;
 	}
 
 	#page-mypage .ui-layout-west ._profile-menu-unit .profile .user-name-container .user-name {
 
-		/*** HOME LEFT COLUMN PROFILE USERNAME ***/
+	/*** HOME LEFT COLUMN PROFILE USERNAME ***/
 		color: var(--primary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
@@ -450,7 +450,7 @@
 
 	#page-mypage .ui-layout-west ._profile-menu-unit {
 
-		/*** HOME LEFT COLUMN MENU CONTAINER ***/
+	/*** HOME LEFT COLUMN MENU CONTAINER ***/
 		padding: 0px 0px 8px 8px !important;
 	}
 
@@ -470,22 +470,22 @@
 		background: transparent !important;
 		color: var(--secondary-color) !important;
 	}
-    
-    #page-mypage .ui-layout-east .contents-east .contents-main {
 
-		/*** HOME CENTER COLUMN ***/
-        width: 900px !important;
-    }
-    
+	#page-mypage .ui-layout-east .contents-east .contents-main {
+
+	/*** HOME CENTER COLUMN ***/
+		width: 900px !important;
+	}
+
 	#page-mypage .rounded,
-    #item-container {
+	#item-container {
 
 		/*** HOME CENTER COLUMN BOXES ***/
 		background: var(--card-bg) !important;
 		border: 1px solid var(--border-color);
 		border-radius: 1px !important;
 	}
-    
+
     #page-mypage .rounded {
 
 		/*** HOME CENTER COLUMN ANNOUNCEMENT BOX ***/
