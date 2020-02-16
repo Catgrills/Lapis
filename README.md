@@ -25,10 +25,7 @@ Instruction
 + Directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Lapis/master/pixiv.user.css">click here</a>
 
 <strong>Step 3 : Install others scripts </strong>
-<ol>
-<li>Install <a href="https://greasyfork.org/en/scripts/31512-pixiv-bigger-scroll-thumbnails">Pixiv Bigger Scroll Thumbnails</a>.</li>
-<li>Install <a href="https://greasyfork.org/en/scripts/32133-pixiv-misc-edition">Pixiv Misc Edition</a></li>
-</ol>
+Install <a href="https://greasyfork.org/en/scripts/31512-pixiv-bigger-scroll-thumbnails">Pixiv Bigger Scroll Thumbnails</a>.
 
 <strong>Step 4 : Install the font </strong>
 
