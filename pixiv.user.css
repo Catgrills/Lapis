@@ -15,7 +15,7 @@
 		--border-color: #DBDCE6 !important;
 		--primary-color: #555 !important;
 		--secondary-color: rgb(123, 123, 123) !important;
-        --invert: invert(0);
+        	--invert: invert(0);
 		--icon: url("https://i.imgur.com/iHziR6f.png") !important;
 	}
 	`,
@@ -28,7 +28,7 @@
 		--border-color: #0D1321 !important;
 		--primary-color: #C0E0DE !important;
 		--secondary-color: #AAABBC !important;
-        --invert: invert(1);
+        	--invert: invert(1);
 		--icon: url("https://i.imgur.com/ZWvuLSo.png") !important;
 	}
 	`
@@ -3136,112 +3136,6 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 	/*[[theme]]*/
 	button[aria-haspopup="true"] /*** FEEDBACK/SHARE/MORE BUTTONS ***/ {
 		display: none !important;
-	}
-
-	header a[href="/en/"] {
-
-		/*** HEADER LOGO ***/
-		margin-left: -110px;
-	}
-
-	header form {
-
-		/*** HEADER SEARCH BAR ***/
-		width: 400px !important;
-		position: absolute !important;
-		right: 0;
-		left: 0;
-		margin: auto !important;
-	}
-
-	header form input {
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		border-top-left-radius: 2px !important;
-		border-bottom-left-radius: 2px !important;
-		color: var(--primary-color) !important;
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		padding: 5px 8px 6px 8px !important;
-		width: 100% !important;
-		margin-top: 7px;
-		margin-left: -48px !important;
-	}
-
-	header form button {
-
-		/*** HEADER SEARCH BAR ICON ***/
-		background-color: #747d8c !important;
-		background-position: center 48% !important;
-		border: 1px solid #000 !important;
-		color: #000 !important;
-		height: 33px !important;
-		padding: 5px 8px 6px 8px !important;
-		margin-top: 7px;
-		margin-left: -1px;
-	}
-
-	header form ul {
-
-		/*** HEADER SEARCH BAR SUGGESTIONS ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		border-radius: 2px;
-		padding: 5px !important;
-		margin-top: 3px !important;
-	}
-
-	header form ul * {
-		border-color: var(--border-color) !important;
-		color: var(--primary-color) !important;
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		line-height: 20pt !important;
-	}
-
-	header form ul li:hover {
-		background: var(--card-bg-2) !important;
-		opacity: .6;
-	}
-
-	header ul li a[href="/setting_user.php"] {
-
-		/*** HEADER SETTINGS ***/
-		background: no-repeat var(--icon) center;
-		background-size: 35px auto !important;
-		color: transparent !important;
-		font-size: 14pt;
-		font-stretch: condensed;
-		width: 100px;
-		position: absolute;
-		right: 0px !important;
-		left: 0px !important;
-		margin-top: 10px;
-	}
-
-	header ul[hidden=""] {
-
-		/*** HEADER SETTINGS MENU ***/
-		background: var(--card-bg-2) !important;
-		border: 1px solid var(--border-color) !important;
-		outline: none !important;
-		margin-top: 16px;
-		margin-right: -75px;
-	}
-
-	header ul[hidden=""] a {
-		background: transparent !important;
-		border-bottom: 1px solid var(--border-color);
-		color: var(--secondary-color) !important;
-		font-size: 12pt !important;
-		font-stretch: condensed;
-		width: inherit !important;
-		margin: 0px 0px -1px 0px !important;
-		position: relative !important;
-	}
-
-	header ul[hidden=""] > li:nth-of-type(1) > a {
-		display: none;
 	}
 
 }
