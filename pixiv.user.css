@@ -53,6 +53,10 @@
 	*::-moz-focus-inner {
 		border: 0 !important;
 	}
+	
+	*:focus {
+		box-shadow: none !important;
+	}
 
 	body {
 		background: var(--body-bg) !important;
