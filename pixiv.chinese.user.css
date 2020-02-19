@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis (CHINESE)
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.0.2
+@version        1.0.3
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -221,6 +221,7 @@
 	}
 
 	.sc-LzLRp.iJznKv,
+	.sc-LzLRq.iSNyjc,
 	.sc-LzLQd.IkktS {
 
 		/*** HEADER CONTAINER ***/
@@ -229,11 +230,13 @@
 	}
 
 	.sc-LzLRp.iJznKv div,
+	.sc-LzLRq.iSNyjc div,
 	.sc-LzLQd.IkktS div {
 		background-color: transparent !important;
 	}
 
 	.sc-LzLRp.iJznKv svg,
+	.sc-LzLRq.iSNyjc svg,
 	.sc-LzLQd.IkktS svg {
 
 		/*** HEADER ICONS ***/
@@ -241,9 +244,9 @@
 	}
 
 	input[placeholder="搜索作品"]
-    /* input[placeholder="搜尋作品"] */
-    /* input[placeholder="作品を検索"] */
-    /* input[placeholder="작품 검색"] */{
+	/* input[placeholder="搜尋作品"] */
+	/* input[placeholder="作品を検索"] */
+	/* input[placeholder="작품 검색"] */{
 
 		/*** HEADER SEARCH BAR ***/
 		background: var(--card-bg-2) !important;
@@ -261,20 +264,21 @@
 	}
 
 	input[placeholder="搜索作品"]::placeholder
-    /* input[placeholder="搜尋作品"]::placerholder */
-    /* input[placeholder="作品を検索"]::placeholder */ 
-    /* input[placeholder="작품 검색"]::placerholder */ {
+	/* input[placeholder="搜尋作品"]::placerholder */
+	/* input[placeholder="作品を検索"]::placeholder */ 
+	/* input[placeholder="작품 검색"]::placerholder */ {
 		color: var(--primary-color) !important;
 	}
 
 	input[placeholder="搜索作品"]:focus
-    /* input[placeholder="搜尋作品"]:focus */
-    /* input[placeholder="作品を検索"]:focus */
-    /* input[placeholder="작품 검색"]:focus */{
+	/* input[placeholder="搜尋作品"]:focus */
+	/* input[placeholder="作品を検索"]:focus */
+	/* input[placeholder="작품 검색"]:focus */{
 		box-shadow: none !important;
 	}
 
 	.sc-LzLRp.iJznKv div[role="presentation"],
+	.sc-LzLRq.iSNyjc div[role="presentation"],
 	.sc-LzLQd.IkktS div[role="presentation"] {
 
 		/*** HEADER POPUP ***/
@@ -284,16 +288,19 @@
 	}
 
 	.sc-LzLRp.iJznKv div[role="presentation"] div,
+	.sc-LzLRq.iSNyjc div[role="presentation"] div,
 	.sc-LzLQd.IkktS div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
 	.sc-LzLRp.iJznKv div[role="presentation"] ul li,
+	.sc-LzLRq.iSNyjc div[role="presentation"] ul li,
 	.sc-LzLQd.IkktS div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
 	.sc-LzLRp.iJznKv div[role="presentation"] *,
+	.sc-LzLRq.iSNyjc div[role="presentation"] *,
 	.sc-LzLQd.IkktS div[role="presentation"] *,
 	a[class*="gtm-user-menu-"],
 	a[class*="gtm-user-menu-"] * {
@@ -303,11 +310,13 @@
 	}
 
 	.sc-LzLRp.iJznKv div[role="presentation"] ul li a,
+	.sc-LzLRq.iSNyjc div[role="presentation"] ul li a,
 	.sc-LzLQd.IkktS div[role="presentation"] ul li a {
 		line-height: 20pt;
 	}
 
 	.sc-LzLRp.iJznKv div[role="presentation"] span,
+	.sc-LzLRq.iSNyjc div[role="presentation"] span,
 	.sc-LzLQd.IkktS div[role="presentation"] span {
 		background: transparent;
 	}
@@ -324,7 +333,13 @@
 		font-stretch: condensed !important;
 	}
 
-	.sc-LzLvP.iuIsTn {
+	.sc-LzLLG.ksYpfY {
+		border: none !important;
+		font-size: 12pt !important;
+	}
+
+	.sc-LzLvP.iuIsTn,
+	.sc-LzMhd.kvFqpm {
 		display: none;
 	}
 
