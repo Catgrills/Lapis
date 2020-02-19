@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.2.3
+@version        1.2.4
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -3265,7 +3265,7 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		fill: var(--primary-color);
 	}
 
-	main section div[style*="transform:translate"] button {
+	main section div[style*="transform: translate"] button {
 
 		/*** MAIN CONTAINER ARTWORK SEE MORE **/
 		background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
