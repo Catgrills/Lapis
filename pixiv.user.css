@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.2.4
+@version        1.2.5
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -3489,7 +3489,7 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		margin-left: 4px;
 	}
 
-	main section .sc-LzOlc {
+	main section .sc-LzOla {
 
 		/*** MAIN CONTAINER BASED ON BOX ***/
 		background: var(--card-bg-2);
@@ -3497,11 +3497,11 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		border-radius: 1px;
 	}
 
-	main section .sc-LzOlc span {
+	main section .sc-LzOla span {
 		color: var(--primary-color) !important;
 	}
 
-	main section .sc-LzOlc div {
+	main section .sc-LzOla div {
 		background: transparent;
 		color: var(--primary-color) !important;
 		font-size: 14pt !important;
@@ -3528,6 +3528,12 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		color: var(--primary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
+	}
+	
+	.sc-fzXfNh.sc-bkzqDG.khgRsK {
+
+		/*** MAIN CONTAINER ARTIST INVISIBLE BLOCK ***/
+		height: 0px !important;
 	}
 
 	main h2 *,
