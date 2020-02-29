@@ -1,6 +1,6 @@
 # Lapis
 
-<img src="preview.png" width="100%">
+<img src="preview_2.png" width="100%">
 
 Preview of <i>Lapis</i>.
 
