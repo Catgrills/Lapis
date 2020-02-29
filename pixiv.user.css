@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.2.6
+@version        1.2.7
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -67,6 +67,14 @@
 		/*** MAIN CONTAINER ***/
 		width: 1050px !important;
 		margin-top: -45px !important;
+	}
+	
+	.sc-fzXfPb.hGAKiq {
+		
+		/*** R-18 ***/
+		font-size: 11pt !important;
+		margin-left: -4px !important;
+		margin-top: -3px !important;
 	}
 
 	._balloon-menu-popup {
