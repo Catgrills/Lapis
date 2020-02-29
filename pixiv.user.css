@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.2.5
+@version        1.2.6
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -229,12 +229,14 @@
 		border-bottom: 1px solid var(--border-color) !important;
 	}
 
+    	#js-mount-point-header div,
 	.sc-LzLRp.iJznKv div,
 	.sc-LzLRq.iSNyjc div,
 	.sc-LzLQd.IkktS div {
 		background-color: transparent !important;
 	}
 
+    	#js-mount-point-header svg,
 	.sc-LzLRp.iJznKv svg,
 	.sc-LzLRq.iSNyjc svg,
 	.sc-LzLQd.IkktS svg {
@@ -268,6 +270,7 @@
 		box-shadow: none !important;
 	}
 
+    	#js-mount-point-header div[role="presentation"],
 	.sc-LzLRp.iJznKv div[role="presentation"],
 	.sc-LzLRq.iSNyjc div[role="presentation"],
 	.sc-LzLQd.IkktS div[role="presentation"] {
@@ -278,18 +281,21 @@
 		border-radius: 2px !important;
 	}
 
+	#js-mount-point-header div[role="presentation"] div,
 	.sc-LzLRp.iJznKv div[role="presentation"] div,
 	.sc-LzLRq.iSNyjc div[role="presentation"] div,
 	.sc-LzLQd.IkktS div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
+	#js-mount-point-header div[role="presentation"] ul li,
 	.sc-LzLRp.iJznKv div[role="presentation"] ul li,
 	.sc-LzLRq.iSNyjc div[role="presentation"] ul li,
 	.sc-LzLQd.IkktS div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
+	#js-mount-point-header div[role="presentation"] *,
 	.sc-LzLRp.iJznKv div[role="presentation"] *,
 	.sc-LzLRq.iSNyjc div[role="presentation"] *,
 	.sc-LzLQd.IkktS div[role="presentation"] *,
@@ -300,12 +306,14 @@
 		font-stretch: condensed !important;
 	}
 
+    	#js-mount-point-header div[role="presentation"] ul li a,
 	.sc-LzLRp.iJznKv div[role="presentation"] ul li a,
 	.sc-LzLRq.iSNyjc div[role="presentation"] ul li a,
 	.sc-LzLQd.IkktS div[role="presentation"] ul li a {
 		line-height: 20pt;
 	}
 
+    	#js-mount-point-header div[role="presentation"] span,
 	.sc-LzLRp.iJznKv div[role="presentation"] span,
 	.sc-LzLRq.iSNyjc div[role="presentation"] span,
 	.sc-LzLQd.IkktS div[role="presentation"] span {
@@ -324,13 +332,17 @@
 		font-stretch: condensed !important;
 	}
     
-	.sc-LzLLG.ksYpfY {
+	.sc-LzLLG.ksYpfY,
+    	.sc-LzLrS.jpIMa {
 		border: none !important;
-		font-size: 12pt !important;
+		font-size: 10pt !important;
+		margin-top: 2px;
+		margin-left: -20px;
 	}
 
 	.sc-LzLvP.iuIsTn,
-	.sc-LzMhd.kvFqpm {
+	.sc-LzMhd.kvFqpm,
+    	.sc-LzMgE.kllBii {
 		display: none;
 	}
 
