@@ -82,12 +82,15 @@
 		border-color: #47D2E9 !important;
 	}	
 		
-	.sc-fzXfPb.hGAKiq {
-		
+	.sc-fzXfPb.hGAKiq,
+	.sc-fzXfPg.bxTLrX {
+
 		/*** R-18 ***/
+		color: #FFF !important;
 		font-size: 11pt !important;
-		margin-left: -4px !important;
-		margin-top: -3px !important;
+		text-shadow: 1px 1px 0px #000;
+		margin-left: -2px !important;
+		margin-top: 3px !important;
 	}
 
 	._balloon-menu-popup {
