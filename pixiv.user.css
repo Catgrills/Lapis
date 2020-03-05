@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.2.7
+@version        1.2.8
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -69,6 +69,19 @@
 		margin-top: -45px !important;
 	}
 	
+	.fZYmEz {
+
+		/*** THUMBNAILS ***/
+		border: 2px solid var(--border-color);
+		border-radius: 0px !important;
+		box-shadow: none;
+		transition: all 1s ease;
+	}
+
+	.fZYmEz:hover {
+		border-color: #47D2E9 !important;
+	}	
+		
 	.sc-fzXfPb.hGAKiq {
 		
 		/*** R-18 ***/
@@ -230,7 +243,8 @@
 
 	.sc-LzLRp.iJznKv,
 	.sc-LzLRq.iSNyjc,
-	.sc-LzLQd.IkktS {
+	.sc-LzLQd.IkktS,
+    	.sc-LzLRn.iqWSNh {
 
 		/*** HEADER CONTAINER ***/
 		background-color: var(--card-bg) !important;
@@ -240,14 +254,16 @@
     	#js-mount-point-header div,
 	.sc-LzLRp.iJznKv div,
 	.sc-LzLRq.iSNyjc div,
-	.sc-LzLQd.IkktS div {
+	.sc-LzLQd.IkktS div,
+    	.sc-LzLRn.iqWSNh div {
 		background-color: transparent !important;
 	}
 
     	#js-mount-point-header svg,
 	.sc-LzLRp.iJznKv svg,
 	.sc-LzLRq.iSNyjc svg,
-	.sc-LzLQd.IkktS svg {
+	.sc-LzLQd.IkktS svg,
+    	.sc-LzLRn.iqWSNh svg {
 
 		/*** HEADER ICONS ***/
 		fill: var(--primary-color) !important;
@@ -281,7 +297,8 @@
     	#js-mount-point-header div[role="presentation"],
 	.sc-LzLRp.iJznKv div[role="presentation"],
 	.sc-LzLRq.iSNyjc div[role="presentation"],
-	.sc-LzLQd.IkktS div[role="presentation"] {
+	.sc-LzLQd.IkktS div[role="presentation"],
+    	.sc-LzLRn.iqWSNh div[role="presentation"] {
 
 		/*** HEADER POPUP ***/
 		background: var(--card-bg-2) !important;
@@ -292,14 +309,16 @@
 	#js-mount-point-header div[role="presentation"] div,
 	.sc-LzLRp.iJznKv div[role="presentation"] div,
 	.sc-LzLRq.iSNyjc div[role="presentation"] div,
-	.sc-LzLQd.IkktS div[role="presentation"] div {
+	.sc-LzLQd.IkktS div[role="presentation"] div,
+    	.sc-LzLRn.iqWSNh div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
 	#js-mount-point-header div[role="presentation"] ul li,
 	.sc-LzLRp.iJznKv div[role="presentation"] ul li,
 	.sc-LzLRq.iSNyjc div[role="presentation"] ul li,
-	.sc-LzLQd.IkktS div[role="presentation"] ul li {
+	.sc-LzLQd.IkktS div[role="presentation"] ul li,
+    	.sc-LzLRn.iqWSNh div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
@@ -307,6 +326,7 @@
 	.sc-LzLRp.iJznKv div[role="presentation"] *,
 	.sc-LzLRq.iSNyjc div[role="presentation"] *,
 	.sc-LzLQd.IkktS div[role="presentation"] *,
+    	.sc-LzLRn.iqWSNh div[role="presentation"] *,
 	a[class*="gtm-user-menu-"],
 	a[class*="gtm-user-menu-"] * {
 		color: var(--primary-color) !important;
@@ -317,14 +337,16 @@
     	#js-mount-point-header div[role="presentation"] ul li a,
 	.sc-LzLRp.iJznKv div[role="presentation"] ul li a,
 	.sc-LzLRq.iSNyjc div[role="presentation"] ul li a,
-	.sc-LzLQd.IkktS div[role="presentation"] ul li a {
+	.sc-LzLQd.IkktS div[role="presentation"] ul li a,
+    	.sc-LzLRn.iqWSNh div[role="presentation"] ul li a {
 		line-height: 20pt;
 	}
 
     	#js-mount-point-header div[role="presentation"] span,
 	.sc-LzLRp.iJznKv div[role="presentation"] span,
 	.sc-LzLRq.iSNyjc div[role="presentation"] span,
-	.sc-LzLQd.IkktS div[role="presentation"] span {
+	.sc-LzLQd.IkktS div[role="presentation"] span,
+    	.sc-LzLRn.iqWSNh div[role="presentation"] span {
 		background: transparent;
 	}
 
@@ -3614,15 +3636,15 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 	main nav div svg[viewBox="0 0 9 10"] path {
 		fill: #FFF;
 	}
-
-	main nav img {
-		border: 2px solid var(--border-color);
+	
+	main nav .dLJxNq {
 		border-radius: 1px !important;
+		border: 2px solid var(--border-color);
 		box-shadow: none;
 		transition: all 1s ease !important;
 	}
 
-	main nav a img:hover {
+	main nav .dLJxNq:hover {
 		border-color: #47D2E9 !important;
 		transition: all 1s ease;
 	}
@@ -3732,13 +3754,14 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		background: #3066BE !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
-		color: #FFF !important;
+		color: #FFF !important/* 
 		font-size: 14pt !important;
 		font-weight: normal;
 		padding: 6px 10px 10px 10px;
 	}
 
-	div[style*="margin:48px"] {
+	div[style*="margin:48px"],
+    	.sc-fzXfNi.sc-bkzqDG.khgRsK  {
 
 		/*** INVISIBLE BLOCK UNDER COMMENTS ***/
 		display: none !important;
