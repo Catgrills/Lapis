@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.2.8
+@version        1.2.9
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -241,6 +241,7 @@
 		display: none;
 	}
 
+	#js-mount-point-header,
 	.sc-LzLRp.iJznKv,
 	.sc-LzLRq.iSNyjc,
 	.sc-LzLQd.IkktS,
@@ -363,7 +364,10 @@
 	}
     
 	.sc-LzLLG.ksYpfY,
-    	.sc-LzLrS.jpIMa {
+    	.sc-LzLrS.jpIMa,
+	.sc-LzLLF.bBDzkn,
+	.sc-LzLLD.gxFmqJ,
+	.sc-LzLwq.fSXhPx {
 		border: none !important;
 		font-size: 10pt !important;
 		margin-top: 2px;
