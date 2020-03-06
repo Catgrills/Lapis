@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.2.9
+@version        1.3.0
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -69,7 +69,8 @@
 		margin-top: -45px !important;
 	}
 	
-	.fZYmEz {
+	.fZYmEz,
+    	.ceXgPg {
 
 		/*** THUMBNAILS ***/
 		border: 2px solid var(--border-color);
@@ -78,19 +79,30 @@
 		transition: all 1s ease;
 	}
 
-	.fZYmEz:hover {
+	.fZYmEz:hover,
+    	.ceXgPg:hover {
 		border-color: #47D2E9 !important;
 	}	
 		
 	.sc-fzXfPb.hGAKiq,
-	.sc-fzXfPg.bxTLrX {
+	.sc-fzXfPg.bxTLrX,
+    	.sc-fzXfQo.fgMYNr {
 
 		/*** R-18 ***/
-		color: #FFF !important;
-		font-size: 11pt !important;
-		text-shadow: 1px 1px 0px #000;
-		margin-left: -2px !important;
-		margin-top: 3px !important;
+		display: none !important;
+	}
+	
+	.sc-fzXfQu.cFZsbP {
+
+		/*** PAGE BADGE ***/
+		margin-right: 4px !important;
+	}
+
+	.gtm-illust-recommend-bookmark,
+	.sc-fzXfOX.cqEeVs {
+
+		/*** BOOKMARK BUTTON ***/
+		margin-right: 4px !important;
 	}
 
 	._balloon-menu-popup {
@@ -231,7 +243,16 @@
 	#page-mypage .item.booth-follow-items .title /*** HOME BOOTH SECTION TITLES ***/,
 	#page-mypage .item.booth-follow-items .information /*** HOME BOOTH SECTION NOTICE ***/,
 	#page-mypage .item.booth-follow-items .event-name-badge /*** HOME BOOTH SECTION EVENT BADGE ***/,
-	#page-mypage .ui-layout-west ._profile-menu-unit .menu-item:nth-child(4) /*** HOME GROUP/EVENTS MENU ***/,.premium-lead-premium-campaign /*** GET PRENIUM BUTTON ***/,._premium-badge /*** PRENIUM BADGE ***/,.stacc_right_menu a[href*="unify"] /*** SWITCH TO NEW FEED LINK ***/,.toolbar-item /*** SEND FEEBACKS ***/,._unit.booth-follow-items .description,._unit.booth-follow-items .information,._user-profile-card-badges /*** USER PROFILE BADGES ***/,.velocity.inline-list {
+	#page-mypage .ui-layout-west ._profile-menu-unit .menu-item:nth-child(4) /*** HOME GROUP/EVENTS MENU ***/,
+	.premium-lead-premium-campaign /*** GET PRENIUM BUTTON ***/,
+	._premium-badge /*** PRENIUM BADGE ***/,
+	.stacc_right_menu a[href*="unify"] /*** SWITCH TO NEW FEED LINK ***/,
+	.toolbar-item /*** SEND FEEBACKS ***/,
+	._unit.booth-follow-items .description,
+	._unit.booth-follow-items .information,
+	._user-profile-card-badges /*** USER PROFILE BADGES ***/,
+	.velocity.inline-list,
+    	.sc-LzLwq.iFtbiJ {
 		display: none !important;
 	}
 
@@ -248,7 +269,8 @@
 	.sc-LzLRp.iJznKv,
 	.sc-LzLRq.iSNyjc,
 	.sc-LzLQd.IkktS,
-    	.sc-LzLRn.iqWSNh {
+    	.sc-LzLRn.iqWSNh,
+    	.sc-LzMgB.bXVQKn {
 
 		/*** HEADER CONTAINER ***/
 		background-color: var(--card-bg) !important;
@@ -259,7 +281,8 @@
 	.sc-LzLRp.iJznKv div,
 	.sc-LzLRq.iSNyjc div,
 	.sc-LzLQd.IkktS div,
-    	.sc-LzLRn.iqWSNh div {
+    	.sc-LzLRn.iqWSNh div,
+    	.sc-LzMgB.bXVQKn div {
 		background-color: transparent !important;
 	}
 
@@ -267,7 +290,8 @@
 	.sc-LzLRp.iJznKv svg,
 	.sc-LzLRq.iSNyjc svg,
 	.sc-LzLQd.IkktS svg,
-    	.sc-LzLRn.iqWSNh svg {
+    	.sc-LzLRn.iqWSNh svg,
+    	.sc-LzMgB.bXVQKn svg {
 
 		/*** HEADER ICONS ***/
 		fill: var(--primary-color) !important;
@@ -314,7 +338,8 @@
 	.sc-LzLRp.iJznKv div[role="presentation"] div,
 	.sc-LzLRq.iSNyjc div[role="presentation"] div,
 	.sc-LzLQd.IkktS div[role="presentation"] div,
-    	.sc-LzLRn.iqWSNh div[role="presentation"] div {
+    	.sc-LzLRn.iqWSNh div[role="presentation"] div,
+    	.sc-LzMgB.bXVQKn div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
@@ -322,7 +347,8 @@
 	.sc-LzLRp.iJznKv div[role="presentation"] ul li,
 	.sc-LzLRq.iSNyjc div[role="presentation"] ul li,
 	.sc-LzLQd.IkktS div[role="presentation"] ul li,
-    	.sc-LzLRn.iqWSNh div[role="presentation"] ul li {
+    	.sc-LzLRn.iqWSNh div[role="presentation"] ul li,
+    	.sc-LzMgB.bXVQKn div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
@@ -331,6 +357,7 @@
 	.sc-LzLRq.iSNyjc div[role="presentation"] *,
 	.sc-LzLQd.IkktS div[role="presentation"] *,
     	.sc-LzLRn.iqWSNh div[role="presentation"] *,
+    	.sc-LzMgB.bXVQKn div[role="presentation"] *,
 	a[class*="gtm-user-menu-"],
 	a[class*="gtm-user-menu-"] * {
 		color: var(--primary-color) !important;
@@ -342,7 +369,8 @@
 	.sc-LzLRp.iJznKv div[role="presentation"] ul li a,
 	.sc-LzLRq.iSNyjc div[role="presentation"] ul li a,
 	.sc-LzLQd.IkktS div[role="presentation"] ul li a,
-    	.sc-LzLRn.iqWSNh div[role="presentation"] ul li a {
+    	.sc-LzLRn.iqWSNh div[role="presentation"] ul li a,
+    	.sc-LzMgB.bXVQKn div[role="presentation"] ul li a {
 		line-height: 20pt;
 	}
 
@@ -350,7 +378,8 @@
 	.sc-LzLRp.iJznKv div[role="presentation"] span,
 	.sc-LzLRq.iSNyjc div[role="presentation"] span,
 	.sc-LzLQd.IkktS div[role="presentation"] span,
-    	.sc-LzLRn.iqWSNh div[role="presentation"] span {
+    	.sc-LzLRn.iqWSNh div[role="presentation"] span,
+    	.sc-LzMgB.bXVQKn div[role="presentation"] span {
 		background: transparent;
 	}
 
@@ -370,7 +399,8 @@
     	.sc-LzLrS.jpIMa,
 	.sc-LzLLF.bBDzkn,
 	.sc-LzLLD.gxFmqJ,
-	.sc-LzLwq.fSXhPx {
+	.sc-LzLwq.fSXhPx,
+    	.sc-LzLLI.fwWBZC {
 		border: none !important;
 		font-size: 10pt !important;
 		margin-top: 2px;
@@ -395,7 +425,7 @@
 		color: #FFF !important;
 		font-size: 14pt;
 		font-stretch: condensed;
-		padding-bottom: 12px !important;
+		padding-bottom: 11px !important;
 	}
 
 	#root .js-click-trackable svg,
@@ -3276,13 +3306,8 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		border-radius: 4px !important;
 		color: var(--primary-color);
 		font-size: 14pt !important;
+        	height: 39px !important;
 		padding: 10px !important;
-	}
-
-	div[class*="LzLqH"] {
-
-		/*** MAIN CONTAINER ARTWORK "PAGES PREVIEW" TEXT***/
-		display: none;
 	}
 
 	form[action=""] section {
@@ -3340,10 +3365,23 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		/*** MAIN CONTAINER LIKE/BOOKMARK BUTTON ***/
 		background: transparent !important;
 	}
-
-	form[action="/bookmark_add.php"] section div:nth-child(2) {
+	
+	form[action="/bookmark_add.php"] section {
 
 		/*** MAIN CONTAINER BOOKMARK POPUP ***/
+		background: var(--card-bg-2) !important;
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+	}
+
+	form[action="/bookmark_add.php"] section * {
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal;
+	}
+
+	form[action="/bookmark_add.php"] section div:nth-child(2) {
 		display: none;
 	}
 
@@ -3538,19 +3576,19 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		margin-left: 4px;
 	}
 
-	main section .sc-LzOla {
+	main section .sc-LzOkY.UgiSZ {
 
 		/*** MAIN CONTAINER BASED ON BOX ***/
-		background: var(--card-bg-2);
+		background: var(--card-bg-2) !important;
 		border: 1px solid var(--border-color);
 		border-radius: 1px;
 	}
 
-	main section .sc-LzOla span {
+	main section .sc-LzOkY.UgiSZ span {
 		color: var(--primary-color) !important;
 	}
 
-	main section .sc-LzOla div {
+	main section .sc-LzOkY.UgiSZ div {
 		background: transparent;
 		color: var(--primary-color) !important;
 		font-size: 14pt !important;
@@ -3630,6 +3668,10 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		padding-bottom: 20px !important;
 		overflow-x: hidden !important;
 	}
+	
+	main nav * {
+		border-radius: 0px !important;
+	}
 
 	main nav div {
 		background: transparent !important;
@@ -3644,18 +3686,19 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		fill: #FFF;
 	}
 	
-	main nav .dLJxNq {
+	main nav .sc-LzLqH.kOHVBP {
 		border-radius: 1px !important;
 		border: 2px solid var(--border-color);
 		box-shadow: none;
 		transition: all 1s ease !important;
 	}
 
-	main nav .dLJxNq:hover {
+	main nav .sc-LzLqH.kOHVBP:hover {
 		border-color: #47D2E9 !important;
 		transition: all 1s ease;
 	}
 
+    	.sc-fzXfNi.sc-bkzqDE.kgPYks,
 	main h2 {
 
 		/*** MAIN CONTAINER COMMENTS ***/
@@ -3683,6 +3726,10 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 
 	textarea::-moz-placeholder {
 		color: var(--primary-color) !important;
+	}
+    
+	textarea[placeholder="Leave a comment"] {
+		height: 40px !important;
 	}
 
 	form button[type="submit"] {
@@ -3761,14 +3808,15 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		background: #3066BE !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
-		color: #FFF !important/* 
+		color: #FFF !important;
 		font-size: 14pt !important;
 		font-weight: normal;
 		padding: 6px 10px 10px 10px;
 	}
 
 	div[style*="margin:48px"],
-    	.sc-fzXfNi.sc-bkzqDG.khgRsK  {
+    	.sc-fzXfNi.sc-bkzqDG.khgRsK
+    	.sc-fzXfNi.sc-bkzqDE.kgPYks  {
 
 		/*** INVISIBLE BLOCK UNDER COMMENTS ***/
 		display: none !important;
@@ -4186,7 +4234,6 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		color: #FFF !important;
 		font-size: 11pt !important;
 		font-weight: bold !important;
-		line-height: initial !important;
 	}
 
 	#root:nth-child(1) > div section div a[href*="/en/artworks/"] div svg {
