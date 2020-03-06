@@ -3010,6 +3010,7 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		/*** RANKING TABS ***/
 		height: 45px !important;
 		line-height: 47px !important;
+		margin-bottom: 7px;
 	}
 
 	#wrapper .layout-body .column-header .tabs {
