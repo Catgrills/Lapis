@@ -4280,10 +4280,11 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		margin-bottom: 20px;
 	}
 
-	#root:nth-child(1) > div section div {
+	#root:nth-child(1) > div section div,
+    	.sc-fzXfPK.bTLfVL span {
 		background-color: transparent !important;
 		color: #3066BE;
-		font-size: 17pt;
+		font-size: 15pt;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
