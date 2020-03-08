@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.3.6
+@version        1.3.7
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -333,42 +333,49 @@
 		box-shadow: none !important;
 	}
 
-	.gtm-search-box-popular-artwork, 
-	.gtm-search-box-popular-artwork *,
-	.gtm-search-box-popular-novel,
-	.sc-LzLqH.kOHVBP {
+	div[class*="gtm-search-box-popular-artwork"],
+	div[class*="gtm-search-box-popular-artwork"] .sc-LzLPy,
+	div[class*="gtm-search-box-popular-novel"], 
+	.sc-LzLqH,
+	.sc-LzLqC.knUnPm,
+	.bjmNqY::before,
+	.XbvQS::before {
+
+		/*** HEADER SEARCH BAR POPUP THUMBNAIL ***/
+		background-color: rgba(0, 0, 0, 0.32) !important;
 		border-radius: 0px !important;
 	}
 
-	.gtm-search-box-popular-artwork .sc-LzLQD.iOWrWf,
-	.sc-LzLQf.eIjLhM.gtm-search-box-popular-novel,
-	.sc-LzLqH.kOHVBP {
-		background-color: rgba(0, 0, 0, 0.32) !important;
+	div[class*="gtm-search-box-popular-artwork"] .sc-LzLPy,
+	div[class*="gtm-search-box-popular-novel"], 
+	.sc-LzLqC.knUnPm,
+	.sc-LzLqH {
 		border: 2px solid var(--border-color) !important;
-		color: #000 !important;
-		font-size: 11pt !important;
-		transition: all 1s ease;
 	}
 
-	.gtm-search-box-popular-artwork .sc-LzLQD.iOWrWf *,
-	.sc-LzLQf.eIjLhM.gtm-search-box-popular-novel *,
+	.juvOtu:hover .sc-fzXfQX,
+	.fNLBbL:hover .sc-fzXfQS {
+		opacity: initial !important;
+	}
+
+	div[class*="gtm-search-box-popular-artwork"] *,
+	div[class*="gtm-search-box-popular-novel"] *,
 	.sc-LzLqH.kOHVBP * {
+
+		/*** HEADER SEARCH BAR POPUP THUMBNAIL TEXT ***/
 		color: #FFF !important;
 		font-size: 11pt !important;
 		font-weight: bold !important;
 		line-height: 15pt !important;
 	}
 
-	.gtm-search-box-popular-artwork .sc-LzLQD.iOWrWf:hover,
-	.sc-LzLQf.eIjLhM.gtm-search-box-popular-novel:hover,
-	.sc-LzLqH.kOHVBP:hover {
-		border-color: #47D2E9 !important;
-		transition: all 1s ease;
-	}
+	.gtm-search-box-recommend-artwork .sc-fzXfPK.bTLfVL *,
+	.gtm-search-box-recommend-artwork .sc-fzXfPF.bTLJni * {
 
-	.gtm-search-box-recommend-artwork .sc-fzXfPK.bTLfVL * {
+		/*** HEADER SEARCH BAR POPUP THUMBNAIL PAGE BADGE ***/
 		color: #FFF !important;
 		fill: #FFF !important;
+		font-size: 11pt !important;
 		font-weight: bold !important;
 	}
 
@@ -4446,10 +4453,6 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 
 	button[class*="Button__StyledButton"] svg {
 		display: none !important;
-	}
-
-	#root:nth-child(1) > div button {
-		visibility: hidden;
 	}
 
 	.sc-LzMhj,
