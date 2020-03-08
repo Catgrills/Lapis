@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.3.8
+@version        1.3.9
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -335,6 +335,7 @@
 	div[class*="gtm-search-box-popular-novel"], 
 	.sc-LzLqH,
 	.sc-LzLqC.knUnPm,
+    	.sc-fzXfQX.jkVDzj,
 	.bjmNqY::before,
 	.XbvQS::before {
 
