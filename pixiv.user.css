@@ -239,7 +239,7 @@
 	.footer._classic-footer /*** HOME FOOTER ***/,
 	._history .title .trial,
 	._icon.sprites-info.open-info.ui-modal-trigger /*** RANKING INFO ICON ***/,
-	iframe[name="expandedFooter"] /*** INVISIBLE BLOC ***/,
+	iframe[name="expandedFooter"] /*** INVISIBLE BLOCK ***/,
 	#page-mypage .item.user-events /*** HOME USER EVENTS SECTION ***/,
 	#page-mypage .item.featured-tags /*** HOME FEATURED TAGS SECTION ***/,
 	#page-mypage .item.contests /*** HOME CONTEST SECTION ***/,
@@ -3832,7 +3832,7 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 	}
 
 	div[style*="margin:48px"],
-    	.sc-fzXfNi.sc-bkzqDG.khgRsK
+    	.sc-fzXfNi.sc-bkzqDG.khgRsK,
     	.sc-fzXfNi.sc-bkzqDE.kgPYks  {
 
 		/*** INVISIBLE BLOCK UNDER COMMENTS ***/
