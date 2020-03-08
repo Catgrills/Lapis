@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.3.3
+@version        1.3.4
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -3936,6 +3936,40 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 
 	.gtm-illust-recommend-thumbnail-link div {
 		background: transparent;
+	}
+	
+	.sc-LzMlF.kMhFyU {
+
+		/*** RECOMMENDED WORKS ***/
+		margin-top: 20px !important;
+	}
+     
+	.sc-LzMlF.kMhFyU a[href*="/artworks"] {
+
+		/*** RECOMMENDED WORKS TITLES ***/
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		margin-top: 5px !important;
+		margin-bottom: 0px;
+	}
+
+	.sc-LzMlF.kMhFyU a[href*="/users"] .sc-LzLqG.kITUvc {
+
+		/*** RECOMMENDED WORKS USERNAMES ***/
+		color: var(--secondary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		line-height: 20pt;
+	}
+
+	.sc-LzMlF.kMhFyU .sc-fzXfQX.jkVDzj {
+
+		/*** RECOMMENDED WORKS THUMBNAILS ***/
+		border: 2px solid var(--border-color);
+		border-radius: 1px !important;
+		box-shadow: none;
+		transition: all 1s ease;
 	}
 
 	/* NOVEL */
