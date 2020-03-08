@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.3.9
+@version        1.4.0
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -3062,7 +3062,7 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		/*** RANKING TABS ***/
 		height: 45px !important;
 		line-height: 47px !important;
-		margin-bottom: 7px;
+		margin-bottom: 5px;
 	}
 
 	#wrapper .layout-body .column-header .tabs {
