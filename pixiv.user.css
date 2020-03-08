@@ -4429,10 +4429,11 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		font-weight: normal;
 	}
 
-	.sc-LzMlF {
+	.sc-LzMlF,
+    	.sc-fzXfPK.bTLfVL span {
 		background: transparent !important;
 		color: #3066BE !important;
-		font-size: 17pt !important;
+		font-size: 15pt !important;
 		font-weight: normal;
 	}
 
