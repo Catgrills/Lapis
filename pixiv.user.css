@@ -68,6 +68,10 @@
 		width: 1050px !important;
 		margin-top: -45px !important;
 	}
+
+	#root {
+	    overflow-y: hidden;
+	}
 	
 	.fZYmEz,
     	.ceXgPg {
