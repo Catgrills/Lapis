@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.4.1
+@version        1.4.2
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -111,6 +111,10 @@
 		color: #FFF !important;
 		font-size: 11pt !important;
 		font-stretch: condensed;
+	}
+	
+	.sc-fzonjX.hIMiPJ {
+		line-height: 0pt !important;
 	}
 	
 	.gtm-illust-recommend-bookmark,
@@ -282,7 +286,8 @@
 	.sc-LzLRq.iSNyjc,
 	.sc-LzLQd.IkktS,
     	.sc-LzLRn.iqWSNh,
-    	.sc-LzMgB.bXVQKn {
+    	.sc-LzMgB.bXVQKn,
+    	.sc-pZCbX.cSnajP {
 
 		/*** HEADER CONTAINER ***/
 		background-color: var(--card-bg) !important;
@@ -294,7 +299,8 @@
 	.sc-LzLRq.iSNyjc div,
 	.sc-LzLQd.IkktS div,
     	.sc-LzLRn.iqWSNh div,
-    	.sc-LzMgB.bXVQKn div {
+    	.sc-LzMgB.bXVQKn div,
+    	.sc-pZCbX.cSnajP div {
 		background-color: transparent !important;
 	}
 
@@ -303,7 +309,8 @@
 	.sc-LzLRq.iSNyjc svg,
 	.sc-LzLQd.IkktS svg,
     	.sc-LzLRn.iqWSNh svg,
-    	.sc-LzMgB.bXVQKn svg {
+    	.sc-LzMgB.bXVQKn svg,
+    	.sc-pZCbX.cSnajP svg {
 
 		/*** HEADER ICONS ***/
 		fill: var(--primary-color);
@@ -336,10 +343,12 @@
 
 	div[class*="gtm-search-box-popular-artwork"],
 	div[class*="gtm-search-box-popular-artwork"] .sc-LzLPy,
+    	div[class*="gtm-search-box-popular-artwork"] .sc-qOiPt,
 	div[class*="gtm-search-box-popular-novel"], 
 	.sc-LzLqH,
 	.sc-LzLqC.knUnPm,
     	.sc-fzXfQX.jkVDzj,
+    	.sc-fznNvL.eClVEf,
 	.bjmNqY::before,
 	.XbvQS::before {
 
@@ -349,8 +358,10 @@
 	}
 
 	div[class*="gtm-search-box-popular-artwork"] .sc-LzLPy,
+    	div[class*="gtm-search-box-popular-artwork"] .sc-qOiPt,
 	div[class*="gtm-search-box-popular-novel"], 
 	.sc-LzLqC.knUnPm,
+    	.sc-fznNvL.eClVEf,
 	.sc-LzLqH {
 		border: 2px solid var(--border-color) !important;
 	}
@@ -366,13 +377,14 @@
 
 		/*** HEADER SEARCH BAR POPUP THUMBNAIL TEXT ***/
 		color: #FFF !important;
-		font-size: 11pt !important;
+		font-size: 12pt !important;
 		font-weight: bold !important;
 		line-height: 15pt !important;
 	}
 
 	.gtm-search-box-recommend-artwork .sc-fzXfPK.bTLfVL *,
-	.gtm-search-box-recommend-artwork .sc-fzXfPF.bTLJni * {
+	.gtm-search-box-recommend-artwork .sc-fzXfPF.bTLJni *,
+    	.gtm-search-box-recommend-artwork .sc-fznYue.eQUUso * {
 
 		/*** HEADER SEARCH BAR POPUP THUMBNAIL PAGE BADGE ***/
 		color: #FFF !important;
@@ -386,7 +398,8 @@
 	.sc-LzLRq.iSNyjc div[role="presentation"],
 	.sc-LzLQd.IkktS div[role="presentation"],
     	.sc-LzLRn.iqWSNh div[role="presentation"],
-    	.sc-LzMgB.bXVQKn div[role="presentation"] {
+    	.sc-LzMgB.bXVQKn div[role="presentation"],
+    	.sc-pZCbX.cSnajP div[role="presentation"] {
 
 		/*** HEADER POPUP ***/
 		background: var(--card-bg-2) !important;
@@ -399,7 +412,8 @@
 	.sc-LzLRq.iSNyjc div[role="presentation"] div,
 	.sc-LzLQd.IkktS div[role="presentation"] div,
     	.sc-LzLRn.iqWSNh div[role="presentation"] div,
-    	.sc-LzMgB.bXVQKn div[role="presentation"] div {
+    	.sc-LzMgB.bXVQKn div[role="presentation"] div,
+    	.sc-pZCbX.cSnajP div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
@@ -408,7 +422,8 @@
 	.sc-LzLRq.iSNyjc div[role="presentation"] ul li,
 	.sc-LzLQd.IkktS div[role="presentation"] ul li,
     	.sc-LzLRn.iqWSNh div[role="presentation"] ul li,
-    	.sc-LzMgB.bXVQKn div[role="presentation"] ul li {
+    	.sc-LzMgB.bXVQKn div[role="presentation"] ul li,
+    	.sc-pZCbX.cSnajP div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
@@ -418,6 +433,7 @@
 	.sc-LzLQd.IkktS div[role="presentation"] *,
     	.sc-LzLRn.iqWSNh div[role="presentation"] *,
     	.sc-LzMgB.bXVQKn div[role="presentation"] *,
+    	.sc-pZCbX.cSnajP div[role="presentation"] *,
 	a[class*="gtm-user-menu-"],
 	a[class*="gtm-user-menu-"] * {
 		color: var(--primary-color);
@@ -430,7 +446,8 @@
 	.sc-LzLRq.iSNyjc div[role="presentation"] ul li a,
 	.sc-LzLQd.IkktS div[role="presentation"] ul li a,
     	.sc-LzLRn.iqWSNh div[role="presentation"] ul li a,
-    	.sc-LzMgB.bXVQKn div[role="presentation"] ul li a {
+    	.sc-LzMgB.bXVQKn div[role="presentation"] ul li a,
+    	.sc-pZCbX.cSnajP div[role="presentation"] ul li {
 		line-height: 20pt;
 	}
 
@@ -439,7 +456,8 @@
 	.sc-LzLRq.iSNyjc div[role="presentation"] span,
 	.sc-LzLQd.IkktS div[role="presentation"] span,
     	.sc-LzLRn.iqWSNh div[role="presentation"] span,
-    	.sc-LzMgB.bXVQKn div[role="presentation"] span {
+    	.sc-LzMgB.bXVQKn div[role="presentation"] span,
+    	.sc-pZCbX.cSnajP div[role="presentation"] span {
 		background: transparent;
 	}
 
@@ -460,7 +478,8 @@
 	.sc-LzLLF.bBDzkn,
 	.sc-LzLLD.gxFmqJ,
 	.sc-LzLwq.fSXhPx,
-    	.sc-LzLLI.fwWBZC {
+    	.sc-LzLLI.fwWBZC,
+    	.sc-psDhf.dsXQkp {
 		border: none !important;
 		font-size: 10pt !important;
 		margin-top: 2px;
@@ -470,6 +489,7 @@
 	.sc-LzMhd.kvFqpm,
     	.sc-LzMgE.kllBii,	
 	.sc-LzMgD.kldeDZ,
+    	.sc-pbKro.bjcxym,
     	.kkUHZQ {
 		display: none;
 	}
