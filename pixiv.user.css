@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.4.6
+@version        1.4.7
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -1158,7 +1158,8 @@
 	/** DESCRIPTION : change the elements of the profile page **/
 	.LzNuE.lbftEW,
 	.sc-LzNvh.gLIgku,
-    	.sc-LzNve.gvFgNn {
+    	.sc-LzNve.gvFgNn,
+	.sc-qcqiP.edeyoB {
 
 		/*** PROFILE BANNER ***/
 		background-image: inherit;
@@ -1167,7 +1168,9 @@
 	.sc-LzNvl.dZcFwh,
 	.sc-LzNvl.dZcFwh button div,
     	.dYDpJG,
-    	.sc-LzNvL.dPQQSL {
+    	.sc-LzNvL.dPQQSL,
+	.sc-puHdH.XrpUX,
+	.sc-pZAwj.gcWFII {
 
 		/*** PROFILE BANNER BUTTONS ***/
 		background-color: transparent !important;
