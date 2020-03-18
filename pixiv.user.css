@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.4.7
+@version        1.4.8
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -275,6 +275,7 @@
 	._unit.booth-follow-items .description,
 	._unit.booth-follow-items .information,
 	._user-profile-card-badges /*** USER PROFILE BADGES ***/,
+    	#wrapper .layout-body ._unit .extaraNavi /*** NEW WORK FOLLOWING EXTRA NAVBAR ***/,
 	.velocity.inline-list,
     	.sc-LzLwq.iFtbiJ,
     	.sc-prQdK.inVUC,
