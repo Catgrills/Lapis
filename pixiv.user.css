@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.4.5
+@version        1.4.6
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -75,7 +75,8 @@
 	
 	.fZYmEz,
     	.ceXgPg,
-    	.WHiMb {
+    	.WHiMb,
+    	.kxQNfC {
 
 		/*** THUMBNAILS ***/
 		border: 2px solid var(--border-color);
@@ -86,13 +87,15 @@
 
 	.fZYmEz:hover,
     	.ceXgPg:hover,
-    	.WHiMb:hover {
+    	.WHiMb:hover,
+    	.kxQNfC:hover {
 		border-color: #47D2E9 !important;
 	}	
 		
 	.sc-fzXfPb.hGAKiq,
 	.sc-fzXfPg.bxTLrX,
-    	.sc-fzXfQo.fgMYNr {
+    	.sc-fzXfQo.fgMYNr,
+    	.sc-fznNTe.kdsLwl  {
 
 		/*** R-18 ***/
 		display: none !important;
@@ -115,13 +118,15 @@
 		font-stretch: condensed;
 	}
 	
-	.sc-fzonjX.hIMiPJ {
+	.sc-fzonjX.hIMiPJ,
+	.sc-fzqOul.kYKazV {
 		line-height: 0pt !important;
 	}
 	
 	.gtm-illust-recommend-bookmark,
 	.sc-fzXfOX.cqEeVs,
-    	.sc-fzowVh.equHBw {
+    	.sc-fzowVh.equHBw,
+    	.sc-fzoVTD.Atfvz {
 
 		/*** BOOKMARK BUTTON ***/
 		margin-right: 5px !important;
