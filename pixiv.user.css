@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.4.4
+@version        1.4.5
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -272,7 +272,8 @@
 	._user-profile-card-badges /*** USER PROFILE BADGES ***/,
 	.velocity.inline-list,
     	.sc-LzLwq.iFtbiJ,
-    	.sc-prQdK.inVUC  {
+    	.sc-prQdK.inVUC,
+	.sc-qYhTA.dLAucL {
 		display: none !important;
 	}
 
@@ -292,7 +293,8 @@
     	.sc-LzLRn.iqWSNh,
     	.sc-LzMgB.bXVQKn,
     	.sc-pZCbX.cSnajP,
-    	.sc-qYhBd.bnmQve {
+    	.sc-qYhBd.bnmQve,
+    	.sc-pRsKx.eqHrrO {
 
 		/*** HEADER CONTAINER ***/
 		background-color: var(--card-bg) !important;
@@ -306,7 +308,8 @@
     	.sc-LzLRn.iqWSNh div,
     	.sc-LzMgB.bXVQKn div,
     	.sc-pZCbX.cSnajP div,
-    	.sc-qYhBd.bnmQve div {
+    	.sc-qYhBd.bnmQve div,
+    	.sc-pRsKx.eqHrrO div {
 		background-color: transparent !important;
 	}
 
@@ -317,7 +320,8 @@
     	.sc-LzLRn.iqWSNh svg,
     	.sc-LzMgB.bXVQKn svg,
     	.sc-pZCbX.cSnajP svg,
-    	.sc-qYhBd.bnmQve svg {
+    	.sc-qYhBd.bnmQve svg,
+    	.sc-pRsKx.eqHrrO svg {
 
 		/*** HEADER ICONS ***/
 		fill: var(--primary-color);
@@ -407,7 +411,8 @@
     	.sc-LzLRn.iqWSNh div[role="presentation"],
     	.sc-LzMgB.bXVQKn div[role="presentation"],
     	.sc-pZCbX.cSnajP div[role="presentation"],
-    	.sc-qYhBd.bnmQve div[role="presentation"] {
+    	.sc-qYhBd.bnmQve div[role="presentation"],
+    	.sc-pRsKx.eqHrrO div[role="presentation"] {
 
 		/*** HEADER POPUP ***/
 		background: var(--card-bg-2) !important;
@@ -422,7 +427,8 @@
     	.sc-LzLRn.iqWSNh div[role="presentation"] div,
     	.sc-LzMgB.bXVQKn div[role="presentation"] div,
     	.sc-pZCbX.cSnajP div[role="presentation"] div,
-    	.sc-qYhBd.bnmQve div[role="presentation"] div {
+    	.sc-qYhBd.bnmQve div[role="presentation"] div,
+    	.sc-pRsKx.eqHrrO div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
@@ -433,7 +439,8 @@
     	.sc-LzLRn.iqWSNh div[role="presentation"] ul li,
     	.sc-LzMgB.bXVQKn div[role="presentation"] ul li,
     	.sc-pZCbX.cSnajP div[role="presentation"] ul li,
-    	.sc-qYhBd.bnmQve div[role="presentation"] ul li {
+    	.sc-qYhBd.bnmQve div[role="presentation"] ul li,
+    	.sc-pRsKx.eqHrrO div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
@@ -445,6 +452,7 @@
     	.sc-LzMgB.bXVQKn div[role="presentation"] *,
     	.sc-pZCbX.cSnajP div[role="presentation"] *,
     	.sc-qYhBd.bnmQve div[role="presentation"] *,
+    	.sc-pRsKx.eqHrrO div[role="presentation"] *,
 	a[class*="gtm-user-menu-"],
 	a[class*="gtm-user-menu-"] * {
 		color: var(--primary-color);
@@ -459,7 +467,8 @@
     	.sc-LzLRn.iqWSNh div[role="presentation"] ul li a,
     	.sc-LzMgB.bXVQKn div[role="presentation"] ul li a,
     	.sc-pZCbX.cSnajP div[role="presentation"] ul li a,
-    	.sc-qYhBd.bnmQve div[role="presentation"] ul li a {
+    	.sc-qYhBd.bnmQve div[role="presentation"] ul li a,
+    	.sc-pRsKx.eqHrrO div[role="presentation"] ul li a {
 		line-height: 20pt;
 	}
 
@@ -470,7 +479,8 @@
     	.sc-LzLRn.iqWSNh div[role="presentation"] span,
     	.sc-LzMgB.bXVQKn div[role="presentation"] span,
     	.sc-pZCbX.cSnajP div[role="presentation"] span,
-    	.sc-qYhBd.bnmQve div[role="presentation"] span {
+    	.sc-qYhBd.bnmQve div[role="presentation"] span,
+    	.sc-pRsKx.eqHrrO div[role="presentation"] span {
 		background: transparent;
 	}
 
@@ -492,7 +502,8 @@
 	.sc-LzLLD.gxFmqJ,
 	.sc-LzLwq.fSXhPx,
     	.sc-LzLLI.fwWBZC,
-    	.sc-psDhf.dsXQkp {
+    	.sc-psDhf.dsXQkp,
+    	.sc-pbvYO.cxyGNa {
 		border: none !important;
 		font-size: 10pt !important;
 		margin-top: 2px;
@@ -504,6 +515,7 @@
 	.sc-LzMgD.kldeDZ,
     	.sc-pbKro.bjcxym,
 	.sc-pJhSf.gdVGCp,
+	.sc-oUbIU.kkgvSC,
     	.kkUHZQ {
 		display: none;
 	}
