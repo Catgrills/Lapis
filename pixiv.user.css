@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.4.8
+@version        1.4.9
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -512,6 +512,7 @@
     	.sc-pbvYO.cxyGNa {
 		border: none !important;
 		font-size: 10pt !important;
+		font-stretch: condensed !important;
 		margin-top: 2px;
 		margin-left: -20px;
 	}
