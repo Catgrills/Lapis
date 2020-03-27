@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.4.9
+@version        1.5.0
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -76,7 +76,8 @@
 	.fZYmEz,
     	.ceXgPg,
     	.WHiMb,
-    	.kxQNfC {
+    	.kxQNfC,
+	.iKEwQu {
 
 		/*** THUMBNAILS ***/
 		border: 2px solid var(--border-color);
@@ -88,14 +89,16 @@
 	.fZYmEz:hover,
     	.ceXgPg:hover,
     	.WHiMb:hover,
-    	.kxQNfC:hover {
+    	.kxQNfC:hover,
+	.iKEwQu:hover {
 		border-color: #47D2E9 !important;
 	}	
 		
 	.sc-fzXfPb.hGAKiq,
 	.sc-fzXfPg.bxTLrX,
     	.sc-fzXfQo.fgMYNr,
-    	.sc-fznNTe.kdsLwl  {
+    	.sc-fznNTe.kdsLwl,
+    	.sc-fzpdyU.fEsfTg  {
 
 		/*** R-18 ***/
 		display: none !important;
@@ -119,14 +122,16 @@
 	}
 	
 	.sc-fzonjX.hIMiPJ,
-	.sc-fzqOul.kYKazV {
+	.sc-fzqOul.kYKazV,
+    	.sc-fzobTh.ktGuED {
 		line-height: 0pt !important;
 	}
 	
 	.gtm-illust-recommend-bookmark,
 	.sc-fzXfOX.cqEeVs,
     	.sc-fzowVh.equHBw,
-    	.sc-fzoVTD.Atfvz {
+    	.sc-fzoVTD.Atfvz,
+    	.sc-pbIaG.ebFstP {
 
 		/*** BOOKMARK BUTTON ***/
 		margin-right: 5px !important;
@@ -300,7 +305,8 @@
     	.sc-LzMgB.bXVQKn,
     	.sc-pZCbX.cSnajP,
     	.sc-qYhBd.bnmQve,
-    	.sc-pRsKx.eqHrrO {
+    	.sc-pRsKx.eqHrrO,
+    	.sc-oUPCf.fNYbSh {
 
 		/*** HEADER CONTAINER ***/
 		background-color: var(--card-bg) !important;
@@ -315,7 +321,8 @@
     	.sc-LzMgB.bXVQKn div,
     	.sc-pZCbX.cSnajP div,
     	.sc-qYhBd.bnmQve div,
-    	.sc-pRsKx.eqHrrO div {
+    	.sc-pRsKx.eqHrrO div,
+    	.sc-oUPCf.fNYbSh div {
 		background-color: transparent !important;
 	}
 
@@ -327,7 +334,8 @@
     	.sc-LzMgB.bXVQKn svg,
     	.sc-pZCbX.cSnajP svg,
     	.sc-qYhBd.bnmQve svg,
-    	.sc-pRsKx.eqHrrO svg {
+    	.sc-pRsKx.eqHrrO svg,
+    	.sc-oUPCf.fNYbSh svg {
 
 		/*** HEADER ICONS ***/
 		fill: var(--primary-color);
@@ -418,7 +426,8 @@
     	.sc-LzMgB.bXVQKn div[role="presentation"],
     	.sc-pZCbX.cSnajP div[role="presentation"],
     	.sc-qYhBd.bnmQve div[role="presentation"],
-    	.sc-pRsKx.eqHrrO div[role="presentation"] {
+    	.sc-pRsKx.eqHrrO div[role="presentation"],
+    	.sc-oUPCf.fNYbSh div[role="presentation"] {
 
 		/*** HEADER POPUP ***/
 		background: var(--card-bg-2) !important;
@@ -434,7 +443,8 @@
     	.sc-LzMgB.bXVQKn div[role="presentation"] div,
     	.sc-pZCbX.cSnajP div[role="presentation"] div,
     	.sc-qYhBd.bnmQve div[role="presentation"] div,
-    	.sc-pRsKx.eqHrrO div[role="presentation"] div {
+    	.sc-pRsKx.eqHrrO div[role="presentation"] div,
+    	.sc-oUPCf.fNYbSh div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
@@ -446,7 +456,8 @@
     	.sc-LzMgB.bXVQKn div[role="presentation"] ul li,
     	.sc-pZCbX.cSnajP div[role="presentation"] ul li,
     	.sc-qYhBd.bnmQve div[role="presentation"] ul li,
-    	.sc-pRsKx.eqHrrO div[role="presentation"] ul li {
+    	.sc-pRsKx.eqHrrO div[role="presentation"] ul li,
+    	.sc-oUPCf.fNYbSh div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
@@ -459,6 +470,7 @@
     	.sc-pZCbX.cSnajP div[role="presentation"] *,
     	.sc-qYhBd.bnmQve div[role="presentation"] *,
     	.sc-pRsKx.eqHrrO div[role="presentation"] *,
+    	.sc-oUPCf.fNYbSh div[role="presentation"] *,
 	a[class*="gtm-user-menu-"],
 	a[class*="gtm-user-menu-"] * {
 		color: var(--primary-color);
@@ -474,7 +486,8 @@
     	.sc-LzMgB.bXVQKn div[role="presentation"] ul li a,
     	.sc-pZCbX.cSnajP div[role="presentation"] ul li a,
     	.sc-qYhBd.bnmQve div[role="presentation"] ul li a,
-    	.sc-pRsKx.eqHrrO div[role="presentation"] ul li a {
+    	.sc-pRsKx.eqHrrO div[role="presentation"] ul li a,
+    	.sc-oUPCf.fNYbSh div[role="presentation"] ul li a {
 		line-height: 20pt;
 	}
 
@@ -509,7 +522,8 @@
 	.sc-LzLwq.fSXhPx,
     	.sc-LzLLI.fwWBZC,
     	.sc-psDhf.dsXQkp,
-    	.sc-pbvYO.cxyGNa {
+    	.sc-pbvYO.cxyGNa,
+	.sc-pciXn.jrdgEA  {
 		border: none !important;
 		font-size: 10pt !important;
 		font-stretch: condensed !important;
@@ -523,6 +537,7 @@
     	.sc-pbKro.bjcxym,
 	.sc-pJhSf.gdVGCp,
 	.sc-oUbIU.kkgvSC,
+    	.sc-plVZC.gocWTh,
     	.kkUHZQ {
 		display: none;
 	}
@@ -1161,10 +1176,12 @@
 	.LzNuE.lbftEW,
 	.sc-LzNvh.gLIgku,
     	.sc-LzNve.gvFgNn,
-	.sc-qcqiP.edeyoB {
+	.sc-qcqiP.edeyoB,
+    	.sc-pzNoE.gmCcON {
 
 		/*** PROFILE BANNER ***/
 		background-image: inherit;
+        	background-size: cover;
 	}
 
 	.sc-LzNvl.dZcFwh,
@@ -1172,7 +1189,9 @@
     	.dYDpJG,
     	.sc-LzNvL.dPQQSL,
 	.sc-puHdH.XrpUX,
-	.sc-pZAwj.gcWFII {
+	.sc-pZAwj.gcWFII,
+    	.sc-pAcex.fzEQMl,
+    	.sc-oUa-dg.eJkGNH {
 
 		/*** PROFILE BANNER BUTTONS ***/
 		background-color: transparent !important;
