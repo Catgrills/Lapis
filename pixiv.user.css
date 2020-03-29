@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.5.0
+@version        1.5.1
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -3835,14 +3835,14 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 		fill: #FFF;
 	}
 	
-	main nav .sc-LzLqH.kOHVBP {
+	main nav div[style="margin: 0px 4px;"] {
 		border-radius: 1px !important;
 		border: 2px solid var(--border-color);
 		box-shadow: none;
 		transition: all 1s ease !important;
 	}
 
-	main nav .sc-LzLqH.kOHVBP:hover {
+	main nav div[style="margin: 0px 4px;"]:hover {
 		border-color: #47D2E9 !important;
 		transition: all 1s ease;
 	}
