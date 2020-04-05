@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.5.3
+@version        1.5.4
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -572,7 +572,7 @@
 	form h1 .js-click-trackable svg,
 	div[role="none"] .js-click-trackable svg {
 		position: relative;
-		top: -1px !important;
+		top: 4px !important;
 		left: -3px;
 	}
 
