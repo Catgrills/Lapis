@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.5.1
+@version        1.5.3
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -306,7 +306,8 @@
     	.sc-pZCbX.cSnajP,
     	.sc-qYhBd.bnmQve,
     	.sc-pRsKx.eqHrrO,
-    	.sc-oUPCf.fNYbSh {
+    	.sc-oUPCf.fNYbSh,
+	.sc-oVcRo.cbuwGp {
 
 		/*** HEADER CONTAINER ***/
 		background-color: var(--card-bg) !important;
@@ -322,7 +323,8 @@
     	.sc-pZCbX.cSnajP div,
     	.sc-qYhBd.bnmQve div,
     	.sc-pRsKx.eqHrrO div,
-    	.sc-oUPCf.fNYbSh div {
+    	.sc-oUPCf.fNYbSh div,
+    	.sc-oVcRo.cbuwGp div {
 		background-color: transparent !important;
 	}
 
@@ -335,7 +337,8 @@
     	.sc-pZCbX.cSnajP svg,
     	.sc-qYhBd.bnmQve svg,
     	.sc-pRsKx.eqHrrO svg,
-    	.sc-oUPCf.fNYbSh svg {
+    	.sc-oUPCf.fNYbSh svg,
+    	.sc-oVcRo.cbuwGp svg {
 
 		/*** HEADER ICONS ***/
 		fill: var(--primary-color);
@@ -427,7 +430,8 @@
     	.sc-pZCbX.cSnajP div[role="presentation"],
     	.sc-qYhBd.bnmQve div[role="presentation"],
     	.sc-pRsKx.eqHrrO div[role="presentation"],
-    	.sc-oUPCf.fNYbSh div[role="presentation"] {
+    	.sc-oUPCf.fNYbSh div[role="presentation"],
+    	.sc-oVcRo.cbuwGp div[role="presentation"] {
 
 		/*** HEADER POPUP ***/
 		background: var(--card-bg-2) !important;
@@ -444,7 +448,8 @@
     	.sc-pZCbX.cSnajP div[role="presentation"] div,
     	.sc-qYhBd.bnmQve div[role="presentation"] div,
     	.sc-pRsKx.eqHrrO div[role="presentation"] div,
-    	.sc-oUPCf.fNYbSh div[role="presentation"] div {
+    	.sc-oUPCf.fNYbSh div[role="presentation"] div,
+    	.sc-oVcRo.cbuwGp div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
@@ -457,7 +462,8 @@
     	.sc-pZCbX.cSnajP div[role="presentation"] ul li,
     	.sc-qYhBd.bnmQve div[role="presentation"] ul li,
     	.sc-pRsKx.eqHrrO div[role="presentation"] ul li,
-    	.sc-oUPCf.fNYbSh div[role="presentation"] ul li {
+    	.sc-oUPCf.fNYbSh div[role="presentation"] ul li,
+    	.sc-oVcRo.cbuwGp div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
@@ -471,6 +477,7 @@
     	.sc-qYhBd.bnmQve div[role="presentation"] *,
     	.sc-pRsKx.eqHrrO div[role="presentation"] *,
     	.sc-oUPCf.fNYbSh div[role="presentation"] *,
+    	.sc-oVcRo.cbuwGp div[role="presentation"] *,
 	a[class*="gtm-user-menu-"],
 	a[class*="gtm-user-menu-"] * {
 		color: var(--primary-color);
@@ -487,19 +494,21 @@
     	.sc-pZCbX.cSnajP div[role="presentation"] ul li a,
     	.sc-qYhBd.bnmQve div[role="presentation"] ul li a,
     	.sc-pRsKx.eqHrrO div[role="presentation"] ul li a,
-    	.sc-oUPCf.fNYbSh div[role="presentation"] ul li a {
+    	.sc-oUPCf.fNYbSh div[role="presentation"] ul li a,
+    	.sc-oVcRo.cbuwGp div[role="presentation"] ul li a, {
 		line-height: 20pt;
 	}
 
     	#js-mount-point-header div[role="presentation"] span,
 	.sc-LzLRp.iJznKv div[role="presentation"] span,
 	.sc-LzLRq.iSNyjc div[role="presentation"] span,
-	.sc-LzLQd.IkktS div[role="presentation"] span,
+	.sc-LzLQd.IkktS div[role="presentation"] span, span
     	.sc-LzLRn.iqWSNh div[role="presentation"] span,
     	.sc-LzMgB.bXVQKn div[role="presentation"] span,
     	.sc-pZCbX.cSnajP div[role="presentation"] span,
     	.sc-qYhBd.bnmQve div[role="presentation"] span,
-    	.sc-pRsKx.eqHrrO div[role="presentation"] span {
+    	.sc-pRsKx.eqHrrO div[role="presentation"] span,
+    	.sc-oVcRo.cbuwGp div[role="presentation"] span {
 		background: transparent;
 	}
 
@@ -523,7 +532,9 @@
     	.sc-LzLLI.fwWBZC,
     	.sc-psDhf.dsXQkp,
     	.sc-pbvYO.cxyGNa,
-	.sc-pciXn.jrdgEA  {
+	.sc-pciXn.jrdgEA,
+    	.jpfPFK {
+		background: transparent;
 		border: none !important;
 		font-size: 10pt !important;
 		font-stretch: condensed !important;
@@ -537,7 +548,7 @@
     	.sc-pbKro.bjcxym,
 	.sc-pJhSf.gdVGCp,
 	.sc-oUbIU.kkgvSC,
-    	.sc-plVZC.gocWTh,
+    	.sc-pmhIX.moCtG,
     	.kkUHZQ {
 		display: none;
 	}
@@ -3965,7 +3976,8 @@ regexp("https://www.pixiv.net/(bookmark|bookmark_new_illust).php\?(rest|type|tag
 
 	div[style*="margin:48px"],
     	.sc-fzXfNi.sc-bkzqDG.khgRsK,
-    	.sc-fzXfNi.sc-bkzqDE.kgPYks  {
+    	.sc-fzXfNi.sc-bkzqDE.kgPYks,
+	.sc-fznMAR.sc-jXqSoE.jBerpM {
 
 		/*** INVISIBLE BLOCK UNDER COMMENTS ***/
 		display: none !important;
