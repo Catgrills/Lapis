@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.5.4
+@version        1.5.5
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -77,7 +77,8 @@
     	.ceXgPg,
     	.WHiMb,
     	.kxQNfC,
-	.iKEwQu {
+	.iKEwQu,
+    	.gStmRn {
 
 		/*** THUMBNAILS ***/
 		border: 2px solid var(--border-color);
@@ -90,7 +91,8 @@
     	.ceXgPg:hover,
     	.WHiMb:hover,
     	.kxQNfC:hover,
-	.iKEwQu:hover {
+	.iKEwQu:hover,
+    	.gStmRn:hover {
 		border-color: #47D2E9 !important;
 	}	
 		
@@ -284,7 +286,8 @@
 	.velocity.inline-list,
     	.sc-LzLwq.iFtbiJ,
     	.sc-prQdK.inVUC,
-	.sc-qYhTA.dLAucL {
+	.sc-qYhTA.dLAucL,
+    	.sc-qQKeD.bSwWwA {
 		display: none !important;
 	}
 
