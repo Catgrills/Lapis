@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.5.5
+@version        1.5.6
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -310,7 +310,8 @@
     	.sc-qYhBd.bnmQve,
     	.sc-pRsKx.eqHrrO,
     	.sc-oUPCf.fNYbSh,
-	.sc-oVcRo.cbuwGp {
+	.sc-oVcRo.cbuwGp,
+    	.sc-oTcDH.jMqbUu {
 
 		/*** HEADER CONTAINER ***/
 		background-color: var(--card-bg) !important;
@@ -327,7 +328,8 @@
     	.sc-qYhBd.bnmQve div,
     	.sc-pRsKx.eqHrrO div,
     	.sc-oUPCf.fNYbSh div,
-    	.sc-oVcRo.cbuwGp div {
+    	.sc-oVcRo.cbuwGp div,
+    	.sc-oTcDH.jMqbUu div {
 		background-color: transparent !important;
 	}
 
@@ -341,7 +343,8 @@
     	.sc-qYhBd.bnmQve svg,
     	.sc-pRsKx.eqHrrO svg,
     	.sc-oUPCf.fNYbSh svg,
-    	.sc-oVcRo.cbuwGp svg {
+    	.sc-oVcRo.cbuwGp svg,
+    	.sc-oTcDH.jMqbUu svg {
 
 		/*** HEADER ICONS ***/
 		fill: var(--primary-color);
@@ -434,7 +437,8 @@
     	.sc-qYhBd.bnmQve div[role="presentation"],
     	.sc-pRsKx.eqHrrO div[role="presentation"],
     	.sc-oUPCf.fNYbSh div[role="presentation"],
-    	.sc-oVcRo.cbuwGp div[role="presentation"] {
+    	.sc-oVcRo.cbuwGp div[role="presentation"],
+    	.sc-oTcDH.jMqbUu div[role="presentation"] {
 
 		/*** HEADER POPUP ***/
 		background: var(--card-bg-2) !important;
@@ -452,7 +456,8 @@
     	.sc-qYhBd.bnmQve div[role="presentation"] div,
     	.sc-pRsKx.eqHrrO div[role="presentation"] div,
     	.sc-oUPCf.fNYbSh div[role="presentation"] div,
-    	.sc-oVcRo.cbuwGp div[role="presentation"] div {
+    	.sc-oVcRo.cbuwGp div[role="presentation"] div,
+    	.sc-oTcDH.jMqbUu div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
@@ -466,7 +471,8 @@
     	.sc-qYhBd.bnmQve div[role="presentation"] ul li,
     	.sc-pRsKx.eqHrrO div[role="presentation"] ul li,
     	.sc-oUPCf.fNYbSh div[role="presentation"] ul li,
-    	.sc-oVcRo.cbuwGp div[role="presentation"] ul li {
+    	.sc-oVcRo.cbuwGp div[role="presentation"] ul li,
+    	.sc-oTcDH.jMqbUu div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
@@ -481,6 +487,7 @@
     	.sc-pRsKx.eqHrrO div[role="presentation"] *,
     	.sc-oUPCf.fNYbSh div[role="presentation"] *,
     	.sc-oVcRo.cbuwGp div[role="presentation"] *,
+    	.sc-oTcDH.jMqbUu div[role="presentation"] *,
 	a[class*="gtm-user-menu-"],
 	a[class*="gtm-user-menu-"] * {
 		color: var(--primary-color);
@@ -498,7 +505,8 @@
     	.sc-qYhBd.bnmQve div[role="presentation"] ul li a,
     	.sc-pRsKx.eqHrrO div[role="presentation"] ul li a,
     	.sc-oUPCf.fNYbSh div[role="presentation"] ul li a,
-    	.sc-oVcRo.cbuwGp div[role="presentation"] ul li a, {
+    	.sc-oVcRo.cbuwGp div[role="presentation"] ul li a,
+    	.sc-oTcDH.jMqbUu div[role="presentation"] ul li a {
 		line-height: 20pt;
 	}
 
@@ -511,7 +519,8 @@
     	.sc-pZCbX.cSnajP div[role="presentation"] span,
     	.sc-qYhBd.bnmQve div[role="presentation"] span,
     	.sc-pRsKx.eqHrrO div[role="presentation"] span,
-    	.sc-oVcRo.cbuwGp div[role="presentation"] span {
+    	.sc-oVcRo.cbuwGp div[role="presentation"] span,
+    	.sc-oTcDH.jMqbUu div[role="presentation"] span {
 		background: transparent;
 	}
 
@@ -536,6 +545,7 @@
     	.sc-psDhf.dsXQkp,
     	.sc-pbvYO.cxyGNa,
 	.sc-pciXn.jrdgEA,
+    	.sc-pcLhl.gQQJyv,
     	.jpfPFK {
 		background: transparent;
 		border: none !important;
@@ -552,6 +562,7 @@
 	.sc-pJhSf.gdVGCp,
 	.sc-oUbIU.kkgvSC,
     	.sc-pmhIX.moCtG,
+    	.sc-pkgFA.kIrMbp,
     	.kkUHZQ {
 		display: none;
 	}
