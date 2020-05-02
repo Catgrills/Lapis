@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.5.7
+@version        1.5.9
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -69,16 +69,18 @@
 		margin-top: -45px !important;
 	}
 	
-    #root {
-        overflow-y: hidden;
-    }
-    
+	#root {
+		overflow-y: hidden;
+	}
+
 	.fZYmEz,
-    .ceXgPg,
-    .WHiMb,
-    .kxQNfC,
-    .iKEwQu,
-    .gStmRn {
+	.ceXgPg,
+	.WHiMb,
+	.kxQNfC,
+	.iKEwQu,
+	.gStmRn,
+	.iqXmBs,
+	.fUmMmk {
 
 		/*** THUMBNAILS ***/
 		border: 2px solid var(--border-color);
@@ -88,54 +90,67 @@
 	}
 
 	.fZYmEz:hover,
-    .ceXgPg:hover,
-    .WHiMb:hover,
-    .kxQNfC:hover,
-    .iKEwQu:hover,
-    .gStmRn:hover {
+	.ceXgPg:hover,
+	.WHiMb:hover,
+	.kxQNfC:hover,
+	.iKEwQu:hover,
+	.gStmRn:hover,
+	.iqXmBs:hover {
 		border-color: #47D2E9 !important;
 	}	
 		
 	.sc-fzXfPb.hGAKiq,
 	.sc-fzXfPg.bxTLrX,
-    .sc-fzXfQo.fgMYNr,
-    .sc-fznNTe.kdsLwl,
-    .sc-fzpdyU.fEsfTg {
+	.sc-fzXfQo.fgMYNr,
+	.sc-fznNTe.kdsLwl,
+	.sc-fzpdyU.fEsfTg {
 
 		/*** R-18 ***/
 		display: none !important;
 	}
-	
-	.sc-fzXfQu.cFZsbP {
+
+	.sc-fzXfQu.cFZsbP,
+	.sc-fzoOEf.eXkYNB .sc-fznzqM.dBrLOj {
 
 		/*** PAGE BADGE ***/
 		margin-right: 3px !important;
 	}
     
-	.sc-fzXfPL.ctZleZ {
+	.sc-fzXfPL.ctZleZ,
+	.sc-fznOgF.glfmCu {
 		height: 11px !important;
 	}
 
-	.sc-fzXfPK.bTLfVL {
+	.sc-fzXfPK.bTLfVL,
+	.sc-fzoOEf.eXkYNB .sc-fznzqM.dBrLOj {
 		background: transparent;
 		color: #FFF !important;
 		font-size: 11pt !important;
 		font-stretch: condensed;
 	}
     
-    .sc-fzonjX.hIMiPJ,
-    .sc-fzqOul.kYKazV,
-    .sc-fzobTh.ktGuED {
-        line-height: 0pt !important;
-    }
-	
+	.sc-fzonjX.hIMiPJ,
+	.sc-fzqOul.kYKazV,
+	.sc-fzobTh.ktGuED {
+		line-height: 0pt !important;
+	}
+
 	.gtm-illust-recommend-bookmark,
 	.sc-fzXfOX.cqEeVs,
-    .sc-fzoVTD.Atfvz,
-    .sc-pbIaG.ebFstP {
+	.sc-fzoVTD.Atfvz,
+	.sc-pbIaG.ebFstP,
+        .sc-fzowVh.equHBw {
 
 		/*** BOOKMARK BUTTON ***/
 		margin-right: 5px !important;
+	}
+	
+	.sc-prOVx.nbRcd * {
+
+		/*** RECOMMENDED WORKS TEXT ***/
+		color: var(--primary-color);
+		font-size: 12pt;
+		font-stretch: condensed;
 	}
 
 	._balloon-menu-popup {
@@ -262,7 +277,7 @@
 	.align-column /*** HOME NAVIGATION ***/,
 	.comic-container /*** HOME COMIC CONTAINER ***/,
 	.comic-hot-works.novel /*** POPULAR COMICS ***/,
-    div[style="height: 180px; opacity: 1;"] /*** RECOMMEND WORKS ***/,
+	div[style="height: 180px; opacity: 1;"] /*** RECOMMEND WORKS ***/,
 	.footer._classic-footer /*** HOME FOOTER ***/,
 	._history .title .trial,
 	._icon.sprites-info.open-info.ui-modal-trigger /*** RANKING INFO ICON ***/,
@@ -277,19 +292,20 @@
 	#page-mypage .ui-layout-west ._profile-menu-unit .menu-item:nth-child(4) /*** HOME GROUP/EVENTS MENU ***/,
 	.premium-lead-premium-campaign /*** GET PRENIUM BUTTON ***/,
 	._premium-badge /*** PRENIUM BADGE ***/,
-    #wrapper .layout-body ._unit .extaraNavi /*** NEW WORK FOLLOWING EXTRA NAVBAR ***/,
+	#wrapper .layout-body ._unit .extaraNavi /*** NEW WORK FOLLOWING EXTRA NAVBAR ***/,
 	.stacc_right_menu a[href*="unify"] /*** SWITCH TO NEW FEED LINK ***/,
 	.toolbar-item /*** SEND FEEBACKS ***/,
 	._unit.booth-follow-items .description,
 	._unit.booth-follow-items .information,
 	._user-profile-card-badges /*** USER PROFILE BADGES ***/,
 	.velocity.inline-list,
-    .sc-LzLwq.iFtbiJ,
-    .sc-qYhTA.dLAucL,
-    .sc-pdkQB.eNujGe,
-    .sc-qQKeD.bSwWwA,
-    .sc-kMBuXH.giDztv,
-    .sc-kHzxZO.hwuwZW {
+	.sc-LzLwq.iFtbiJ,
+	.sc-qYhTA.dLAucL,
+	.sc-pdkQB.eNujGe,
+	.sc-qQKeD.bSwWwA,
+	.sc-kMBuXH.giDztv,
+	.sc-kHzxZO.hwuwZW,
+	.sc-oTLFK.hRSeLE {
 		display: none !important;
 	}
 
@@ -312,7 +328,8 @@
 	.sc-pRsKx.eqHrrO,
 	.sc-oUPCf.fNYbSh,
 	.sc-oVcRo.cbuwGp,
-	.sc-oTcDH.jMqbUu {
+	.sc-oTcDH.jMqbUu,
+    	.sc-pRPKI.iOAoqy {
 
 		/*** HEADER CONTAINER ***/
 		background-color: var(--card-bg) !important;
@@ -329,7 +346,8 @@
 	.sc-pRsKx.eqHrrO div,
 	.sc-oUPCf.fNYbSh div,
 	.sc-oVcRo.cbuwGp div,
-	.sc-oTcDH.jMqbUu div  {
+	.sc-oTcDH.jMqbUu div,
+    	.sc-pRPKI.iOAoqy div  {
 		background-color: transparent !important;
 	}
 
@@ -343,7 +361,8 @@
 	.sc-pRsKx.eqHrrO svg,
 	.sc-oUPCf.fNYbSh svg,
 	.sc-oVcRo.cbuwGp svg,
-	.sc-oTcDH.jMqbUu svg {
+	.sc-oTcDH.jMqbUu svg,
+    	.sc-pRPKI.iOAoqy svg {
 
 		/*** HEADER ICONS ***/
 		fill: var(--primary-color);
@@ -448,7 +467,8 @@
 	.sc-pRsKx.eqHrrO div[role="presentation"],
 	.sc-oUPCf.fNYbSh div[role="presentation"],
 	.sc-oVcRo.cbuwGp div[role="presentation"],
-	.sc-oTcDH.jMqbUu div[role="presentation"] {
+	.sc-oTcDH.jMqbUu div[role="presentation"],
+    	.sc-pRPKI.iOAoqy div[role="presentation"] {
 
 		/*** HEADER POPUP ***/
 		background: var(--card-bg-2) !important;
@@ -466,7 +486,8 @@
 	.sc-pRsKx.eqHrrO div[role="presentation"] div,
 	.sc-oUPCf.fNYbSh div[role="presentation"] div,
 	.sc-oVcRo.cbuwGp div[role="presentation"] div,
-	.sc-oTcDH.jMqbUu div[role="presentation"] div {
+	.sc-oTcDH.jMqbUu div[role="presentation"] div,
+    	.sc-pRPKI.iOAoqy div[role="presentation"] div {
 		border-color: var(--border-color) !important;
 	}
 
@@ -480,7 +501,8 @@
 	.sc-pRsKx.eqHrrO div[role="presentation"] ul li,
 	.sc-oUPCf.fNYbSh div[role="presentation"] ul li,
 	.sc-oVcRo.cbuwGp div[role="presentation"] ul li,
-	.sc-oTcDH.jMqbUu div[role="presentation"] ul li {
+	.sc-oTcDH.jMqbUu div[role="presentation"] ul li,
+    	.sc-pRPKI.iOAoqy div[role="presentation"] ul li {
 		background: transparent !important;
 	}
 
@@ -495,6 +517,7 @@
 	.sc-oUPCf.fNYbSh div[role="presentation"] *,
 	.sc-oVcRo.cbuwGp div[role="presentation"] *,
 	.sc-oTcDH.jMqbUu div[role="presentation"] *,
+    	.sc-pRPKI.iOAoqy div[role="presentation"] *,
 	a[class*="gtm-user-menu-"],
 	a[class*="gtm-user-menu-"] * {
 		color: var(--primary-color);
@@ -512,7 +535,8 @@
 	.sc-pRsKx.eqHrrO div[role="presentation"] ul li a,
 	.sc-oUPCf.fNYbSh div[role="presentation"] ul li a,
 	.sc-oVcRo.cbuwGp div[role="presentation"] ul li a,
-	.sc-oTcDH.jMqbUu div[role="presentation"] ul li a {
+	.sc-oTcDH.jMqbUu div[role="presentation"] ul li a,
+    	.sc-pRPKI.iOAoqy div[role="presentation"] ul li a {
 		line-height: 20pt;
 	}
 
@@ -526,7 +550,8 @@
 	.sc-pRsKx.eqHrrO div[role="presentation"] span,
 	.sc-oUPCf.fNYbSh div[role="presentation"] span,
 	.sc-oVcRo.cbuwGp div[role="presentation"] span,
-	.sc-oTcDH.jMqbUu div[role="presentation"] span {
+	.sc-oTcDH.jMqbUu div[role="presentation"] span,
+    	.sc-pRPKI.iOAoqy div[role="presentation"] span {
 		background: transparent;
 	}
 
@@ -552,7 +577,8 @@
 	.sc-pbvYO.cxyGNa,
 	.sc-pciXn.jrdgEA,
 	.sc-pcLhl.gQQJyv,
-	.jpfPFK {
+	.jpfPFK,
+    	.sc-pIhhe.cxGvUA {
 		background: transparent;
 		border: none !important;
 		font-size: 10pt !important;
@@ -565,10 +591,10 @@
 	.sc-LzMgE.kllBii,
 	.sc-LzMgD.kldeDZ,
 	.sc-pbKro.bjcxym,
-	.sc-oUbIU.kkgvSC,
 	.sc-pmhIX.moCtG,
 	.sc-pkgFA.kIrMbp,
-	.kkUHZQ {
+	.kkUHZQ,
+	.sc-oTDcV.gfuZXo {
 		display: none;
 	}
 
