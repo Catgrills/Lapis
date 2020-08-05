@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.6.0
+@version        1.6.1
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -1559,10 +1559,22 @@
         border-radius: 2px !important;
     }
 
-    .iubowd * /*** OTHERS THUMBNAILS ***/, .iUwzEL * /*** LIVE THUMBNAILS ***/, .uiwhyo-0 * /*** BOOTH THUMBNAILS ***/, .fmeGSu *, .kwNUKp * /*** CONTEST LIST ***/, .flnuYL *, .gEUnZz *, .fzcmNI a[href*="/user"]
-
-    /*** RECOMMENDED USERS CONTAINER ***/
-    , .lhSkaj /*** FEATURED BOOTH DESCRIPTION ***/, .hgzImF, .dOWyUR * /*** NOVEL FOLLOWING CONTAINER ***/, .fiuRzt * /*** NOVEL EDITOR'S PICK CONTAINER ***/, .MmAGs * /*** NOVEL POPULAR SERIES CONTAINER ***/, .cnjnOf, .iqSZcU * /*** NOVEL RANKING CONTAINER ***/, .zjpQn /*** NOVEL THUMBNAILS ***/ {
+    .iubowd * /*** OTHERS THUMBNAILS ***/, 
+    .iUwzEL * /*** LIVE THUMBNAILS ***/, 
+    .uiwhyo-0 * /*** BOOTH THUMBNAILS ***/, 
+    .fmeGSu *, 
+    .kwNUKp * /*** CONTEST LIST ***/, 
+    .flnuYL *, 
+    .gEUnZz *, 
+    .fzcmNI a[href*="/user"] /*** RECOMMENDED USERS CONTAINER ***/, 
+    .lhSkaj /*** FEATURED BOOTH DESCRIPTION ***/, 
+    .hgzImF, 
+    .dOWyUR * /*** NOVEL FOLLOWING CONTAINER ***/, 
+    .fiuRzt * /*** NOVEL EDITOR'S PICK CONTAINER ***/, 
+    .MmAGs * /*** NOVEL POPULAR SERIES CONTAINER ***/, 
+    .cnjnOf, 
+    .iqSZcU * /*** NOVEL RANKING CONTAINER ***/, 
+    .zjpQn /*** NOVEL THUMBNAILS ***/ {
 
         /*** THUMBNAILS DATA ***/
         color: var(--primary-color);
