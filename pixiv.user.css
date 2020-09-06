@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Lapis
 @namespace      https://github.com/Catgrills/Lapis
-@version        1.6.1
+@version        1.6.2
 @description    An user style for Pixiv called Lapis.
 @author         Catgrills/Katgrills
 @preprocessor uso
@@ -1399,7 +1399,8 @@
         opacity: .6 !important;
     }
 
-    .fiRbaK * {
+    .fiRbaK *,
+    .kPduLX * {
 
         /*** NAV BAR ALL/R-18 BUTTONS ***/
         color: var(--primary-color) !important;
@@ -1407,7 +1408,8 @@
         font-stretch: condensed !important;
     }
 
-    .fiRbaK > span {
+    .fiRbaK > span,
+    .kPduLX > span {
 
         /*** NAV BAR ALL/R-18 CURRENT ***/
         background: var(--card-bg-2) !important;
